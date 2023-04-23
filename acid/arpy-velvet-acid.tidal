@@ -1,0 +1,7 @@
+setcps 1
+
+d1 $ jux rev $ sound "bd*2 [808:3 bass]"
+
+d2 $ every 2 rev $ jux rev $ chop 2 $ s "<arpy:1 arpy> ~ ~" # speed "-0.5" # legato 0.6
+
+hush
