@@ -1,0 +1,21 @@
+setcps 1
+
+d1 $ sound "[bd bd sn:5] [bd sn:3]"
+
+d2 $ striate 4 $ s "<amencutup invaders>"
+ # vowel "<a e> o o"
+
+
+d5 $ vowel "<a e> o o" # s "<amencutup invaders>"
+
+d3 $ s "[casio|casio:1]" -- pipe for random
+
+solo 1
+
+unsolo 5
+
+unsolo 2
+
+unsolo 1
+
+hush
