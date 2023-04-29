@@ -4,8 +4,12 @@ d1 $ jux rev $ sound "sn:2 [808:3 bass]"
 
 d2 $ every 2 rev $ jux rev $ chop 2 $ s "<arpy:1 arpy> ~ ~ arpy:2" # speed "-0.5 -0.25"
  # legato 0.6
- # room 0.3
+ # room 0.5
 
-d3 $ s "casio"
+d2 silence
+
+d3 $ slow 2 $ s "casio"
+ # room 0.2
+ # speed "-0.8"
 
 hush
