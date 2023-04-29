@@ -1,15 +1,21 @@
 setcps 1.4
 
-d1 $ jux rev $ sound "sn:2 [808:3 bass]"
+unsolo 2
 
-d2 $ every 2 rev $ jux rev $ chop 2 $ s "<arpy:1 arpy> ~ ~ arpy:2" # speed "-0.5 -0.25"
- # legato 0.6
+d1 $ jux rev $ sound "[sn:2 [drum [bass/2]], hh:5]"
+
+d2 $ every 2 rev $ jux rev $ chop 2 $ s "<arpy:1 arpy> ~ ~ arpy:2" # speed "<-0.5 -0.25 -0.75 -1>"
  # room 0.5
+ # legato 0.6
 
-d2 silence
-
-d3 $ slow 2 $ s "casio"
+d4 $ slow 2 $ s "[casio*2] ~ ~"
  # room 0.2
- # speed "-0.8"
+ # speed "<-0.8 0.5>"
+
+d5 $ s "bend"
+
+unsolo 5
+
+unmuteAll
 
 hush
