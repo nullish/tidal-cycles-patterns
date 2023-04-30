@@ -1,4 +1,20 @@
-d1 $ n (slow 2 $ fmap (*7) $ run 8) 
-  # s "supergong" 
-  # decay "[1 0.2]/4" 
-  # voice "[0.5 0]/8" 
+d1 $ n (slow 2 $ fmap (*7) $ run 8)
+  # s "supergong"
+  # decay "[1 0.2]/4"
+  # voice "[0.5 0]/8"
+
+d1 silence
+
+d2 $ s "supergong*2" # n "-a a"
+  -- # decay "[1 0.2]/2"
+  # voice "[0.5 0]/8"
+
+d3 $ slow 2 $ n 1
+ # s "supersquare"
+ # rate 2.5
+ # lfo "0.7 0.5"
+
+d4 $ fast 2 $ jux rev $ s "superchip*8" # n "[c -d -e -f]*2"
+ # sustain 0.1
+
+ hush

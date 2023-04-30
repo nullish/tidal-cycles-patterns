@@ -6,6 +6,8 @@ d3 $ sound "bd*8" # pan (slow 2 isaw)
 
 d4 $ sound "bd*4" # pan (slow 4 $ smooth "0 1 0.5 1")
 
-unsolo 4 
+d5 $ s "bass:2*8" # lpf (range 200 3000 $ sine)
+
+unsolo 4
 
 hush

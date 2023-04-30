@@ -1,12 +1,16 @@
-d2 $ jux rev $ fast 2 $ s "sn:1 [<bass cp>*2]"
+setcps 0.3
 
-d3 $ echo 2 0.3 0.8 $ s "<casio:1 arpy>"
- # room 0.4
+d2 $ jux rev $ fast 4 $ s "<sn:1 sn> [<bass cp>*2]"
 
-d4 $ every 2 rev $ jux rev $ chop 2 $ s "<arpy:1 arpy> ~ ~ arpy:2" # speed "<-0.5 -0.25 -0.75 -1>"
- # legato 0.6
+d3 $ fast "<4 2 2 2>" $ jux rev $ s "superchip*8" # n "[-c -d <e -e> -f]*2"
+ # sustain 0.1
+ # gain "0.9 0.8 1"
+ # pan sine
+
+d4 $ fast 2 $ every 2 rev $ jux rev $ chop 2 $ s "<arpy:1 arpy> ~ ~ arpy:2" # speed "<-0.5 -0.25 -0.75 -1>"
+ # legato 0.8
  # room 0.5
 
-d4 silence
+ unsolo 3
 
-hush
+ hush
