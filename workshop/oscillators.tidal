@@ -1,0 +1,11 @@
+d1 $ sound "bd*8" # pan sine
+
+d2 $ sound "bd*16" # speed (slow 2 $ range 0.5 2 tri)
+
+d3 $ sound "bd*8" # pan (slow 2 isaw)
+
+d4 $ sound "bd*4" # pan (slow 4 $ smooth "0 1 0.5 1")
+
+unsolo 4 
+
+hush
