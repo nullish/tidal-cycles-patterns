@@ -1,0 +1,2 @@
+d2 $ every 2 (chop 2) $ sound "sn:1 bd:1"
+|+| gain "1"

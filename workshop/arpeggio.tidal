@@ -1,4 +1,7 @@
-d4 $ fast 2 $ jux rev $ s "superchip*8" # n "[-c -d e -f]*2"
+d4 $ jux rev $ s "superchip*8" # n "[-c -d e -f]*2"
  # sustain 0.1
+ -- # octer "2 4 1" 
 
 d4 silence
+
+hush

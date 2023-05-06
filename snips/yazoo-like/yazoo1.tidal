@@ -1,0 +1,4 @@
+ d5 $ s "arpy*12"
+  # lpf (range 200 3000 $ sine)
+  # lpq 0.2
+  # speed "[1 0.8 0.4 0.6]*2"

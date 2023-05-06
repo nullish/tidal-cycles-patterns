@@ -1,0 +1,4 @@
+d2 $ slice 8 "6 0 5 4 1 2 1 0" $ s "breaks152"
+ # legato 1
+
+hush

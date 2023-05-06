@@ -1,0 +1,26 @@
+d1 $ s "arpy*2"
+ # delay "0.5"
+ # delayt "0.25"
+ # speed 0.5
+
+d2 $ s "arpy*4"
+ # octer "0.2 0.4 0.8 1"
+
+d3 $ slow 4 $ n 1
+ # s "supersquare"
+ # room 0.4
+ # dry 2
+
+d4 $ slow 4 $ n 1
+ # s "supersquare"
+ # phasr 0.5
+ # phasdp 1.5
+
+
+ d5 $ s "arpy*12"
+  # lpf (range 200 3000 $ sine)
+  # lpq 0.2
+  # speed "[1 0.8 0.4 0.6]*2"
+
+
+hush

@@ -1,0 +1,3 @@
+d2 $ every 32 (const $ sound "sn:1*16") $ jux (density 1.5) $ sound "sn:2 drum cp drum:2"
+|+| speed "0.9"
+|+| gain "1.2"
