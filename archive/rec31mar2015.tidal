@@ -1,0 +1,7 @@
+solo $ d3 $ jux (slow 4) $ jux (|+| speed "-5 -6 -7") $ sound "moog*3 t"
+|+| vowel "e"
+|+| speed "-3 -2 -2"
+|+| end "0.2"
+|+| gain "0.8"
+
+hush

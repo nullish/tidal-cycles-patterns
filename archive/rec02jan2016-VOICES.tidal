@@ -1,0 +1,7 @@
+cps (1)
+
+d1 $ n (choose [1, 0, 0, 2]) # s "numbers"
+
+d2 $ density 2 $ sound "[drum*2, hh*4, jvbass*2]"
+
+hush

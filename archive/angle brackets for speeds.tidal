@@ -1,0 +1,5 @@
+d1 $ jux (trunc 0.75) $ striate 2 $ sound "[arpy*2, [casio*2]]" # speed "-0.5 -0.8"
+ |*| speed "<0.5 1 0.75 1.25>"
+ # room "0.2"
+
+d2 $ jux (density 1.5) $ sound "[bd:1 bd, sn:1*2, drum]"

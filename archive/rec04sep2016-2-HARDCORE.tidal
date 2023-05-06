@@ -1,0 +1,11 @@
+d1 $ density 2 $ sound "[sn bass:1, sn:1 drum ~ drum, hh*2, cp/2]"
+
+d1 $ density 2 $ sound "[sn [casio*2], sn:1 drum ~ drum, bass:1*4, cp/2]"
+
+solo $ d2 $ every 8 (# up (run 8)) $ striate 2 $ echo (1/2) $ sound "pacman" # speed "0.6"
+|+| gain "1.2"
+|+| vowel "a"
+
+cps (0.5)
+
+hush

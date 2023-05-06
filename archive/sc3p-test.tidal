@@ -1,0 +1,9 @@
+cps 2
+
+d1 $ chop 2 $ superimpose (fast 2.5) $ sound "tb303"
+ # speed 1.2
+
+d1 silence
+
+
+d2 $ sound "superpiano"

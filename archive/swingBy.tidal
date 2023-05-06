@@ -1,0 +1,18 @@
+-- A clever thing from Slack
+
+d1 $ jux rev $ n (struct "x(5,8,<0 2 4>)" $ slow 4 $ scaleP "<minPent majPent>" (floor <$> (sine * 10))) # sound "supermandolin"
+  # legato 8
+  |+| n "-12"
+
+d1 silence
+
+-- swingBy function
+
+d2 $ jux (palindrome) $ swingBy (0.75) 2 $ n (run 8) # sound "<arpy t>"
+ # legato 4
+ # hpf 400
+ # coarse 10
+ # speed "-1"
+ # cutoff 800
+
+d2 silence

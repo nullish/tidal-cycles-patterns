@@ -1,0 +1,5 @@
+d2 $ sometimesBy 0.25 (striate 4) $ slow 8 $ sound (samples "rub*4" (irand 3))
+
+cps (76/60)
+
+hush

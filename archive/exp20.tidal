@@ -1,0 +1,38 @@
+d2 $ iter 4 $ degrade $ stut 16 0.5 0.01 (n "-12 -10 -8 -6 -4 -2 0 2 4 6 8 10" |+| s "supersaw")
+|+| vowel "[a e e i], [i o o]"
+# crush "6 4 8 4 5"
+# sustain "0.1"
+# speed "2"
+
+d3 $ every 2 (rev) $ every 3 (striate 5) $ jux (rev) $ weave 16 (sound (samples"arpy*16" (run 8)))
+[vowel "a e e i",
+vowel "a i",
+speed "2 3 3"
+]
+# up "0 1 2 3 4 5 6 7 8"
+# speed "1 2"
+# room "0.9"
+# orbit "1"
+
+d4 $ every 2 (rev) $ every 3 (striate 5) $ jux (rev) $ weave 16 (sound (samples"feel*16" (run 8)))
+[vowel "a e e i",
+vowel "a i",
+speed "2 3 3"
+]
+# up "0 1 2 3 4 5 6 7 8"
+# speed "1 2"
+
+d5 $ whenmod 2 1 (const $ sound "~") $ rarely (jux (striate 2)) $ rarely (density 2) $ iter 4 $ every 3 (rev) $ slowcat
+$ [sound "bd:3 sn:1(2,5)",
+   sound "bd:3 cp(3,7)"
+  |+| crush "6 7 6 8 10"
+  # shape "0.8"
+  ]
+
+d6 $ rarely (jux (iter 2)) $ sound "bleep:13" # speed "-1 -0.7 -1.5"
+# shape "0.8"
+# crush "6"
+# delay "1"
+# delayfeedback "0.9"
+# delaytime (slow 16 $ scale 0.02 1 sine1)
+|*| speed "2"

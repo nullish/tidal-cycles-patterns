@@ -1,0 +1,21 @@
+d1 $ density 4 $ iter 2 $ sound "gabba sn:1"
+|+| begin "0.2"
+|+| gain "0.7"
+
+d2 $ jux (slow 4) $ degradeBy 0.2 $ sound "[jvbass*12 ~]*2"
+|+| speed "1 2 2.5 -2"
+
+d3 $ every 2 (rev) $ iter 3 $ sound "[drum:1*2] [sn:1*2] [hh*4] ~ cp"
+
+d4 $ jux (zoom (0, 0.5)) $ sound "blip:2*4"
+|+| speed "0.2 0.4 0.6 0.8"
+|+| cut "0.8"
+|+| delay "0.2"
+
+d5 $ slow 2 $ gap 8 $ jux (|+| end "0.8") $ sound "moog"
+|+| begin "0.25"
+|+| accelerate "-1"
+
+d6 $ sound "tb303"
+
+hush

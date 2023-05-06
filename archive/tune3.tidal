@@ -1,0 +1,16 @@
+d1 $ density 2 $ sound "[sn:1] hh*2"
+|+| speed "0.8"
+
+d2 $ every 4 (slow 2) $ every 4 (|+| speed "1") $ striate 2 $ sound "ebass*2"
+|+| speed "0.6"
+|+| gain "0.6"
+|+| shape "0.1 0 0.1"
+|+| begin "0.25"
+
+d3 $ every 4 (iter 1) $ every 2 (rev) $ chop 4 $ sound "tb303*2"
+|+| gain "0.8"
+|+| speed "1 1.2 1.4"
+
+d4 $ every 4 (density 2) $ sound "cp"
+
+cps (80/60)

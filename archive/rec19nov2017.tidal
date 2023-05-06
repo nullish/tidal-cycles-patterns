@@ -1,0 +1,26 @@
+cps 0.85
+
+d1 $ within (0.5, 1) (# speed "<0.6 2.2>")
+ $ sound "[[bd*2] ~ [<sn:1 blip>*2] ~, bass1 [drum:1*2] ~, ~ ~ [sn*2]/2]"
+  # gain 1.2
+  # resonance 0.2
+
+d2 $ degrade $ stut 4 0.25 0.4 $ every 4 (slow 2 . (palindrome)) $ gap 2 $ jux (# cutoff 400) $ jux rev $ spread (slow) [2, 4]
+ $ sometimesBy (1/4) (off (1/16) (# vowel "e")) $ whenmod 8 4 (# speed "0.2")
+ $ off (1/8) (# sound "arpy") $ fast 2 $ superimpose (zoom (0, 0.2) . (fast 2))
+ $ every 4 (jux (fast 2 . (zoom (0.25, 1))))
+ $ sound "arpy:1*4"
+ # orbit 1
+ # room 0.3
+ # gain 1
+ # shape (scale 0 0.4 $ slow 2 $ sine1)
+
+d3 $ sound "[cb8*3, bd:1*2]"
+ # gain 1.1
+
+d4 $ every 12 (slow 2 . (striate 24)) $ loopAt 2 $ sound "breaks125"
+ # gain (scale 1.4 1.6 $ slow 2 $ saw1)
+
+d4 silence
+
+hush

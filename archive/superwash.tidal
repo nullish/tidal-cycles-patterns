@@ -1,0 +1,5 @@
+d1 $ sound "feel*4 [feel:2 sn:2]"
+
+t1 (superwash (# accelerate "4 2 -2 -4") (striate 2) 1 4 6) $ sound "bd [odx:2 sn/2]"
+
+hush

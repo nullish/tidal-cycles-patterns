@@ -1,0 +1,21 @@
+d1 $ sound "bass kick [gabba] sn:1"
+|+| speed "1.1"
+|+| gain "1.2"
+
+d2 $ every 4 (|+| accelerate "-3") $ every 2 (stut 2 0.8 0.2) $ jux (|+| speed "2 2.2") $ sound "hard*3 ~"
+|+| speed "1 1 2 1"
+|+| begin "0.5"
+|+| gain "0.9"
+
+d3 $ slow 2 $ chop 4 $ sound "acid:1*2"
+|+| speed "1 1.2"
+|+| gain "1.2"
+|+| delay "0.5"
+
+d4 $ sound "rave cp"
+|+| speed "0.8"
+|+| end "0.2 1"
+
+cps (80/60)
+
+hush

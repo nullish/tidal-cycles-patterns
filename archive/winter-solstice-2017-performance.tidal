@@ -1,0 +1,19 @@
+-- I'm jusy dieing to get this recipe.
+
+cps 1
+
+d1 $ n (irand 4) # s "[drum, bass]"
+
+solo $ d3 $ slow 3 $ striate 4 $ s "stepford"
+ # gain 1.2
+
+d4 $ degrade $ jux (slow 4 . (spin 2)) $ jux (slow 4 . (# up "<4 2>")) $ jux (slow 1.5 . (chop 2)) $ weave 24 (s "tb303*2")
+ [
+  slow 2 $ gap 4 $ palindrome $ speed (run 4),
+  slow 2 $ stut 3 0.7 0.25 $ speed "2 4 <8 4>"
+ ]
+ |-| speed "1.5"
+ # gain 0.8
+ # begin 0.2
+
+hush

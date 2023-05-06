@@ -1,0 +1,5 @@
+d1 $ s "acid"
+
+t1 (mortal 2 8) $ sound "[hh*4, odx(3,8)]"
+
+hush

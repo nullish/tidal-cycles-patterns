@@ -1,0 +1,15 @@
+d1 $ every 2 (rev) $ slowspread (striate) [1, 8, 4] $ sound "[sn sn:2]*2"
+
+d2 $ every 4 (striate 2 . (|+| speed "2.4")) $ every 2 (rev) $ density 2 $ sound "bass3*2"
+|+| speed "1.4 2.2"
+|+| end "0.25"
+|+| gain "0.9"
+
+d3 $ sound "moog"
+|+| gain "0.8"
+
+d3 $ silence
+
+cps (80/60)
+
+hush

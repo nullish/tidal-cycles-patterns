@@ -1,0 +1,9 @@
+d1 $ sound "gabba*2" # speed "-1" # accelerate "-1"
+
+d1 $ n 1 # s "cosmicg"
+ # speed "-0.5"
+ # accelerate "-0.5"
+
+d1 $ n (run 3) # s "gab"
+
+d1 $ sound "dstep"

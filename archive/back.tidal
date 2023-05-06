@@ -1,0 +1,17 @@
+d1 $ jux (slow 4 . (# speed 4)) $ every 2 (chop 2) $ density 4 $ s "bass1"
+ # speed 2
+ # room 0.3
+
+d2 $ s "sn:2 [cp*2]"
+
+d3 $ every 2 (jux (rev)) $ every 4 (# gain 1) $ slowspread (slow) [1, 0.25] $ s "sn:<2 1>*24"
+ # gain 0.6
+
+solo $ d3 $ slow 8 $ superimpose (zoom (0.24, 0.75)) $ jux rev $ slow 4 $ chop 4 $ s "[drum ~  bass0 drum:1 ~ bd]*13"
+ # gain 1.2
+
+d4 $ off 0.25 (# s "blip") $ jux (slow 1.5 . (# up "-2")) $ chop 2 $ jux (# speed (run 3)) $ slow 4 $ every 2 (stut 2 0.7 0.4) $ s "superpiano*4"
+ # up 0.5
+
+
+hush

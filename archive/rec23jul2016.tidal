@@ -1,0 +1,10 @@
+d1 $ rev $ density 4 $ smash 4 [1, 2, 4, 2] $ sound "tb303"
+|+| speed "0.9"
+
+d2 $ every 8 (degrade $ palindrome $ stut 3 0.9 0.4 $ sound "blip*3 blip?"
+|+| speed "2.5 1.2 2 0.8"
+
+d3 $ density 2 $ sound "hh drum/2"
+|+| gain "1.2"
+
+hush

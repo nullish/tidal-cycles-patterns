@@ -1,0 +1,21 @@
+cps (1)
+
+d2 $ every 8 (const $ sound "[drum sn:1]*2") $ jux (slow 1.5)
+ $ sound "[arpy bass, drum sn:1]"
+ # gain "1.2"
+ # speed "0.5 1"
+
+d1 $ superimpose (# speed "1.5") $ slow 4 $ striate 8 $ sound "choir*2"
+ # gain "0.8"
+
+d3 $ sound "choir" 
+ # speed "<1 3 2>" # orbit "1" # resonance "0.3"
+
+d4 $ slow 2 $ jux (palindrome)
+ $ whenmod 8 4 (# up "2")$ n (run 3) # s "piano"
+ # gain "1.2"
+ # speed "<1 2>"
+
+d2 $ silence
+
+hush

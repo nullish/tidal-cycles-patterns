@@ -1,0 +1,11 @@
+cps (0.45)
+
+d1 $ density 80 $ chop 4 $ s "t" # n (irand 2) # gain "0.7"
+|+| speed "1"
+|-| up (slow 2 $ scale 0.3 1 $ sine1)
+
+hush
+
+d2 $ n (irand 8) # s "drum" # speed "0.7"
+
+hush

@@ -1,0 +1,24 @@
+d1 $ every 2 (rev) $ sound "[jvbass*2] sn:1 bass"
+|+| speed "1 1 1.4 0.9"
+|+| gain "1 1.2 1 1.2"
+
+d2 $ slow 1.2 $ every 4 (jux (|+| accelerate "-1")) $ weave 4 (speed "1 2") [
+  slow 2 $ trunc 0.5 $ sound "moog" |+| end "0.3" |+| shape "0.2 0"]
+
+d2 $ silence
+
+d3 $ slow 4 $ weave 4 (speed "1.4") [jux (|+| speed "0.8 0.6") $ slow 2 $ stut 2 0.7 0.4 $ sound "[arpy:1 arpy:2]*4", 
+  slow 4 $ sound "moog" |+| end "0.5"]
+  |+| gain "1"
+
+d3 $ silence
+
+d4 $ weave 4 (speed "1 1.2") [sound "blip [blip*2]", sound "blip:1*3" |+| delay "0.5"]
+|+| gain "1"
+
+solo $ d5 $ slow 4 $  brak $ sound "hh:1*2"
+|+| gain "1.4"
+
+cps (90/60)
+
+hush

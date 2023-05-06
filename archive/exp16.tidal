@@ -1,0 +1,25 @@
+d2 $ chop 2 $ sound "supersquare*8" # n (fmap ((-)12) "0 2 4 6 8 10 12 14") # sustain "0.1"
+# pitch1 "0.03"
+# gain "1.1"
+# orbit "1"
+
+d3 $ iter 4 $ chop 2 $ n "[c3 ~ ~ ~ fs3 f3 ~ ~]" # s "supersaw" # sustain "0.1"
+# vowel "a e i e a i"
+# shape "0.7"
+# delay "0.5"
+# delaytime "0.02 0.04 0.01 0.03"
+# delayfeedback "0.7 0.02"
+# crush "8 4 6 8 4 6 4 6"
+# orbit "1"
+
+d4 $ chop 2 $ jux rev $ sound "supersaw*8" # n (fmap (+12) "0 2 4 6 8 10 12 14") # sustain "0.05"
+# room "0.7"
+# size "0.8"
+# shape "0.5"
+# crush "2 6 4 8 6 2 4 8"
+# orbit "0"
+# gain "0.9"
+
+
+
+hush

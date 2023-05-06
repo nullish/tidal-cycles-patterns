@@ -1,0 +1,9 @@
+d1 $ every 2 (palindrome) $ superimpose (off 0.125 (slow 2 .  (# speed "-0.8"))) $ sound "bass(3,8)"
+ # speed 1
+ # accelerate 1
+
+d2 $ sound "[drum, hh*8, sn:1*2]"
+
+d3 $ off 0.5 (# sound "<t:1 t> ~ ~") $ off 0.125 (slow 1.5 . (# up 3)) $ n (irand 3) # s "blip"
+ # crush 4
+ # room 0.2

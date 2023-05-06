@@ -1,0 +1,17 @@
+let tsdelay = make' VF tsdelay_p
+    tsdelay_p = F "tsdelay" Nothing
+    xsdelay = make' VI xsdelay_p
+    xsdelay_p = I "xsdelay" Nothing
+
+d1 $ sound "cp bd cp bd" # tsdelay "0.2" # xsdelay "55" # tsdelay "3" # xsdelay "500"
+
+hush
+
+let (freq, _) = pF "freq" (Just 100)
+    (modFreq, _) = pF "modFreq" (Just 10)
+    (phase, _) = pF "phase" (Just 1.0)
+    (rate, _) = pI "rate" (Just 1)
+
+d1 $ n "13" # sound "fmshuffle" # modFreq "880" # freq "50" # sustain "1"
+
+hush

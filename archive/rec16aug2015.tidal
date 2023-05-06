@@ -1,0 +1,8 @@
+d1 $ density 2 $ sound "jvbass [hh drum]"
+
+d2 $ stut 2 0.6 0.25 $ jux (|+| speed "1.2 1.4") $ weave 2 (speed "1 1.2") [sound "tb303*2", echo (1/3) $ sound "choir" |+| begin "0.2"]
+|+| speed "1 1.2"
+|+| end "0.3"
+|+| gain "0.9"
+
+hush

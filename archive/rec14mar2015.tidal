@@ -1,0 +1,12 @@
+d1 $ density 2 $ striate 2 $ sound "tb303:1*2"
+|+| unit "c"
+|+| speed "2 3"
+
+d2 $ every 4 (trunc 0.25) $ sound "cp"
+|+| speed "0.4"
+
+d2 $ silence
+
+d3 $ sound "bd*2"
+
+hush

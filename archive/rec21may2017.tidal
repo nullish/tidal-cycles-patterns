@@ -1,0 +1,10 @@
+d1 $ sound "[drum(3,8), {[[drum:1*2] sn:1](2,4)}*2]" # gain "1.1"
+
+d2 $ every 2 (density 2 . (striate 2)) $ sound "drum" # speed "-0.6" # gain "1.2"
+
+d2 silence
+
+d3 $ jux (# speed (run (choose [3, 2])))
+ $ jux (slow 1.5 . (chop 2)) $ spin 3 $ palindrome $ n "0 1" # s "jvbass*3" # speed (choose [1.2, 2, 1])
+ # coarse "15"
+ # gain "1"

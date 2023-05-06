@@ -1,0 +1,9 @@
+d1 $ off 0.125 (slow 2 . (# s "arpy")) $ whenmod 8 4 (|-| up "<1 2>") $ fast 2 $ jux rev $ chop 4 $ sound "t:1"
+ # cutoff 2000
+ # orbit 1
+ # room 0.3
+
+d2 $ s "[sn:1*2 ~ sn:1 bass0, bd(3,8)]"
+
+
+hush

@@ -1,0 +1,11 @@
+d1 $ sound "[drum:1 [drum*2], bd(5,8),[sn:1*2 hh*2]]"
+|+| gain "0.9"
+|+| speed "0.8"
+
+d2 $ slow 24 $ striate 32 $ sometimesBy 0.125 (rev) $ sound "[80z:1*4, kurt/4]" # speed "0.8"
+|+| end "0.5"
+
+d3 $ striate 4 $ slow 2 $ spin 2 $ sound "numbers*2"
+|+| unit "s"
+|+| speed "0.5"
+|+| delay "0.6"

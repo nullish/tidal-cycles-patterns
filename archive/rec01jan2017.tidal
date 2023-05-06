@@ -1,0 +1,9 @@
+d1 $ echo (1/2) $ jux (iter 4 . (# vowel "a e")) $ striate 2 $ slowspread ($) [(density 2), (# speed "1.5 2"), (rev)]$ sound "sine*36"
+ # cutoff (scale 1200 2600 $ slow 4 $ sine1)
+ # gain (scale 0.7 1 $ sine1)
+ # room "0.4"
+ # speed "1 0.8 0.6"
+
+d2 $ every 8 (const $ sound "cp*16") $ superimpose (palindrome) $ sound "[jvbass*2 sn:2*2, bd(3,4),[cp cp:1]*2, hh*8]"
+
+hush

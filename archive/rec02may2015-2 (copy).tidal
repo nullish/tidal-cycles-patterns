@@ -1,0 +1,19 @@
+solo $ d1 $ slow 2 $ interlace (chop 2 $ sound "cp" |+| speed "-0.7") $ rev $ sound "sn:2*2 bass drum"
+|+| gain "0.8"
+|+| speed "1 1.4 1"
+
+d2 $ sometimesBy (1/3) (superimpose (|+| accelerate "0.5"))  $ jux (slow 4 . (|+| speed "0.8")) $ every 4 (|+| speed "3") $ sound "t:1*8"
+|+| speed "1.5 1.8 2 1 1"
+
+d2 $ every 4 (density 2) $ density 2 $ weave 4 (sound "tb303*2") [speed "0.6", speed "1", speed "1.4"]
+|+| accelerate "1 0.8"
+|+| begin "0.4"
+|+| gain "1"
+
+d2 $ silence
+
+d3 $ slow 8 $ smash 4 [1, 2] $ sound "invaders:4 invaders:3*8"
+
+d3 $ silence
+
+hush

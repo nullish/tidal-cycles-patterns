@@ -1,0 +1,8 @@
+d1 $ every 2 (jux (# cutoff "<800 1600>")) $ jux (slow 4 . (# speed "-0.5 -0.3")) $ chop 2 $ n (irand 2) # s "arpy" # speed "1 1.2"
+ # pan "-1 1"
+
+d2 $ brak $ sound "bass*2"
+ # gain "1.4"
+ # speed "-1.2"
+
+d3 $ every 4 (rev . (density 2)) $ density 2 $ brak $ sound "[sn:1 can, cp:1 ~]"

@@ -1,0 +1,11 @@
+-- Performance will start in a moment. This is going to be weird.
+
+d1 $ jux palindrome $ chop 4 $ n (run 2) # s "arpy"
+ # speed "0.8 0.6"
+
+d2 $ sound "{[bass1, drum/2 sn]}*2"
+ # gain 1.2
+
+hush
+
+-- THANKS FOR LISTENING

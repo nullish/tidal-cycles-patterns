@@ -1,0 +1,9 @@
+d1 $ slow 2 $ spin 2 $ sound "tb303:2"
+
+d2 $ every 4 (rev . (density 2)) $ sound "[jvbass*2] drum"
+|+| gain "1.2"
+
+d3 $ every 2 (iter 3) $ slow 2 $ chop 2 $ sound "sn:1*4 bd*4 sn:2*4 drum:1*4"
+|+| gain "0.9"
+
+cps (80/60)

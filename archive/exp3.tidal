@@ -1,0 +1,13 @@
+d1 $ striate 3 $ sound "bd cp cp [cp cp cp]?" # pan (rand)
+|+| delay "1"
+|+| delayfeedback "0.7"
+|+| delaytime "[0.02 0.01 0.03 0.01 0.04]"
+
+d2 $ sound "tacscan:12*8" # speed "4"
+# density 2 (vowel "a e o")
+# gain "0.6"
+
+d3 $ striate 3 $ smash 3 [1,2,3,4] $ sound "speechless speechless:2 speechless:3 speechless:4"
+# speed "1.5"
+# crush "8"
+# gain "1.7"

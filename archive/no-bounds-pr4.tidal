@@ -1,0 +1,17 @@
+d1 $ superimpose (echo (1/2) . (density 2 . (# speed 4))) $ chop 2 $ sound "tb303"
+ # cutoff (scale 1200 1600 $ slow 2 $ sine1)
+
+d4 $ sound "[drum ~ [bass*2], bd sn:1]"
+
+d5 $ every 4 (striate 3 . (# up "-2")) $ weave 24 (sound "tb303*2") [
+ speed (run 4),
+ -- slow 2 $ speed "0.8 0.6",
+ density 1.5 $ chop 2 $ speed "2 4 8",
+ --whenmod 8 4 (rev) $ slow 4 $ stut 4 0.25 0.4 $ speed "8 <6 10>"
+]
+ # orbit 1
+ # room 0.3
+ # cutoff 2000
+ # gain 1.2
+
+ hush

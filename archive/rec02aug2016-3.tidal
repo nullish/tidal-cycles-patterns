@@ -1,0 +1,9 @@
+solo $ d1 $ palindrome $ trunc 0.5 $ chop 2 $ jux (stut 2 0.25 0.5 . (|+| begin "0.25")) $ sound "tb303*2"
+|+| speed "0.8 1.2"
+|+| gain "1.2"
+
+d2 $ every 4 (const $ sound "cp*4") $ sound "drum sn:2"
+
+cps (1)
+
+hush

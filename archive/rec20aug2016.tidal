@@ -1,0 +1,12 @@
+d1 $ every 8 (density 4 . (jux (|+| speed "1.5 1"))) $ density 2 $ every 8 (rev) $ sound "[tb303:1*2] sn:1"
+|+| room "0.2"
+|+| end "0.4 1"
+
+d2 $ sometimesBy 0.1 (const $ slow 4 $ striate 8 $ sound "rave*4" # gain "0.8") $ jux (|+| accelerate "2.2") $ striate 4 $ slow 2 $ every 2 (rev) $ echo (1/4) $ n "0 1" # s "arpy"
+|+| speed "0.8"
+
+d3 $ sound "tb303:1"
+|+| gain "1"
+|+| speed "-1"
+
+hush

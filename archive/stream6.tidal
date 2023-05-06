@@ -1,0 +1,6 @@
+cps 1
+
+d1 $ superimpose (slow 2 . (# speed 0.4)) $ jux palindrome $ chop 4 $ sound "arpy arpy:1"
+ # speed "0.8 <0.6 1>"
+
+d1 silence

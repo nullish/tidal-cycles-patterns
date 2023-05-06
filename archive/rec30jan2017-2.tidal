@@ -1,0 +1,7 @@
+d1 $ superimpose (rev . (slow 1.5)) $ density 2 $ sound "diphone diphone:2"
+ # begin "0.5 0"
+ # end "0 0.5"
+ # cutoff (scale 200 2500 $ slow 8 $ sine1)
+ # room "0.3"
+
+d2 $ palindrome $ sound "[bd*2, bass:1(1,4):?, gabba(2,3), kurt]"

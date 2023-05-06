@@ -1,0 +1,98 @@
+cps (1.15)
+
+d1 $ slow 4 $ jux (# vowel "a e") $ sound "moog moog"
+  # accelerate "-1"
+  # speed "1.4"
+
+d2 $ spin 3  $ sound "kick"
+    # speed "-0.5"
+
+
+hush
+
+----
+
+d1 $ weave 12 (n (run 3) # s "blip") [
+  speed "0.6 0.4 0.6 0.8",
+  speed "1 1 0.6 0.8 1.2 1 0.8 0.6 0.4"
+]
+# gain "1.2"
+
+d2 $ sound "[jvbass*2]"
+
+hush
+
+----
+
+d1 $ whenmod 4 8 (# speed "1.2") $ slow 4 $ stut 4 0.75 0.5 $ striate 4  $ sound "acid ~ acid ~"
+  # gain "1"
+  # speed "0.8"
+
+  ----
+
+d1 $ every 2 (rev) $ jux (iter 3) $ sound "[t:2*2, [drum*2] cp/2]"
+|+| end "0.5"
+|+| gain "1"
+
+hush
+
+--
+
+d1 $ slow 24 $ striate 10 $ sound "80z:1*12" # gain "0.9"
+|+| speed (scale 0.4 1 $ sine1)
+
+d1 silence
+
+--
+
+cps (0.85)
+
+d1 $ slow 2 $ every 4 (const $ chop 2 $ sound "jvbass*8") $ sound "[blip, [drum cp]*2]"
+
+d1 silence
+
+d2 $ slow 6 $ striate 32 $ echo (1/2) $ sound "pacman" # speed "-0.8"
+|+| gain "1.2"
+
+hush
+
+--
+
+d1 $ palindrome $ slow 2 $ sound "bass0" # speed (scale 2 3 $ saw1)
+
+--
+
+d1 $ jux (slow 2.5) $ slow 2 $ weave 12 (n "0 1 1 0 1 1 0 1 " # s "casio")
+  [slow  2 $ speed "-1 -0.8",
+  speed "1 1 0.8 0.6 0.4 0.8",
+  speed "-0.4 -0.2 -0.6 -0.8 -0.4"]
+
+--
+
+d1 $ slow 2 $ stut 3 0.75 0.4 $ spread (striate) [2, 1] $ sound "[[blip blip:1]*2, casio]" # speed "-0.5 -0.8"
+|+| gain "1.4"
+
+d1 silence
+
+--
+
+cps(-1)
+
+cps(1)
+
+d1 $ n "0 1" # s "bass/2"
+|+| cutoff (scale 400 1000 $ sine1)
+
+d1 silence
+
+solo $ d2 $ slow 4 $ jux (rev . (chop 2)) $ whenmod 8 4 (|/| speed "3 2") $ every 2 (chop 4) $ superimpose (# vowel "a e a e") $ sound "moog" # speed "4"
+|+| gain "0.8"
+|+| cutoff (scale 400 800 $ sine1)
+
+
+d3 $ sound "[drum sn:1, hh*4]"
+
+d4 $ stut 4 0.75 0.5 $ sound "blip*2"
+# gain "1.2"
+
+hush

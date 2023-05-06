@@ -1,0 +1,15 @@
+d1 $ slow 2 $ every 2 (# accelerate "1") $ sound "tb303:3*4"
+ # gain "1"
+ # cutoff (choose [400, 800, 1000, 200])
+ # speed (run 3)
+
+
+d2 $ stut 6 0.75 1.25 $ sound "newnotes"
+ # gain "1.2"
+
+d3 $ superimpose (slow 4 . (striate 3 . (# speed (run 4)))) $ trunc 0.25 $ every 2 (degrade) $ sound "[t:1 ~ bass]*8" # speed (rand)
+ |+| speed "2.2"
+ # gain "0.9"
+
+d4 $ jux (rev . (slow 2.5)) $ within (0.5, 1) (palindrome) $ sound "[bd(3,4), sn:1*2, [sn:2 sn [hardcore:1*2]](8, 12)]"
+ # gain "1.2"

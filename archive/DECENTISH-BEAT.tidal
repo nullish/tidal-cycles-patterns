@@ -1,0 +1,5 @@
+cps 1.15
+
+d1 $ every 2 (off 0.25 (rev. (zoom (0.25, 0.75)))) $ s "[sn:1*2 bd ~ cp, <jvbass cb8>*2]"
+
+hush

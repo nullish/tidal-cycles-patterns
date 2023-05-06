@@ -1,0 +1,5 @@
+d1 $ weave 8 (speed "1 0.5") [sound "breaks125", (stut 2 0.8 0.25 (striate 4 (sound "bass:2")))]
+
+cps (32/60)
+
+hush

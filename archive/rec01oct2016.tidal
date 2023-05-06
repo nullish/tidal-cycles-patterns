@@ -1,0 +1,13 @@
+d1 $ every 8 (const (sound "[sn:1 sn] ~ [sn:1*2]")) $ sound "~ [bass*2] [sn:1 sn]/2"
+|+| speed "1 1 0.7"
+
+d1 $ palindrome $ sound "drum sn:1 jvbass*2"
+
+d2 $ slow 2 $ stut 4 1.4 0.4 $ sound "hh"
+
+d3 $ spin 3 $ slow 8 $ striate 4 $ every 2 (|+| vowel "e a") $ every 4 (|+| accelerate "2") $ sound "moog" # speed "3"
+|+| delay "0.4"
+
+d4 $ jux (0.25 ~>) $ slow 2 $ s "t arpy*2 t" # n "0 1 0 2 0 0 1"
+
+cps (1.5)

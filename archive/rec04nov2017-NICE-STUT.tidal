@@ -1,0 +1,3 @@
+d1 $ sound "[sn:1*2, [hh [cb8*2]]*2, bass(2,1), bd]"
+
+d2 $ slow 4 $ stut 12 1 0.5 $ n "c e f" # s "superpiano"

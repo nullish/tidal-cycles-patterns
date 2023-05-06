@@ -1,0 +1,10 @@
+d1 $ slowcat [n "[c4 ~ ~ ~ cs4 ds4 ~ ~]" # s "bass1" # cut "1"
+]
+
+d2 $ slowcat [n "[~ ~ ~ c5 ~ cs6 cf5 ~]" # s "psr",
+              n "~" # s "arpy"
+             ]
+
+d3 $ slowcat [n "~ c6 ~ ef6 g6 ~ c7 ~" # s "supersaw" # cut "2" # pitch1 "0.1" # vowel "a e i e i o" # pan "0 1 0 1 0 1 0 1 0 1 0 1 0 1"]
+            
+             hush

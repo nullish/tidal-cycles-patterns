@@ -1,0 +1,9 @@
+solo $ d1 $ every 2 (jux (# cutoff "<800 1600>")) $ jux (slow 4 . (# speed "-0.5 -0.3")) $ chop 2 $ n (irand 2) # s "arpy" # speed "1 1.2"
+ # pan "-1 1"
+ # gain "0.9"
+
+d2 $ slow 4 $ striate 8 $ jux (# speed "-1.1") $ sound "choir*2"
+ # gain "1"
+ # delay "0.3"
+
+d1 $ within (0.5, 1) (chop 2) $ sound "[bass arpy, drum sn:1]" # speed "1 0.5"

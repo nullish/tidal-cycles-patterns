@@ -1,0 +1,21 @@
+d1 $ spin 3 $ slow 2 $ iter 3 $ weave 8 (sound "arpy arpy:1")
+  [speed "0.6 0.4 0.2",
+  speed "0.6 0.4 0.8",
+  speed "1.4 1.8 0.8 0.6"]
+  |+| delay "0.3"
+  |+| gain "0"
+
+d1 $ silence
+
+d2 $ every 2 (brak) $ sound "drum cp sn:2 ~"
+|+| gain "1.2"
+
+d2 $ silence
+
+d4 $ sound "80z"
+|+| unit "s"
+|+| speed "4"
+
+cps (72/60)
+
+hush

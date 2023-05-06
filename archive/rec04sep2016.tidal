@@ -1,0 +1,5 @@
+d1 $ every 2 (zoom (0.25, 0.75)) $ sound "acid*8" # up (run 4)
+ |+| speed "1"
+
+
+hush

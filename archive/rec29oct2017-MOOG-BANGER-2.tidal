@@ -1,0 +1,14 @@
+solo $ d1 $ every 12 (# gain 0) $ striate 4 $ juxBy 0.25 (# speed (scale 1 4 $ slow 8 $ saw1)) $ jux (density 2 . (# vowel "a")) $ juxBy 0.75 (# up 6) $ sound "moog*12"
+ # crush 8
+ # gain 0.9
+
+
+d2 $ whenmod 8 4 (jux (brak)) $ sound "[bd(3,8), hh*8, sn:2*2]"
+
+d3 $ n (irand 2) # s "<arpy blip>"
+ # up "<1 4>"
+ # delay 0.7
+ # gain 1.2
+ # cutoff "<3000 400>"
+
+ hush

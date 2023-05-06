@@ -1,0 +1,2 @@
+d1 $ palindrome $ superimpose (|+| speed "0.4 0.6 0.2 0.5") $ slow 4 $ sound "blip*24"
+|+| speed "-1.5"

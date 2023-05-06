@@ -1,0 +1,17 @@
+d1 $ every 4 (density 4 . (trunc 0.5)) $ sound "[drum ~ [bass*2] ~, bd sn:2]" # speed "<1 0.8>"
+
+d2 $ superimpose (echo (1/2) . (density 2 . (# speed "4"))) $ chop 2 $ sound "tb303"
+ # cutoff (scale 600 1000 $ slow 4 $ sine1)
+ # gain "1.2"
+
+d3 $ weave 24 (sound "tb303*2")
+ [speed (run 4),
+ slow 2 $ speed "0.8 0.6",
+ density 1.5 $ chop 2 $ speed "2 4 8",
+ whenmod 8 4 (rev) $ slow 4 $ stut 4 0.75 0.3 $ speed "6 8"]
+ # cutoff "2000"
+ # gain "1.2"
+ # orbit "1"
+ # room "0.3"
+
+d4 $ slow 4 $ striate 8 $ sound "arpy" # speed "-0.5"

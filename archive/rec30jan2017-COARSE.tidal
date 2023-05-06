@@ -1,0 +1,7 @@
+d1 $ iter 2 $ n "0*2 1 0 2" # s "t"
+ # gain "0.9"
+
+d2 $ sound "[bd(3,4), hh*4, bass:1 ~]"
+
+d1 $ sound "{t(3,4)}*2"
+ # coarse "24 48"

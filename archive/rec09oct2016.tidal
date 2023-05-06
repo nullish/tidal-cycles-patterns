@@ -1,0 +1,12 @@
+d1 $ spin 2 $ stut 4 0.6 0.7 $ sound "piano"
+|+| gain "1.2"
+|+| delay "0.4"
+
+d2 $ every 12 (|+| gain "0") $ sound "[jvbass*2, kick(3,8), can:1*2]"
+
+d3 $ slow 2 $ stut 3 0.4 0.7 $ every 4 (density 2 . (zoom (0.75, 1))) $ every 12 (iter 3) $ s "piano*4" # n "4 3 2 4" # speed "-2.2"
+|+| gain "1.2"
+|+| delay "0.4"
+|+| pan sine1
+
+hush

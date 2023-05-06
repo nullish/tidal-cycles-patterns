@@ -1,0 +1,23 @@
+cps (0.8)
+
+d1 $ slow 8 $ stut 24 0.7 0.4$ rev $ brak $ sound "gabba casio"
+ # gain 0.9
+
+d4 $ every 4 (# acclerate "-1") $ chop 8 $ sound "pacman"
+ # speed "-0.25"
+ # vowel "e e e e e"
+ # hpf 0.8
+ # gain 1.2
+ # orbit 1
+ # room 0.6
+
+d4 silence
+
+d2 $ sound "[drum*2, jvbass*4, cp]"
+
+d2 silence
+
+d3 $ palindrome $ slow 2 $ sound "bass sn sn:1 ~"
+
+
+hush

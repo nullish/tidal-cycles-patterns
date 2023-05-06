@@ -1,0 +1,17 @@
+d1 $ sound "[foo, bass*2]"
+
+d2 $ sound "sn:1*2"
+
+d3 $ striate 8 $ sound "[pacman, t:1/2]" # speed "-0.65"
+ # up (run 3)
+ # lpf 900
+ # hpf (scale 100 400 $ slow 2 $ sine1)
+ # gain 1.4
+ # orbit 1
+ # delay 0.08
+
+d4 $ n (slow 4 $ irand 8) # s "cp" # gain 0.9
+ # speed (scale 0.9 1 $ slow 2 $ sine1)
+ # pan "<-1 1>"
+
+hush

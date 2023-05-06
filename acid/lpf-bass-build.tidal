@@ -1,4 +1,0 @@
--- snippet: acid2
-d1 $ s "bass:2*8" # lpf (range 200 3000 $ sine)
-
-hush

@@ -1,0 +1,11 @@
+d1 $ sometimesBy (1/4) (jux (slow 4 . (stut 4 0.7 0.25)))
+ $ every 8 (scramble 4) $ every 4 (superimpose (rev . (# speed (run 3)))) $ off 0.5 (slow 2.5 . (# s "<casio>") . (# speed "0.8 0.4") . (# cutoff 1000))
+ $ jux rev $ off 0.125 (iter 2 . (# up 2)) $ chop 4 $ s "<t:1 pacman arpy>"
+ # begin 0.5
+ # legato 0.4
+ # speed 0.4
+
+d2 $ every 2 (palindrome) $ fast 2 $ s "[bd, hh*2, sn:2/2, bass:1, [can*2]]"
+ # speed 0.8
+
+hush

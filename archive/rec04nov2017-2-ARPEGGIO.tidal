@@ -1,0 +1,4 @@
+ d1 $ jux rev $ every 2 (density 2 . (zoom (0.5, 1))) $ sound "moog*8"
+  # speed (saw1*3)
+
+  hush

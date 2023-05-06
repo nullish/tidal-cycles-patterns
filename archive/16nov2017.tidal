@@ -1,0 +1,17 @@
+let toggles :: Pattern Int -> [Pattern a] -> Pattern a
+    toggles p xs = unwrap $ (xs !!!) <$> p
+    (!!!) xs n = xs !! (n `mod` length xs)
+
+    d1 $ toggles "0 2"
+      [sound "bd",
+       sound "sn:2*4",
+       sound "arpy(5,8)"
+      ]
+
+
+d1 $ $ toggles "0"
+
+
+d1 $ sound "blip"
+
+d1 silence

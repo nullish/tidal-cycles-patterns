@@ -1,0 +1,17 @@
+d1 $ every 2 (iter 3) $ slow 4 $ stut 8 0.8 0.5 $ sound "piano piano:4 piano:1 piano:3"
+
+d2 $ sound "[bass bd, cp/2, hh:1*2]"
+
+d3 $ every 2 (chop 2 . (trunc 0.5)) $ sound "casio" # speed "-0.2"
+|+| delay "0.6"
+|+| gain "0.9"
+
+d1 silence
+
+d4 $ slow 2 $ weave 24 (speed "1") [
+s "piano*4" # n "4 3 3 4",
+slow 2 $ s "piano*12" # n "0 3 4 0 1 4 3 0 1",
+s "piano*4" # n "4 1 1 1"
+]
+
+hush

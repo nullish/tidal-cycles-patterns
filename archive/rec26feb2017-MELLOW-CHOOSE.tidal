@@ -1,0 +1,16 @@
+d1 $ brak $ sound "[sn:2*2, hh*4, drum/2]"
+
+d2 $ sound "drum*2"
+
+d3 $ every 8 (brak . (# gain "1.1")) $ whenmod 8 4 (|*| speed "2") $ stut 2 0.7 0.5 $ striate 2 $ trunc 0.5 $ jux (slow 2 . (|=| speed "0.8")) $ sound "blip" |-| speed "-1" |+| speed (run 3)
+ # delayfeedback "0.3"
+ # orbit "1"
+ # room "0.2"
+ # gain "1"
+
+d4 $ every 8 (superimpose (density 24 . (# accelerate "-1"))) $ whenmod 8 4 (|*| speed "2") $ every 2 (rev) $ density 2 $ chop 2 $ sometimesBy 0.25 (juxBy 0.75 (slow 1.2 . (# speed "0.6"))) $ s "blip*2" # n (choose [1, 2]) # speed "0.3 0.2"
+ # coarse "10"
+ # cutoff "600"
+ # gain "1.2"
+
+d5 $ every 4 (degrade) $ stut 4 0.8 0.5 $ slow 2 $ jux (# speed "4") $ sound "hh:1*2" # speed "0.7"

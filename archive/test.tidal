@@ -1,0 +1,15 @@
+d1 $ sound "[bass*2]/2 sn:1 drum bass"
+
+d2 $ superimpose (|+| speed "-0.8") $ every 2 (striate 2 . (superimpose (|+| speed "-0.6"))) $ sound "pacman"
+|+| speed "0.9"
+
+d2 $ silence
+
+d3 $ weave 8 (speed "0.9 1.2 0.0 1.4") [sound "arpy*4",
+  sound "t:1*2" |+|]
+
+  d3 $ silence
+
+cps (75/60)
+
+hush

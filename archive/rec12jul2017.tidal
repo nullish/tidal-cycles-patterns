@@ -1,0 +1,32 @@
+let hurry x = (|*| speed (fromRational <$> x)) . fast x
+
+cps 1.15
+
+d1 $ jux (slow 1.5) $ every 4 (palindrome) $ sound "{<bass tb303>*9}*2"
+ |-| speed 1.2
+ |*| speed (run 2)
+ # resonance 0.2
+ # vowel "a e e e e"
+
+d1 $ every 4 (# hpf 1600) $ every 3 (superimpose (hurry 1.2)) $ whenmod 9 3 (palindrome) $ off (1/4) (slow 4 . (chunk 2 (striate 18 . (# speed 0.4))))
+ $ jux (chop 2) $ jux (chop 4) $ off 0.5 (# sound "t:2") $ sound "tb303"
+ # vowel "<a e>"
+
+d1 silence
+
+solo $ d2 $ jux (slow 1.5 . (rev)) $ off 0.25 (# shape 0.2) $ sound "[bd <sn sn:1> bd:1? sn, hh*7]"
+ # gain 0.9
+
+d3 $ slow 2 $ stut 3 0.7 0.6 $ every 2 (jux (chop 2)) $ sound "sn:1"
+ # speed "-0.4"
+ # begin 0.3
+ # gain 1
+
+d4 silence
+
+d1 $ every 7 (# up 2) $ jux rev $ sometimesBy (1/16) (slow 2 . (striate 12 . (|-| speed (run 2)))) $ chop 2 $ trunc 0.5 $ sound "tb303*4"
+  # speed "4 2.7 4 4"
+  # resonance 0.4
+  # gain 1.3
+
+hush

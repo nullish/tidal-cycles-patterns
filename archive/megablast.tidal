@@ -1,0 +1,10 @@
+d1 $ sound "[hh drum]"
+
+d2 $ every 4 (trunc 0.5) $ sound "mblast"
+
+d3 $ jux (|+| vowel "e") $ slow 4 $ sound "mblast:1"
+
+d3 $ silence
+
+d4 $ every 2 (rev) $ stut 4 0.8 0.5 $ sound "blip*2"
+|+| speed "0.6 1.4"

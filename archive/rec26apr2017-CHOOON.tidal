@@ -1,0 +1,33 @@
+cps (0.85)
+
+d1 $ jux (slow 1.5 . (rev)) $ sound "[[drum*4, {sn:1 ~ sn}*2, jvbass*2], bd ~ sn ~]" # gain "0.9"
+
+d1 $ slow 2 $ every 2 (jux (slow 1.5)) $ sound "[hh:1 ~ sn:1 ~ t, jvbass/2, t/2]*4" # speed "1.2"
+ # delay "0.1"
+
+d1 $ within (0.5, 1) (# speed "0.5 0.75") $ sound "[drum sn, can*4]" # gain "1.2"
+
+d2 $ every 4 (# gain "1.1") $ every 4 (spread (slow) [1, 2]) $ palindrome $ every 4 (zoom (0.5, 1)) $ jux (iter 2) $ n (run 3) # s "blip blip:1"
+ # coarse "25 10"
+ # speed "0.8"
+
+d2 silence
+
+solo $ d3 $ superimpose (slow 4 . (# cutoff "3000")) $ n (slow 2 $ irand 2) # s "blip blip:1"
+ # coarse "55 10"
+ # orbit "1"
+ # gain "1.1"
+ # room "0.2"
+
+d4 $ every 4 (jux (brak)) $ chop 2 $ sound "tb303:3*3"
+ # begin "0.5"
+ # speed (run 3)
+ |+| speed "<0 0.4>"
+ # gain "0.9"
+
+d4 silence
+
+solo $ d5  $ slow 2 $ every 2 (rev) $ s "alphabet*3" # n (run 3)
+ # accelerate "0.6"
+
+hush

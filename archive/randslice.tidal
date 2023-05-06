@@ -1,0 +1,3 @@
+d1 $ randslice 14 $ sound "bev"
+
+hush

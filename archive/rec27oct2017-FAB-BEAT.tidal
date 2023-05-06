@@ -1,0 +1,14 @@
+d1 $ off (1/8) (# brak (sound "jvbass" # speed 1.1)) $ jux (swingBy 0.25 2) $ n (run 4) # s "feel"
+ # speed "0.6 0.8"
+
+d2 $ every 2 (# begin 0.2) $ sound "ebass"
+ # speed 0.8
+
+d3 $ sound "blip choir"
+ # crush "2 16"
+ # begin "0 0.7"
+ # orbit 1
+ # room 0.7
+
+
+hush

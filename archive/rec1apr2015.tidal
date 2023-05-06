@@ -1,0 +1,17 @@
+d1 $ interlace (sound "hh") $ every 2 (trunc 0.5) $ sound "bass*2"
+|+| gain "1.2"
+|+| speed "-1"
+|+| resonance "0.5"
+
+d1 $ silence
+
+d2 $ every 2 (brak) $ sound "[sn:2 sn:1]*2 [bd*2]"
+|+| gain "1.6"
+
+$ d3 $ spin 3 $ density 2 $ every 4 (|+| speed "0.9 2.2") $ trunc 0.5 $ sound "acid*2"
+|+| speed "1.2"
+|+| gain "0.9"
+
+d4 $ every 2 (brak) $ sound "cp*2"
+
+hush

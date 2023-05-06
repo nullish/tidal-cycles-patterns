@@ -1,0 +1,15 @@
+d1 $ sound "[hh*4,drum sn:1, [jvbass*8]]"
+
+d2 $ palindrome $ slow 2 $ juxBy 0.5 (slow 4 . (|+| speed "0.2")) $ every 2 (|+| up (run 4)) $ sound "t*8"
+|+| speed "0.4"
+|+| gain "1.2"
+
+d2 silence
+
+d3 $ slow 32 $ chop 2 $ every 2 (0.75 ~>) $ spin 2 $ jux (density 1.5 . (|+| speed "1")) $ striate 12 $ sound "tb303*4" # up "4"
+|+| accelerate "-1"
+|+| end "0.8"
+|+| delay "0.2"
+|+| gain "1"
+
+d3 silence

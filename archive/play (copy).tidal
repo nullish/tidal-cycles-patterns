@@ -1,0 +1,12 @@
+solo $ d1 $ superimpose (|+| speed "2.4 1") $ chop 2 $ sound "bass jvbass"
+|+| speed "1"
+
+d2 $ every 2 (rev) $ sound "[sn:2] ~ [bd*2]"
+|+| speed "1"
+
+d3 $ superimpose (echo (1/2) . (|+| speed "1")) $ striate 4 $ every 2 (chop 2) $ sound "arpy*8"
+|+| unit "s"
+|+| speed "0.5 0.7 -1.2 0.5 -1.2"
+|+| begin "0.2"
+
+hush

@@ -1,0 +1,19 @@
+d1 $ every 4 (|+| accelerate "-4") $ chop 2 $ slow 2 $ sound "[bass1, bass/2]"
+|+| accelerate "3"
+
+solo $ d2 $ slow 4 $ weave 24 (sound "tb303*4")
+  [speed "3 3.4 4 4",
+  speed "2 3 2 3 2 3",
+  slow 2 $ echo (1/2) $ speed "4 6 6 6 6 4 6 4",
+  palindrome $ speed "0.6 0.8"]
+  |+| delay "0.5"
+
+d2 $ silence
+
+d3 $ every 4 (rev) $ every 2 (zoom (0.25, 0.75)) $ sound "[cp drum*2 ~ sn:1, drum:1 [hh*2]]"
+|+| delay "0.3"
+|+| shape (scale 0 0.3 $ slow 4 $ sine1)
+
+cps (0.95)
+
+hush

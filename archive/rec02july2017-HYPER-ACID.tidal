@@ -1,0 +1,5 @@
+d1 $ sometimesBy (1/4) (jux (# cutoff 400)) $ off 0.2 (iter 7) $ chop 16 $ n (irand 12) # s "t"
+
+d2 $ sound "[bd*2, electro*4]"
+
+hush

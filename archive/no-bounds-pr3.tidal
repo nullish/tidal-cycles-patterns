@@ -1,0 +1,7 @@
+d1 $ jux (striate 4) $ slow 2 $ n "0 1" # s "joyous"
+ # gain 1.2
+ # pan "-1 1"
+ # speed 0.9
+ # accelerate 0.25
+
+ hush

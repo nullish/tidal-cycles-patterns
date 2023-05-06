@@ -1,0 +1,21 @@
+d1 $ slow 2 $ rev $ spread (chop) [2, 4] $ sound "sn:1 909"
+
+d2 $ rev $ sound "[t:1*2] ~ ~"
+|+| speed "0.8"
+
+d2 $ silence
+
+d3 $ slow 2 $ trunc 0.5 $ every 2 (|+| accelerate "-0.7") $ sound "t:1"
+|+| speed "0.25"
+|+| accelerate "0.7"
+
+d3 $ silence
+
+d4 $ slow 2 $ sound "invaders:4*2"
+|+| speed "0.8 0.5"
+
+d4 $ silence
+
+cps (80/60)
+
+hush

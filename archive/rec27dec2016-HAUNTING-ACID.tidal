@@ -1,0 +1,7 @@
+d1 $ superimpose (# speed (run 2)) $ slow 2 $ sound (choose ["t:1","casio"]) # cutoff (scale 1000 1600 $ slow 2 $sine1) # gain "1.2"
+
+d2 $ striate 4 $ jux (slow 2 . (# vowel "e o")) $ sound "tb303:3" # shape (scale 0 0.4 $ sine1) # gain "0.7"
+
+d2 silence
+
+hush

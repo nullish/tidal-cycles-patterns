@@ -1,0 +1,13 @@
+d1 $ slow 4 $ stut 4 0.7 0.25 $ sound "moog*12" # speed ((irand 3)+2)
+ # begin 0.9
+ # shape (scale 0 0.3 $ slow 2 $ sine1)
+ # coarse 10
+ # room 0.3
+
+d1 silence
+
+solo $ d2 $ every 2 (0.125 ~>)$ slow 2 $ every 8 (# gain 0) $ superimpose (spread (slow) [1,2]) $ off 0.25 (chop 2) $ jux rev $ fast 2 $ sound "<kurt [sn:1*2] sn>(2,3)*2" # speed 0.7 # gain 1
+
+d3 $ slow 2 $ brak $ sound "feel*2" # gain 1.2
+
+hush

@@ -1,0 +1,7 @@
+d1 $ loopAt 0.25 $ sound "[amencutup, sn:1/4]"
+ # cutoff (scale 1200 2600 $ slow 2 $ sine1)
+ # orbit 1
+ # room 0.3
+
+d2 $ every 16 (|+| speed "0.2") $ every 8 (# gain 0.9) $ loopAt 0.25 $ sound "gabba"
+ # gain 0

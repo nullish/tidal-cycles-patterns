@@ -1,0 +1,22 @@
+d1 $ every 2 (rev) $ weave 14 (speed "0.7 1.4 0.6 0.7") [
+  every 4 (chop 2) $ every 4 (|+| accelerate "-1") $ sound "tb303*2" |+| vowel "a i",
+  sound "jvbass*2"]
+|+| speed "2"
+|+| gain "1.2"
+|+| delay "0.6"
+
+d1 $ silence
+
+d2 $ every 2 (|+| speed "1 1 0.8 1") $ sound "jvbass drum blip:2 cp"
+|+| gain "1 1.2 1 1.2"
+|+| speed "1 1 2 1"
+|+| accelerate "1 0 0 0"
+
+d3 $ slow 2 $ sound "kurt:1 t:1"
+|+| speed "0.4 0.5"
+
+d3 $ silence
+
+cps (84/60)
+
+hush

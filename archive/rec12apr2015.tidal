@@ -1,0 +1,17 @@
+d1 $ every 4 (|+| end "0.5") $ sound "breaks125"
+|+| unit "c"
+|+| speed "0.25"
+|+| gain "0.9"
+
+d2 $ sound "jvbass"
+
+d3 $ every 2 (jux (|+| speed "1.4")) $ slow 4 $ striate 12 $ sound "acid acid?"
+|+| gain "1.2"
+
+d4 $ slow 8 $ sound "rave"
+|+| unit "s"
+|+| speed "4"
+
+cps (60/60)
+
+hush

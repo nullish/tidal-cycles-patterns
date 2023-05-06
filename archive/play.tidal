@@ -1,0 +1,31 @@
+d1 $ every 2 (jux (|+| vowel "a e")) $ every 4 (density 2) $ slow 2 $ striate 10 $ sound "pacman*12"
+|+| accelerate "-1"
+
+d1 $ silence
+
+d2 $ every 2 (brak . (density 2)) $ sound "sn:1 drum ~"
+|+| gain "1.2"
+|+| delay "0.2"
+
+d2 $ silence
+
+d3 $ density 2 $ sound "can can:1"
+
+d3 $ silence
+
+d4 $ slow 2 $ spin 3 $ trunc 0.5 $ iter 2 $ weave 8 (sound "[arpy arpy:1]*2")
+  [speed "0.6 0.4 0.2",
+  speed "0.6 0.4 0.8",
+  speed "1.8 1.4 0.8 0.6"]
+|+| delay "0.3"
+|+| gain "0"
+
+d5 $ sound "80z"
+|+| unit "s"
+|+| speed "4"
+
+d5 $ silence
+
+cps (70/60)
+
+hush

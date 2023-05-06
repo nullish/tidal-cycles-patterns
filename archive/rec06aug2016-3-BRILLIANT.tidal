@@ -1,0 +1,20 @@
+d1 $ slow 4 $ superimpose (|+| speed "0.6") $ sound "t:1*4"
+|+| speed "0.8 1 1.2 0.8"
+
+d1 $ silence
+
+d2 $ striate 4 $ sound "wobble*2"
+|+| speed "1.2"
+|+| gain "0.9"
+
+d3 $ sound "[sn:2 drum]"
+|+| delay "0.2"
+|+| speed "0.8"
+
+d4 $ superimpose (density 2) $ palindrome $ weave 12 (sound "[blip arpy]")
+  [speed "1 1.2",
+  speed "1 0.6 1 2"]
+
+hush
+
+cps (1.125)

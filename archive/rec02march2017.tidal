@@ -1,0 +1,10 @@
+d1 $ jux (slow 1.5) $ every 2 (rev) $ density 2 $ sound "drum sn"
+
+d2 $ within (0.5, 1) (chop 2) $ sound "bd sn:1"
+
+d3 $ chop 4 $ jux (# speed "4") $ every 8 (|+| speed (run 3)) $ sound "ebass"
+
+d4 $ density 2 $ superimpose (# speed "-2")
+ $ every 8 (const $ sound "arpy*2" # speed "0.6" # accelerate "-1") $ brak $ slow 2 $ trunc 0.5 $ sound "{arpy arpy:1}*2" # speed "0.6 0.8"
+
+hush

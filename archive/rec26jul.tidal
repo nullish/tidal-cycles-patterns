@@ -1,0 +1,9 @@
+d1 $ sound "[drum*2][hh*2] [drum cp]/2 [hh*2] cp"
+
+d2 $ slow 4 $ stut 4 0.6 0.5 $ spread (striate) [1, 2, 1] $ every 2 (chop 2) $ sound (samples "t*3 ~" "0 2 0 3")
+|+| speed "-0.6 0.4 -0.8 1"
+|+| delay "0.4"
+
+cps (1.1)
+
+hush

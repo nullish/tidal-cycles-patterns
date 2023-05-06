@@ -1,0 +1,7 @@
+cps 1.5
+
+d1 $ every 4 (0.25 ~>) $ slow 2 $ striate 128 $ sound "breaks125"
+ # gain 1.4
+ # resonance 0.2
+
+hushs

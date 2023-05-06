@@ -1,0 +1,11 @@
+cps 1.25
+
+d1 $ every 3 rev $ every 4 (jux (every 2 (off 0.25 (slow 2 . (# speed "-2"))))) $ every 2 (off 0.125 (# sound "yow*2")) $ superimpose (slow 7 . (# speed 0.6)) $ sound "yow:1"
+ # gain 1.2
+ # speed "0.8 1"
+ # orbit 1
+ # room 0.6
+
+ d2 $ every 2 (# speed "1 1 2") $ sound "{cp cp:1/2, bd drum, can(3,4)}"
+
+ hush

@@ -1,0 +1,13 @@
+d4 $ every 4 (|+| gain "1") $ slow 2 $ sound "perc*32" # speed "4 8 4 6 2 4 8 10"
+|+| gain "0"
+|+| orbit "1"
+
+solo $ d1 $ spin 3 $ every 4 (rev) $ slow 4 $ every 4 (jux (density 2)) $ stut 8 0.6 0.5 $ sound "[piano, piano:1, piano:2]*2"
+|+| speed "1.4 1.2"
+
+d2 $ every 2 (trunc 0.5) $ sound "bass*4"
+|+| speed (run 2)
+
+d3 $ every 2 (0.25 ~>) $ sound "[drum drum:1 [sn:2*2] ~, ~*4 [bd]]"
+
+hush

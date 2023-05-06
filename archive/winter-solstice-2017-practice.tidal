@@ -1,0 +1,13 @@
+d1 $ slow 4 $ every 12 (superimpose (# speed "-1")) $ off (1/8) (# s "blip/4") $ sometimesBy 0.8 (spin 3) $ striate (choose ([8, 12])) $ s "stepford"
+ # cutoff (scale 1000 3000 $ slow 2 $ sine1)
+ # gain 1.2
+ # end "<0.5 1>"
+
+d2 $ jux (slow 1.5) $ stack
+ [s "[bd sn:1*2 ~ <bd stab>, cp, jvbass*2, cb8*2 ~ cb8, can*4]",
+ slow 2 $ s "drum(3,8)",
+ s "tabla*2" # gain 1.2
+ ]
+
+
+hush

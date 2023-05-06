@@ -1,0 +1,16 @@
+cps (1)
+
+d1 $ every 4 (superimpose (striate 2 . (# speed "1.5"))) $ slow 4 $ striate 8 $ juxBy (1/3) (# speed "-1.5") $ sound "choir*2"
+ # delay "0.3"
+
+d2 $ within (0, 0.5) (striate 2) $ sound "[bass arpy, drum sn:1]" # speed "1 0.5"
+
+d3 $ sound "choir" # speed "<1 3 2>"
+
+d4 $ jux (rev) $ brak $ n (run 3) # sound "piano" # delay "0.3" # gain "1.2"
+
+d4 $ jux (rev) $ slow 2 $ jux (# speed "2 3 2.2") $ striate 4 $ n (run 3) # s "piano" # gain "1.4"
+
+d3 $ silence
+
+hush

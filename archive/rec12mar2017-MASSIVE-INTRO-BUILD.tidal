@@ -1,0 +1,7 @@
+d1 $ superimpose (# speed "2.2 2.4 1.8 2") $ jux (rev . (# speed "2")) $ slow 2 $ striate 12 $ n "0 1 1 0" # s "tb303"
+
+d2 $ slow 2 $ striate 24 $ sound "[bass drum]*2"
+ # orbit "1"
+ # room "0.5"
+
+hush

@@ -1,0 +1,14 @@
+
+
+d1 $ iter 2 $ superimpose (slow 2 . (|+| speed "3 4")) $ chop 8 $ sound "moog"
+|+| speed "4"
+
+d2 $ palindrome $ jux (density 1.5) $ slow 2 $ striate 4 $ sound "drum:1 drum ~ sn"
+|+| gain "1.2"
+
+d2 $ sound "drum sn:1"
+
+d3 $ slow 2 $ every 2 (chop 2) $ chop 45 $ sound "sine"
+|+| speed "1.5"
+|+| accelerate "2"
+|+| room "0.3"

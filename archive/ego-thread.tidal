@@ -1,0 +1,18 @@
+d1 $ sound "[sn:2 hh]*2"
+
+d2 $ striate 2 $ sound "jvbass"
+|+| speed "1.2"
+|+| gain "1.2"
+
+d3 $ slow 4 $ sound "t:4"
+|+| speed "0.4"
+
+
+d5 $ slow 4 $ sound "odd"
+
+
+d5 $ silence
+
+cps (75/60)
+
+hush

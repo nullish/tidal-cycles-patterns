@@ -1,0 +1,33 @@
+d2 $ iter 4  $ stut 4 34 17 $ striate 4
+$ s "superchip*8" # n (fmap (+12)(irand 64)) # cut "2" # resonance "0.5" # pitch1 "0.2"
+# pan "0 1 0 1 0 1 0 1"
+# delay "0.5"
+# delayfeedback "0.3"
+# delaytime "0.02 0.04 0.02 0.01 0.02 0.04 0.02 0.01"
+# crush "8 4 6 12 8 6 12 6"
+# gain "0.3"
+# vowel "a e i e i o u"
+# orbit "1"
+
+d3 $ every 4 (striate 4) $ stut 2 9 7 $ degrade
+$ s "supersaw*8" # n (fmap ((-)12)(irand 36)) # cut "1" # resonance "0.9" # pitch1 "0.2"
+# delay "0.5"
+# delayfeedback "0.3"
+# delaytime "0.02 0.04 0.02 0.01 0.02 0.04 0.02 0.01"
+# crush "8 4 6 4 8 6 4 6"
+# vowel "a e i e i o u"
+# gain "1"
+
+d4 $ every 4 (striate 4) $ stut 2 9 7 $ degrade
+$ s "supersaw*8" # n (fmap ((-)12)(irand 36)) # cut "1" # resonance "0.9" # pitch1 "0.2"
+# crush "8 4 6 4 8 6 4 6"
+# vowel "a e i e i o u"
+# gain "1.4"
+
+d5 $ stut 4 34 17 $ striate 4
+$ s "supersaw*8" # n (fmap ((-)24)(irand 46)) # cut "3" # resonance "0.2" # pitch1 "0.2"
+# crush "8 4 6 12 8 6 12 6"
+# gain "0.5"
+# vowel "a e i e i o u"
+
+hush

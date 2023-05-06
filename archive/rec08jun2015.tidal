@@ -1,0 +1,18 @@
+d1 $ every 2 (iter 2) $ striate 2 $ spread (slow) [1, 2] $ weave 16 (sound "80z bass") [speed "0.9 1",
+  speed "1 1.1"]
+|+| gain "1"
+
+d2 $ brak $ sound "[cow cow:1] bd:1 sn:2 bd"
+|+| speed "0.8 1 1 1"
+
+d3 $ jux (|+| vowel "e") $ slow 15 $ spread (echo) [3, 1] $ slowspread (striate) [8, 4, 1] $ sound "rave [kurt:1*4]"
+|+| gain "1 1 1.4"
+|+| end "1 0.2 1"
+
+d3 $ silence
+
+d4 $ every 2 (rev) $ stut 4 0.8 0.5 $ sound "blip*2"
+|+| speed "0.6 0.4"
+
+
+hush

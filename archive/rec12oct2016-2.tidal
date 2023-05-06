@@ -1,0 +1,6 @@
+d1 $ slow 2 $ jux (palindrome) $ striate 4 $ sound "[blip*2 t*2, blip:1 blip:]" # speed ("1.2 0.8 1.2 1")
+|+| cutoff (scale 800 1400 $ sine1)
+|+| gain "1.2"
+
+d2 $ every 4 (zoom (0, 0.25) . (density 1.5)) $ sound "[[drum [sn:1]*2]*2, jvbass*4, cp]"
+|+| shape (scale 0 0.4 $ slow 4 $ sine1)

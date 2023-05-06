@@ -1,0 +1,12 @@
+cps 1
+
+d1 $ slow 0.5 $ every 2 (rev . (fast 2)) $ chop 2 $ sound "[{drum cp} arpy]"
+ # room "0.4"
+ # speed "<-1 -0.6>"
+
+d2 $ s "jvbass*4"
+ # speed (run 3)
+
+d2 silence
+
+hush

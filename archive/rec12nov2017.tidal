@@ -1,0 +1,30 @@
+d4 silence
+
+d1 $ whenmod 9 3 (# gain 0.8) $ fast 2 $ jux rev $ iter 2 $ brak
+ $ sound "[bd <sn:1 [arpy:1*2]>, bass1, oh ~]"
+ # orbit 1
+ # room 0.2
+ # size 0.4
+
+d1 silence
+
+d2 $ rarely (superimpose (slow 4 . (rev))) $ every 4 (0.25 ~>) $ every 4 (# speed ((saw1)+1))
+ $ superimpose (# accelerate 0.25)
+ $ gap "<2 4>"
+ $ off (1/16) (slow 4 . (# sound "t:2 t"))
+ $ sound "tb303*2"
+ # cutoff 1000
+ # gain 1.3
+
+d2 silence
+
+d3 $ sound "cp"
+ # speed "<0.5 1>"
+# delay 0.2
+ # delayt 0.3
+
+d4 $ fast 4 $ jux (# speed (sine)) $ slow 8 $ gap 48 $  sound "[drum:1, bass1 gabba]"
+ # speed "-0.5"
+ # gain 1
+
+hush

@@ -1,0 +1,4 @@
+d1 $ sound "[[sn:1 bd](3,8), cp]"
+
+d2 $ sound "tb303*4" # cutoff (scale 900 2000 $ slow 2 $ square1)
+|+| resonance "0.2"

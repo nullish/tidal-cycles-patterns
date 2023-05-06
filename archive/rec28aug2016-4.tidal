@@ -1,0 +1,25 @@
+d4 silence
+
+d1 $ jux (chop 4) $ every 2 (0.25 ~>) $ sometimesBy 0.2 (|+| speed "-1.4 1 1 1") $ sound "syn arpy [blip blip:1] arpy:1"
+|+| end "0.1 1"
+|+| speed "1.2 1 1 0.8"
+
+d2 $ whenmod 8 4 (rev) $ weave 24 (sound "blip")
+  [speed "0.8 0.6 0.4 0.4",
+  speed "1.2 1.4 1.6 1.8",
+  slow 4 $ stut 4 0.75 0.5 $ speed "0.4 0.6 0.8 0.8"]
+
+d3 $ every 2 (density 2 . (rev)) $ every 8 (const $ sound "kurt*2") $ sound "kurt drum"
+|+| speed "0.8 1"
+|+| delay "0.4"
+
+d4 $ slow 12 $ striate 8 $ sound "moog:1*2"
+|+| end "0.4"
+|+| vowel "e a"
+|+| speed "1"
+|+| accelerate "2"
+
+d1 silence
+d2 silence
+
+cps (1.2)

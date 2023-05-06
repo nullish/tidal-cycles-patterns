@@ -1,0 +1,7 @@
+d1 $ slow 4 $ striateL' 3 0.125 4 $ sound "tb303"
+
+d2 $ s "amencutup"
+
+hush
+
+192.168.1.108

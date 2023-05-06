@@ -1,0 +1,20 @@
+d1 $ striate 2 $ sound "jvbass syn"
+|+| end "0.2"
+|+| speed "0.6"
+
+d2 $ slow 2 $ sound "bd cp drum cp:1 bd cp drum cp:2"
+|+| delay "0.2"
+
+d3 $ density 1.5 $ chop 2 $ every 4 (rev) $ weave 6 (s "blip*4" # n "0 1 2 1")
+  [speed "1 0.8",
+  speed "0.8 1.2 1.4 1.6",
+  speed "0.4"]
+  |+| delay "0.2"
+
+  d4 $ jux (slow 2 . (striate 2)) $ slow 2 $ weave 10 (sound "80z")
+    [speed "0.5",
+    speed "0.7 0.3"]
+    |+| begin "0.5"
+
+
+hush

@@ -1,0 +1,24 @@
+d1 $ every 8 (|+| gain "0") $ every 4 (striate 2 . (|+| speed "3")) $ slow 2 $ striate 2 $ trunc 0.25 $ sound "tb303 ~"
+|+| speed "2"
+
+d1 silence
+
+d2 $ every 4 (rev) $ sound "t:2*4"
+|+| speed "1 0.75 0.5 0.25"
+|+| gain "1.2"
+
+d2 silence
+
+d3 $ sound "[bd*2] ~ cp"
+|+| gain "1.4"
+
+d4 $ trunc 0.5 $ sound "sn:1 bass1 ~"
+|+| speed "2"
+|+| vowel "e"
+
+d4 silence
+
+cps (75/60)
+
+
+hush

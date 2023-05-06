@@ -1,0 +1,22 @@
+d1 $ whenmod 8 4 (iter 2) $ stut 8 0.6 0.45 $ weave 4 (speed "0.6 0.8") [sound "arpy arpy:1",
+  sound "[casio casio:1]/2",
+  slow 2 $ chop 2 $ sound "tb303" |+| end "0.2" |+| vowel "e",
+  sound "jvbass"]
+  |+| gain "0.9"
+
+d1 $ silence
+
+d2 $ whenmod 8 4 (|+| speed "0.8") $ every 2 (0.33 ~>)
+  $ every 2 (slowspread (striate) [2, 4]) $ sound "sn:1 drum jvbass sn:2 hh:1 bass bd:1 bd bd:2 hh:3 sn:2 drum"
+
+d3 $ slow 8 $ whenmod 12 9 (|+| speed "1")  $ sound "dstep*4"
+|+| speed "0.8 0.6 1"
+|+| gain "1"
+|+| shape "0 0.8 -0.5"
+|+| begin "0.2"
+
+d3 $ silence
+
+cps (88/60)
+
+hush

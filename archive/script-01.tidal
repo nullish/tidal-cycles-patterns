@@ -1,0 +1,11 @@
+cps (1.2)
+
+d1 $ jux (# cutoff (scale 1200 2200 $ slow 2 $ (choose [0.95, -0.1]))) $ jux (slow 2 . (chop 2)) $ palindrome $ stut 2 1.6 0.4 $ jux (slow 2 . (chop 2))
+ $ sound "arpy*2"
+ # speed "<0.4 0.6>"
+ # room "0.4"
+ # vowel "d a a a"
+
+d2 $ sound "[drum*2, hh(4,12), jvbass*2, cp]" # gain "1.1"
+
+hush

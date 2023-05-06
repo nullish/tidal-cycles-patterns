@@ -1,0 +1,28 @@
+d1 $ sound "sn:1 bass cp jvbass"
+|+| speed "1 1 0.8 1.2"
+
+solo $ d2 $ slow 2 $ every 2 (|+| end "0.95") $ jux (|+| vowel "a e o") $ sound "do"
+|+| unit "c"
+|+| speed "0.4"
+|+| gain "0.8"
+
+d2 $ silence
+
+d3 $ every 8 (slow 4) $ every 2 (slow 2) $ striate 4 $ echo (1/2) $ sound "80z"
+|+| accelerate "-0.5"
+|+| gain "1"
+|+| speed "0.8"
+
+d3 $ silence
+
+solo $ d4 $ slow 2 $ chop 10 $ weave 4 (sound "tb303*2") [speed "1.4 1.2", speed "0.9 1"]
+|+| gain "1"
+
+d4 $ silence
+
+d5 $ trunc 0.5 $ spread (chop) [1, 2, 4] $ sound "acid:1"
+|+| speed "0.8"
+
+cps (55/60)
+
+hush

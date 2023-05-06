@@ -1,0 +1,19 @@
+d1 $ every 2 (slow 2 . (brak)) $ density 2 $ sound "sn:1 bd:1 [hh*4]/2"
+|+| gain "1"
+
+d2 $ every 2 (rev . (brak)) $ every 4 (slow 2 . (chop 4 . (|+| speed "0.3"))) $ sound "bleep*2"
+|+| speed "0.7 0.6"
+|+| end "0.3"
+|+| gain "1 0.3"
+
+d2 $ silence
+
+d3 $ every 4 (slow 2 . (echo (1/2) . (|+| speed "0.2"))) $ sound "bleep:2"
+|+| speed "0.7"
+|+| end "0.3"
+
+d3 $ silence
+
+cps (80/60)
+
+hush

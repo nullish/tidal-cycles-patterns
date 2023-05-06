@@ -1,0 +1,11 @@
+cps 1.15
+
+d1 $ sound "jvbass(3,8)"
+ # gain 1.2
+
+d2 $ sound "[drum, bass, [hh can]*2]"
+
+d3 $ every 2 (superimpose (# speed (run 2))) $ chop 4 $ sound "arpy arpy:1"
+ # speed "0.7 0.6"
+
+ hush

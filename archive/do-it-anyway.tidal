@@ -1,0 +1,21 @@
+d1 $ interlace (sound "acid") $ slow 4 $ sound "moog"
+
+d2 $ sound ""
+d3 $ slow 4 $ sound "cp kurt"
+|+| unit "c"
+|+| speed "-0.25"
+
+
+d4 $ sometimesBy 0.5 (iter 2) $ slow 2 $ every 2 (striate 2) $ stut 2 0.8 0.7 $ sound "blip*2 t:2*2"
+|+| speed "1 2 1 0.9"
+|+| end "1 1 0.5 0.5"
+|+| gain "0.8"
+
+solo $ d4 $ every 4 (|+| vowel "e i") $ jux (density 2 . (chop 2 . (|+| speed "1.4")))
+  $ weave 8 (speed "1 0.8") [sound "tb303", sound "kurt kurt:1"]
+
+d4 $ silence
+
+cps (65/60)
+
+hush

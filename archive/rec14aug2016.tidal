@@ -1,0 +1,7 @@
+d1 $ spread (chop) [2, 1] $ every 12 (const $ density 2 $ sound "syn*2" |+| speed "1 0.8 0.6") $ sound "syn drum"
+|+| end "0.25"
+|+| speed "0.8 1"
+
+d2 $ slow 4 $ sound "[syn*12]"
+|+| speed "1.8 1.4 1.2 1"
+|+| delay "0.4"

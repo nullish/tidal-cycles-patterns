@@ -1,0 +1,9 @@
+d1 $ every 2 (slow 2 . (|+| speed (run 8))) $ slow 4 $ s "80z*8" # n "1"
+|+| end "0.75"
+|+| gain "0.8"
+
+d2 $ every 12 (rev) $ every 2 (0.5 ~>) $ sound "[jvbass*2, sn:1 drum:1 ~, hh:1]"
+
+d3 $ stut 2 0.8 0.5 $ chop 2 $ sound "bass1" # speed "3" # accelerate "2.5"
+|+| vowel "e"
+hush

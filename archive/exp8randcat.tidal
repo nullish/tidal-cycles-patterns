@@ -1,0 +1,26 @@
+d1 $ randcat [every 8 (density 2) (stut 7 0.9 0.9 $ striate 1 $ up "0 -2 -4 -6 -8 -10 -12 -14" # sound "sine" # cut "1" # pan "0 1 0 1 0 1 0 1" # crush "2 6 4 8 2 8 4 6" # gain "1.1"), (stut 7 0.9 1 $ striate 2 $ up "0 2 4 6 8 10 12 14" # sound "sine" # cut "1" # gain "0.7" # pan "0 1 0 1 0 1 0 1" # crush "4 6 8 6" # shape "0.9" # orbit "1")]
+# crush "8 6 4 2 4 6 7"
+
+open with randcat [] brackets to  open and close whole phrase. a comma
+and a space in between and make sure that one dollar sign is eliminated
+from each phrase so the individual phrases can close with a ()
+
+d2 $ sound "bd hh bd hh:13"
+# shape "0.6"
+# crush "8 6 8 5 9"
+
+d3 $ sound "~ bass ~ ~ ~ ~ bass"
+# crush "4 8 4 8"
+# gain "0.9 "
+
+hush
+
+
+d3 $ stut 16 0.9 10.1 $ striate 3 $ up "0 12 44 26 38 10 32 64" # sound "sine" # cut "1"
+# gain "0.7"
+# crush "4 6 8 6"
+# shape "0.9"
+# orbit "1"
+
+d3 silence
+$ sound "bd bd bd [bd bd]"

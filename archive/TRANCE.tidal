@@ -1,0 +1,8 @@
+cps (1.25)
+
+d1 $ jux (# cutoff (scale 1000 2200 $ slow 2 $ sine1)) $ palindrome $ chop 2 $ stut 2 1.6 0.4 $ jux (slow 2 . (chop 2)) $ sound "arpy*2" # speed "0.4"
+ # orbit "1"
+ # room "0.5"
+
+
+d2 $ every 2 (jux (density 2. (rev))) $ sound "[drum*2, jvbass, cp]" # gain "1.1"

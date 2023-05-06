@@ -1,0 +1,11 @@
+d1 $ every 4 (echo (1/2)) $ every 4 (|+| speed "0.6 1.2") $ every 2 (trunc 0.25) $ slow 2 $ chop 4 $ sound "tb303*2"
+|+| speed "0.6 1.6"
+|+| begin "0.15"
+|+| gain "1.2"
+
+d2 $ every 2 (|+| speed "0.9")$ every 2 (rev) $ sound "bass drum bass cp"
+|+| speed "1 1 1 0.7"
+
+cps (85/60)
+
+hush

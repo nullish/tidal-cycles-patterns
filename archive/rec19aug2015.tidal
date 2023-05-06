@@ -1,0 +1,11 @@
+d1 $ slow 1.5 $ echo (1/2) $ jux (stut 2 0.6 0.3) $ sound "arpy:1 arpy:2"
+|+| speed "0.5"
+
+d2 $ superimpose (|+| speed "2") $ whenmod 8 4 (chop 2) $ every 2 (chop 2) $ sound "tb303"
+|+| gain "0.9"
+|+| shape "0.2 0.1 0"
+|+| begin "1"
+
+d3 $ slow 2 $ every 2 (rev) $ sound "cp bd"
+
+cps (75/60)

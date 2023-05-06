@@ -1,0 +1,18 @@
+cps 1.15
+
+d1 $ superimpose (slow 10 . (# coarse 40)) $ whenmod 8 4 (|-| speed "0.2") $ off 0.25 (# sound "blip") $ weave 12 (sound "arpy:<0 1>")
+ [-- palindrome $ chop 2 $ iter 2 $ speed (run 3),
+ speed "1 2 1 1",
+ jux rev $ palindrome $ slow 2 $ jux (density 1.5) $ speed "-0.25*2 -0.5*2",
+ density 2 $ speed (irand 4) # gain 0.9 # begin 0.9]
+ # delay 0.3
+ # delayt 0.25
+ # orbit 1
+ # room 0.2
+
+
+
+d2 $ sound "[drum*2, jvbass*2]"
+
+
+hush

@@ -1,0 +1,9 @@
+cps (1.15)
+
+solo $ d1 $ every 8 (palindrome) $ whenmod 4 2 (# speed "0.9") $ spin 2 $ every 4 (superimpose (zoom (0, 0.5))) $ every 2 (rev . (density 1.5)) $ sound "[casio can, jvbass*2]"
+ # delayfeedback "0.7"
+ # speed "0.7"
+
+d2 $ sound "[drum*2, bass]"
+
+d3 $ slow 2 $ striate 4 $ every 4 (jux (density 2 . (rev . (zoom (0, 0.9))))) $ sound "t:1*7 ~ t" # speed "0.8" # gain "1.4"

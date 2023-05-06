@@ -1,0 +1,13 @@
+d1 $ density 1.2 $ palindrome $ sound "t:1*8" # cutoff (scale 300 500 $ slow 4 $ sine1) # resonance "0.4" # up "1"
+|+| gain "0.8"
+
+d2 $ superimpose (density 1.5) $ sound "[sn:1 drum, sn:2 bd, casio:2 blip, cp]"
+
+d3 $ spin 2 $ slow 4 $ striate 4 $  sound "tb303*4" # up "0.2"
+|+| gain "1"
+|+| speed sine1
+|+| delay "0.4"
+
+d4 $ sound "arpy"
+
+hush

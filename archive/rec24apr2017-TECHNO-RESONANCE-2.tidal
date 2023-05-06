@@ -1,0 +1,12 @@
+d1 $ superimpose (degrade . (# vowel "a")) $ every 4 (0.5 ~>) $ juxBy (1/3) (slow 2 . (# speed "-0.2")) $ stut 2 0.8 0.7 $ n (irand 4) # s "blip" # (palindrome $ speed "-1 1")
+ |-| speed "0.2"
+ # orbit "1"
+ # resonance "0.4"
+ # cutoff (scale 800 2600 $ sine1)
+
+d2 $ density 2 $ chop 4 $ rev $ brak $ sound "[bass0*2, sn:1 ~, bass*2]" # gain "0.8"
+
+d3 $ sound "bass0:1*2" # speed "0.5"
+ # gain (scale 1 0.8 $ slow 4 $ sine1)
+
+ hush

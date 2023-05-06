@@ -1,0 +1,22 @@
+d1 $ slow 2 $ every 2 (0.4 ~>) $ weave 8 (s "t" # n "2")
+  [speed "1.2 1 1.2 1.2 1 1",
+  speed "0.8 0.6 0.4 0.2",
+  stut 4 0.5 0.8 $ slow 2 (speed "1.8 1.4 1.4 1.8")]
+
+  d1 $ silence
+
+d2 $ slow 12 $ spread (striate) [12, 8, 4] $ sound "sn:1*12"
+|+| begin "0.5"
+|+| speed "-0.8"
+
+d2 $ silence
+
+d3 $ every 4 (density 2) $ slow 4 $ chop 4 $ superimpose (|+| speed "0.8") $ trunc 0.5 $ sound "choir*4"
+|+| room "0.2"
+|+| end "0.9"
+
+d3 $ silence
+
+d4 $ every 4 (0.25 ~>) $ every 2 (rev) $ echo (1/2) $ sound "hh sn:1 drum ~ sn:1"
+
+  hush

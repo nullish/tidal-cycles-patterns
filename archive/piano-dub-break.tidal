@@ -1,0 +1,10 @@
+cps 1.15
+
+d1 $ jux (slow 1.5 . (# up (saw1 + 4))) $ striate 4 $ n (chord "<major minor>") # s "piano"
+ # gain 1.2
+
+d2 $ every 4 (0.25 ~>) $ slow 4 $ striate 148 $ sound "breaks125"
+ # gain 1.3
+
+
+hush

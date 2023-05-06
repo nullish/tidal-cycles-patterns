@@ -1,0 +1,1 @@
+d1 $ superimpose (density 1.5) $ sound "[drum sn:1, sn*2(3, 8), can*2 [drum:1]*2]"

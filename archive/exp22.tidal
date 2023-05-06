@@ -1,0 +1,22 @@
+d2 $ jux (rev)
+   $ iter 4
+   $ slowspread ($) [striate 2, striate 4, striate 8]
+   $ slowspread ($) [stut 10 0.9 0.7, rev]
+   $ sound "cp bd sn"
+   # crush "8 4"
+   # room "0.3"
+   # size "0.8"
+   # resonance "0.2"
+   # orbit "1"
+   # cut "1"
+
+
+d3 $ jux (rev)
+   $ iter 4 $ slowspread ($) [striate 4, stut 3 0.8 0.1]
+   $ up (fmap (+12) "[-24 -22 -18 -16 -12 -10 -8 -6 -2 0]")
+   # sound "arpy"
+   # gain "1.2"
+   # orbit "1"
+
+
+hush

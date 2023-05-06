@@ -1,0 +1,7 @@
+d1 $ palindrome $ loopAt 0.25 $ sound "[drum/2 sn:1/4]"
+ # cutoff (scale 1200 2600 $ slow 2 $ sine1)
+ # orbit 1
+ # room 0.3
+
+d2 $ sound "[breaks125, bass:1]"
+ # speed 0.9

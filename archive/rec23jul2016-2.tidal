@@ -1,0 +1,15 @@
+d1 $ rev $ density 4 $ smash 4 [1, 2, 4, 2] $ sound "tb303"
+|+| speed "0.9"
+
+d2 $ jux (slow 8 . (|+| speed "-0.5")) $ every 4 (rev) $ rev $ density 2 $ chop 4 $ stut 2 0.5 0.4 $ sound "t:1"
+|+| speed "1"
+|+| accelerate "-1"
+
+d3 $ sound "cp:1 drum/2 cp:2 drum/2"
+|+| gain "1"
+|+| delay "0.4"
+
+d4 $ density 4 $ sound "[hh*2]"
+|+| gain "1.2"
+
+hush

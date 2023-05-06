@@ -1,0 +1,6 @@
+-- snippet: acid2
+setcps 1
+
+d1 $ s "bass:2*8" # lpf (range 200 3000 $ sine)
+
+hush

@@ -1,0 +1,19 @@
+d1 $ jux (slow 4 . (degrade . (# coarse 60))) $ off (1/3) (slow 1.5 . (rev)) $ n (irand 8) # s "<arpy tb303:3>"
+ |-| speed "0.6 0.4 1 0.2"
+ # accelerate 0.5
+ # cutoff (scale 800 2000 $ slow 2 $ sine1)
+ # hpf 200
+ # gain "1.2"
+
+d1 silence
+
+d2 $ every 2 (density 2 . (zoom (0.25, 0.5))) $ density 2 $ sound "[drum*2 sn:1/2, bd <can*2 can:1*3>, hh*2, cp/2]"
+ # orbit 1
+ # room 0.3
+
+d3 $ every 4 (slow 2) $ spread (chop) [1, 2] $ sound "bass*8"
+ |+| speed 2
+ # speed (run 8)
+ # lpf 800
+
+hush

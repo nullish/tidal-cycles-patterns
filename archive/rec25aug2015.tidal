@@ -1,0 +1,16 @@
+d1 $ density 2 $ every 2 (rev) $ sound "drum drum:1 bass cp:1"
+
+d1 $ silence
+
+d2 $ superimpose (|+| vowel "a e") $ every 2 (density 2) $ sound "[jvbass jvbass]*2"
+|+| speed "1"
+|+| gain "1"
+
+d4 $ every 4 (stut 4 0.8 0.8) $ chop 2 $ sound "blip*2"
+|+| speed "-0.6 -0.8"
+|+| accelerate "2"
+|+| end "0.5"
+|+| gain "1.2"
+
+
+cps (65/60)

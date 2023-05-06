@@ -1,0 +1,1 @@
+d1 $ density 2 $ jux (slow 2 . (linger 0.5)) $ sound "[bd*2, [ho*3]/2, jvbass, bass/2]"

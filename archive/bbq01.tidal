@@ -1,0 +1,12 @@
+d1 $ every 4 (|+| speed "1") $ jux (slow 1.5) $ jux (density 8 . (# gain 0.4)) $ every 2 (superimpose (# coarse 20)) $ jux (chop 2) $ sound "[arpy*4, blip]"
+ # cutoff (scale 400 2100 $ slow 2 $ sine1)
+ |-| speed "4"
+ # speed (choose [1, 0.6, 3])
+
+d2 $ striate 4 $ stut 10 0.4 8 $ sound "cp/4"
+ # speed "-0.5"
+
+d3 $ every 2 (jux (rev)) $ sound "drum bass"
+ # gain 1.2
+
+hush

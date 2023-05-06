@@ -1,0 +1,8 @@
+d1 $ degrade $ slow 2 $ striate 10 $ every 2 (trunc 0.5) $ sound "hit*4" |-| speed "1" |/| speed "1 2 0.5 4"
+
+d1 $ every 8 (slow 1.5 . (rev)) $ every 4 (# speed "0.8 1") $ jux (degrade) $ within (0, 0.5) (chop 2) $ sound "[hit cp, hh*2, [[jvbass*2] drum*2]]*2"
+
+d2 $ whenmod 8 4 (superimpose (# speed "-1")) $ jux (trunc 0.2) $ slow 4 $ sound "tb303:2"
+   # gain (scale 0.5 1 $ slow 8 $ sine1)
+
+hush

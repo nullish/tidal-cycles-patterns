@@ -1,0 +1,23 @@
+d1 $ slowcat [sound "sd:11 ~ sd:35" #cut "1",
+              sound "sd:324 sd:11" #cut "1"
+              ]
+              # gain "0.9"
+              # shape "0.5"
+
+
+d2 $ slowcat [sound "bd ~ ~ cp",
+              sound "[cp cp] cp [cp cp] ~",
+              sound "bd ~ ~ cp",
+              sound "cp [cp cp] ~ [cp cp]"
+              ]
+              # room "0.7"
+              # size "0.5"
+              # orbit "1"
+
+
+d3 $ striate 1 $ n (fmap (+12) "[a5 c5 e5 g5 b5 d6 f6 a6 c7]") # s "supersaw" # sustain "0.2"
+# gain "0.7"
+# pitch1 "4"
+# orbit "1"
+
+          hush

@@ -1,0 +1,14 @@
+-- start with sine > arpy
+-- add iter to vary
+-- add vowels, and raise cutoff levels to intensify
+-- end with choose arpy, sine
+
+d1 $ echo (1/2) $ jux (iter 4 . (# vowel "[e o]*2")) $ every 2 (|+| resonance "0.1") $ striate 2 $ density 2 $ slowspread ($) [(slow 2), (# speed "1.5"), (density 2),
+ (rev)] $ sound "sine*48" # cutoff (scale 800 1600 $ density 2 $ sine1)
+ |-| speed "0.8"
+ |+| gain (scale 0.9 1 $ slow 2 $ sine1)
+ |+| room "0.3"
+ |+| shape "0.2"
+
+-- start with bass + snare. add busiy pattern and superimpose density to intensify
+d2 $ every 24 (const $ sound "cp*24") $ every 4 (superimpose (density 2)) $ whenmod 8 4 (# up "0.2") $ sound "[jvbass*4, sn:2*2, [cp sn:1]*2 [sn:2 cp]*2]" # gain "1.2" # delay "0.4"

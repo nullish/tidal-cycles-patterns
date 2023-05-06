@@ -1,0 +1,14 @@
+d1 $ jux (# speed "-0.4") $ every 2 (iter 2 . (rev)) $ density 2 $ brak $ stut 2 0.6 0.8 $ sound "sn:1"
+ # speed (choose [0.4, 0.6])
+ # coarse "[10, 40]"
+
+d2 $ every 4 (trunc 0.5 . (rev)) $ foldEvery [2, 4, 6] (|+| speed "1") $ sound "tb303:3"
+ # gain "0.9"
+ # cutoff "400"
+ # orbit "1"
+ # resonance "0.4"
+
+d3 $ sound "[jvbass:1*2, bd*2]"
+ # gain (scale 1 1.2 $ slow 2 $ sine1)
+
+hush 

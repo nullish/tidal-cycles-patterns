@@ -1,0 +1,12 @@
+let toggles :: Pattern Int -> [Pattern a] -> Pattern a
+    toggles p xs = unwrap $ (xs !!!) <$> p
+    (!!!) xs n = xs !! (n `mod` length xs)
+
+d1 $ whenmod 8 4 (# speed "<1.2 1.4>") $ density 4 $ jux (density 1.5) $ toggles (irand 3) [
+ brak $ n (run 3) # s "stab",
+ s "stab*2 cp drum:1",
+ echo(1/2) $ s "arpy" # speed 0.8 # legato 2 # coarse 30,
+ s "[bass1*2, sn:1*2]"
+]
+
+hush

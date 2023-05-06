@@ -1,0 +1,6 @@
+d1 $ every 2 brak $ sound "bd sn:2"
+
+d2 $ every 2 (|+| gain "0") $ sound "foo*3"
+|+| speed "0.9"
+
+hush

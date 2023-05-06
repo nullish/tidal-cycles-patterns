@@ -1,0 +1,4 @@
+d1 $ sound "kurt kurt:1 kurt:2 kurt:1"
+|+| speed "0.4"
+
+hush

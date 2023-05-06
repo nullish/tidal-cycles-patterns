@@ -1,0 +1,17 @@
+# PLEASE RECORD ME!!!!!!!
+
+d1 $ sometimesBy 0.25 (iter 2) $ every 4 (slow 2 . (chop 2))$ sound "ebass:3*8"
+|+| speed "-1 -0.5 -0.3 -1 -0.9 -0.4"
+
+d2 $ every 2 (brak) $ spread (chop) [2, 1] $ sound "sn:1 sn:2"
+|+| speed "0.6 0.6 1"
+|+| gain "1.2"
+
+d3 $ slow 2 $ sound "sn:2*2"
+|+| speed "-1"
+
+
+d4 $ slow 2 $ whenmod 4 8 (rev) $ brak $ spread (striate) [2, 1] $ stut 2 0.25 0.5 $ sound "ebass:3*2"
+|+| speed "-2 -1.8"
+
+hush

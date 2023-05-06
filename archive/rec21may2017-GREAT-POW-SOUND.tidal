@@ -1,0 +1,17 @@
+d1 $ superimpose (slow 1.5) $ sound "[drum(3,8), {[[drum:1?*2] sn:1](2,4)}*2]" # gain "1.1"
+
+d2 $ every 2 (density 2 . (striate 2)) $ sound "drum" # speed "-0.6" # gain "1.2"
+
+d2 silence
+
+d3 $ every 4 (slow 2) $ jux (# speed (run (choose [3, 2])))
+ $ jux (slow 1.5 . (chop 2)) $ spin (choose [3, 1]) $ palindrome $ n "0 1" # s "jvbass*3" # speed (choose [1.2, 2, 1, 3])
+ # coarse "15"
+ # gain "1"
+
+d3 silence
+
+d4 $ brak $ striate 4 $ rev $ slow 2 $ sound "sine*3" |/| speed (run 3)
+ # room "0.4"
+ # accelerate "-1"
+ # orbit "1"

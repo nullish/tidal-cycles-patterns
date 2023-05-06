@@ -1,0 +1,11 @@
+d1 $ every 8 (|+| gain "0") $ palindrome $ sound "[[bass bd:1]*2, hh*2, sn sn:1 ~, cp]" # speed "1.2" # delay "0.3"
+
+d2 $ jux (|+| up (run 2)) $ slow 4 $ stut 4 0.8 0.75 $ sound "syn*2" # speed "0.4 0.8"
+|+| gain "1.2"
+
+d3 $ sound "[[jvbass*4], sn:1 drum]"
+
+d4 $ weave 16 (striate 4 $ density 2 $ sound "t:1*2")
+  [
+  speed "0.2 0.2 0.4"]
+|+| gain "0.9"

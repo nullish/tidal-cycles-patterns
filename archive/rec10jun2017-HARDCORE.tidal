@@ -1,0 +1,10 @@
+d1 $ chop 2 $ whenmod 12 4 (jux (slow 2 . (# up 1))) $ sound "bass*2"
+ # crush 2
+ # gain "1"
+
+d2 $ sound "drum*2"
+ # orbit 1
+ # room 0.3
+
+d3 $ every 4 (slow 2) $ jux (density 2) $ chop 8 $ off 0.25 (slow 1.5 . (rev)) $ slow 4 $ sound "{[drum? bd? bd:1, blip sn sn:1? drum] ~ bd bd:1 gabba ~ sn sn:1}*2"
+ # speed (scale 0.8 1.2 $ slow 2 $ saw1)

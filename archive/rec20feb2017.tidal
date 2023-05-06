@@ -1,0 +1,16 @@
+d1 $ spread (chop) [1, 2] $ slow 2 $ sound "[drum*2 sn:1*2 bd*2, cp, t*4]"
+
+d1 $ sound "[drum*4, jvbass cp]"
+
+d2 $ every 4 (jux (slow 2 . (|+| speed "2"))) $ every 2 (rev) $ superimpose (slow 4 . (striate 2 . (# speed "-0.4"))) $ spin 2 $ rev $ sometimesBy 0.2 (chop 2 . (zoom (0, 0.25)))
+ $ n "0 2 1 0 0 1 1" # s "arpy" # speed "-0.8 -1 -0.6 -0.8"
+ # cutoff (scale 800 1500 $ slow 2 $ sine1)
+ # orbit "1"
+ # room (scale 0.1 0.4 $ slow 2 $ sine1)
+
+d3 $ every 4 (rev . (density 2)) $ slow 2 $ n (run 3) # s "blip" # speed "-1.2"
+ # orbit "1"
+
+d4 $ whenmod 9 3 (# gain "0") $ sound "invaders:1"
+ # unit "s"
+ # speed "0.4"

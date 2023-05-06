@@ -1,0 +1,6 @@
+d1 $ superimpose (# speed "2.2 2.4 1.8 2") $ jux (rev . (# speed "2")) $ slow 2 $ striate 12 $ n "0 1 1 0" # s "tb303"
+
+d2 $ superimpose (slow 4 . (# speed "-1")) $ chop 2 $ density 2 $ jux (slow 1.2 . (rev)) $ sound "[rbass, drum [drum:1 drum:2] sn, hh*2, bass:1?]" # speed "1"
+ # gain 1.2
+
+ hush

@@ -1,0 +1,14 @@
+d1 $ every 12 (superimpose (chop 2 . (# speed "-1"))) $ sound "[drum cp]"
+ # shape (scale 0 0.3 $ slow 2 $ saw1)
+
+d2 $ whenmod 8 4 (# speed "2.2") $ every 2 (jux (density 2)) $ sound "jvbass*2"
+ # speed "2"
+ # cutoff (scale 800 1600 $ slow 4 $ sine1)
+ # gain (scale 0.8 1.1 $ slow 4 $ saw1)
+
+d3 $ palindrome $ every 2 (# gain "0") $ slow 2 $ stut 2 0.6 0.2 $ sound "blip*2"
+ # coarse "30 40"
+ # speed "1.2"
+ # gain "1"
+
+ hush

@@ -1,0 +1,16 @@
+cps (1.1)
+
+d1 $ brak $ sound "bass*2"
+ # up "1"
+ # accelerate "-1"
+
+d2 $ sound "[sn:1, drum*2]" # speed "0.8"
+ # orbit "1"
+ # room "0.3" # size "0.5"
+
+d3 $ whenmod 24 8 (|+| speed (choose [1, -1, 2]))
+ $ every 4 (superimpose (rev . (striate 4 . (slow 2 . (iter 2 . (# speed "-1 -2"))))))
+ $ juxBy (1/3) (|-| speed "0.5") $ stut 2 0.65 0.5 $ sound "[tb303~]*3"
+ |*| speed (run 4)
+ # cutoff "2000"
+ # orbit "1"

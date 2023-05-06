@@ -1,0 +1,13 @@
+d1 $ every 8 (rev) $ every 2 (zoom (0.25, 0.75)) $ sound "acid*8" # up (run 8)
+ |+| speed "1"
+ |+| gain "0.9"
+
+d2 $ palindrome $ striate 4 $ sound "t:1*2"
+|+| speed "0.6"
+|+| end "0.5"
+|+| gain "0.9"
+
+d3 $ every 2 (iter 4) $ sound "[bass [drum sn:1 drum [hh:1*2]], cp*2]"
+|+| gain "1.2"
+
+ cps (1.25)

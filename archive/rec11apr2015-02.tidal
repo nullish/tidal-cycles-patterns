@@ -1,0 +1,6 @@
+d1 $ superimpose (|+| speed "2") $ every 2 (rev .(iter 1)) $ jux (|+| speed "0.6") $ echo (1/8) $ sound "t:2*2"
+|+| speed "0.8 1"
+
+solo $ d2 $ every 2 (chop 2) $ sound "sn:2 bd"
+
+hush

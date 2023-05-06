@@ -1,0 +1,3 @@
+d1 $ append' (n (irand 2) # s "blip arpy" # vowel "e i") (chop 2 $ sound "t*4" |-| speed "0.25" |=| up (run 3))
+
+hush

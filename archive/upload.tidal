@@ -1,0 +1,15 @@
+d1 $ striate 2 $ sound "tb303*2"
+|+| speed "0.8"
+|+| begin "0.1"
+|+| pan "-1 1"
+
+d2 $ density 2 $ sound "[hh bd]"
+
+d3 $ every 4 (|+| gain "1") $ density 2 $ sound "[cp:2*2] cp:2"
+|+| gain "0"
+
+d4 $ rev $ every 2 (trunc 0.5) $ sound "acid [t:1*4]"
+|+| speed "1 0.6 1.1 0.7"
+|+| gain "0.9"
+
+hush

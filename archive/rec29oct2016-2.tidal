@@ -1,0 +1,16 @@
+d1 $ slow 2 $ every 2 (palindrome) $ sound "[[casio]*8] gabba*2, kick:1*2, cp*2] [[jvbass:1*2] gabba*2, drum:2*2, drum]"
+|+| gain "0.9"
+
+d2 $ whenmod 8 4 (|=| speed "0.9") $ striate 4 $ every 4 (zoom (0, 0.5)) $ sound  "t:1*2"
+|+| speed "0.8"
+|+| delay "0.4"
+|+| gain "1"
+
+solo $ d3 $ sound "syn*2"
+|+| accelerate "1.5"
+|+| gain "1.2"
+|+| delay "0.4"
+
+cps (1.25)
+
+hush

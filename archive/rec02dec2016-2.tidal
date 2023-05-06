@@ -1,0 +1,13 @@
+d1 $ every 4 (iter 4) $ slow 2 $ palindrome $ sound "[drum ~ sn:1 sn:2 ~ cp ~ ~]*2"
+
+d2 $ every 8 (const $ slow 2 $ striate 4 $ sound "bass*3" # speed (run 3)) $ every 4 (palindrome) $ n (irand 3) # s "bass ~"
+
+d2 $ silence
+
+d3 $ every 2 (|/| speed (run 4)) $ jux (slow 4 . (# accelerate "-1")) $ stut 8 0.5 0.2 $ sometimesBy (1/4) (# speed "-1 1") $ n (irand 2) # s "casio " # shape (density 2 $ scale 0.1 0.3 $ sine1)
+ # speed "0.4"
+ # gain (scale 0.6 1 $ slow 4 $ sine1)
+
+ d4 $ sound "[bass*4] sn:2"
+
+hush

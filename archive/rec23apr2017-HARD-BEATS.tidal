@@ -1,0 +1,1 @@
+d1 $ juxBy (1/2) (slow 4 . (striate 8)) $ every 4 (fastspread slow [2, 3]) $ superimpose (slow 1.5 . (rev)) $ sound "[sn:1*2, {bd drum:1*2 ~ bd*2 drum drum:2, hh*4, jvbass, [drum ~ bd]}]"

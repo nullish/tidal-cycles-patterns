@@ -1,0 +1,11 @@
+d1 $ trunc 0.5 $ jux (density 2) $ chop 2 $ sound "tb303"
+
+d2 $ sound "drum*2"
+
+d3 $ sound "hh*4"
+
+
+d4 $ every 2 (density 2 . (rev)) $ sound "cp? casio:1"
+|+| speed "0.9"
+
+hush

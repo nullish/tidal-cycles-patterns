@@ -1,0 +1,15 @@
+d1 $ density 0.5 $ every 2 (rev) $ sound "drum:1*2 [bass drum] [sn:1] drum:1 bass drum:1"
+|+| speed "0.6 0.8"
+
+d1 $ silence
+
+d2 $ density 2 $ every 4 (0.5 ~>) $ striate 4 $ sound "jvbass bass"
+
+d3 $ slow 4 $ spin 3 $ every 4 (|+| speed "0.6 1.2 0.4") $ every 2 (0.25 ~>) $ echo (1/4) $ sound "blip*8"
+|+| speed "0.6 0.8 1 1"
+|+| delay "0.3"
+|+| gain "1.2"
+
+d3 $ silence
+
+hush

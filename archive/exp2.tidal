@@ -1,0 +1,5 @@
+d1 $ sound $ every 4 (density 2) $ palindrome $ samples ("brak feel*4") "0 1 2 3 4 5 6 7"
+hush
+d2 $ striate 3 $ sound $ palindrome $ samples "arpy*8" "0 1 2 3"
+
+d3 $ sound "bd [cp cp] hh [cp cp]"

@@ -1,0 +1,25 @@
+d1 $ stut 7 0.9 0.9 $ striate 1 $ up "0 -2 -4 -6 -8 -10 -12 -14" # sound "sine" # cut "1"
+# pan "0 1 0 1 0 1 0 1"
+# crush "2 6 4 8 2 8 4 6"
+# gain "1.3"
+
+d2 silence
+
+d2 $ stut 7 0.9 1 $ striate 2 $ up "0 2 4 6 8 10 12 14" # sound "sine" # cut "1"
+# gain "0.7"
+# pan "0 1 0 1 0 1 0 1"
+# crush "4 6 8 6"
+# shape "0.9"
+# orbit "1"
+
+d3 silence
+
+
+d3 $ stut 16 0.9 10.1 $ striate 3 $ up "0 12 44 26 38 10 32 64" # sound "sine" # cut "1"
+# gain "0.7"
+# crush "4 6 8 6"
+# shape "0.9"
+# orbit "1"
+
+d3 silence
+$ sound "bd bd bd [bd bd]"

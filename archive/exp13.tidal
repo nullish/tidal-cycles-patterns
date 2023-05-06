@@ -1,0 +1,25 @@
+d2 $ jux (rev) $ striate 2 $ smash 3 [2,3,4] $ sound (brak "bleep*2 arpy") # n (irand 32)
+# density 2 (vowel "o e i")
+# density 3 (speed "2 3 4")
+# crush "8 7 6 5 4 5 6 7"
+
+d3 $ jux (rev) $ striate 2 $ smash 3 [2,3,4] $ sound (brak "bleep*2 arpy") # n (irand 32)
+# density 2 (vowel "o e i")
+# density 3 (speed "2 3 4")
+# crush "8 7 6 5 4 5 6 7"
+# speed "0.5"
+# delay "0.5"
+# delaytime "0.3"
+# delayfeedback "0.5"
+# orbit "1"
+
+d4 $ jux (rev) $ striate 2 $ smash 3 [2,3,4] $ sound (brak "bleep*2 arpy") # n (irand 32)
+# density 2 (vowel "o e i")
+# density 3 (speed "2 3 4")
+# crush "8 7 6 5 4 5 6 7"
+# speed "0.25"
+# orbit "1"
+# cut "1"
+
+
+hush

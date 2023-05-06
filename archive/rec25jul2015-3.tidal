@@ -1,0 +1,8 @@
+d1 $ every 2 (iter 3) $ chop 2 $ stut 8 0.6 0.45 $ weave 2 (speed "0.8 0.6") [sound "arpy arpy:1",
+  sound "[casio casio:1]/4",
+  slow 2 $ sound "tb303" |+| end "0.2" |+| vowel "e"]
+  |+| gain "0.9"
+
+d2 $ every 2 (rev) $ sound "[hh*2] drum cp bass"
+
+cps (88/60)

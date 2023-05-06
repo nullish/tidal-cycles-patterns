@@ -1,0 +1,7 @@
+d1 $ sound "[drum*2, hh*4, [h:1*2]]"
+
+d2 $ sometimesBy 0.25 (rev . (# speed "-2 1")) $ jux (spread (slow) [2, 1]) $ chop (2) $ sound (choose ["t", "t:1", "t:2"])
+ # room "0.3"
+ # cutoff (scale 600 2200 $ slow 2 $ saw1)
+
+ hush

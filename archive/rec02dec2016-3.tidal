@@ -1,0 +1,7 @@
+d1 $ jux (density 1.5 . (rev)) $ sound "bass*2 sn:2 sn:1" # pan "-1 1"
+
+d2 $ every 12 (slow 2 . (degrade)) $ every 4 (# speed "1.2") $ every 4 (# accelerate "2") $ striate 7 $ jux (striate 3) $ sound "tb303"
+
+d2 $ slow 2 $ sound "tb303"
+
+hush

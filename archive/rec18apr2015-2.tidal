@@ -1,0 +1,12 @@
+d1 $ every 4 (rev . (|+| speed "3 4")) $ sound "bass3*2 bass*2"
+|+| gain "1"
+
+d2 $ sound "bd:1 sn:2"
+|+| speed "0.8"
+
+d3 $ sometimesBy 0.25 (|+| vowel "e") $ slow 2 $ striate 4 $ echo (1/4) $ weave 32 (sound "tb303") [speed "2",speed "2.9", speed "2.2", end "0.7"]
+
+d4 $ every 2 (chop 2)  $ sound "tb303"
+|+| accelerate "-2"
+
+hush

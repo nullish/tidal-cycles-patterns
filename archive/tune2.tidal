@@ -1,0 +1,7 @@
+d1 $ sound "[bd cp]*2"
+
+d2 $ jux (|+| speed "0.6") $ every 4 (|+| begin "0.5") $ sound "ebass:3*4"
+|+| speed "0.7"
+|+| gain "1.2"
+
+hush

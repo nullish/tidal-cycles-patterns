@@ -1,0 +1,5 @@
+d1 $ loopAt 1 $ sound "t*2"
+
+d2 $ every 2 (rev) $ sound "[hh*4, cp drum ~ bass]"
+
+hush

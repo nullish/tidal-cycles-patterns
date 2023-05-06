@@ -1,0 +1,10 @@
+d1 $ jux (# vowel "e a") $ weave 12 (sound "arpy*2")
+ [every 4 (density 2 . (rev)) $ chop 2 $ speed "0.4 0.6",
+ speed "2 4 2 4",
+ speed "1"]
+ # cutoff (scale 1000 2200 $ slow 2 $ sine1)
+ # room "0.4"
+
+d2 $ sound "choir" # speed (run -3
+
+  hush

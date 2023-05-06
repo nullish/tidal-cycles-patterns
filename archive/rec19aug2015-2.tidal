@@ -1,0 +1,13 @@
+d1 $ superimpose (chop 2 . (|+| speed "2 1.8")) $ sound "tb303:1*2"
+|+| speed "1 1.2"
+
+d3 $ every 4 (|+| speed "1 -0.8") $ sound "[hh*2] cp"
+|+| speed "1 0.8"
+
+d2 $ every 4 (rev) $ sound "gabba drum gabba bass"
+|+| speed "1.4 1 1.2 1"
+
+d4 $ density 2 $ chop 2  $ jux (|+| vowel "e") $ sound "tb303:1"
+|+| speed "2.4"
+
+hush

@@ -1,0 +1,9 @@
+cps (1)
+
+d1 $ whenmod 8 4 (# speed "1.2") $ n (run 8) # stack [
+s "sn" # gain "0.9",
+s "jvbass"
+]
+
+
+hush

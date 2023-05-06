@@ -1,0 +1,55 @@
+d2 $ iter 4 $ jux (rev) $ chop 3 $ n "[0 -2 -4 -6 -8 -10 -12- 16]" # s "supersaw"
+# crush "8 6 4 6 4 2"
+# cutoff "6000"
+# resonance (rand)
+# pan (rand)
+# gain "0.9"
+
+d2 silence
+
+d2 silence
+$ palindrome $ iter 4 $ n "[0 -12 -14 -16 -18 -20 -22- 26]" # s "supersaw"
+# cutoff "100"
+
+d1 $ iter 4 $ sound "jungbass ~ jungbass:1"
+
+d1 silence
+
+d4 silence
+
+d7
+
+d4 $ striate 3 $ smash 3 [1,2,3,4] $ sound "speechless:1 speechless:2 speechless:3 speechless:4"
+# speed "1.2 1.5"
+# gain "1.5"
+# crush "8 4 6 4 8 6 5 3"
+# pan "0 1 0 1 0 1 0 1 0 1 0"
+
+d5 $ sound "tacscan:12*8" # speed "4"
+# density 4 (vowel "a e o")
+# crush "8 6 4 6 4 2"
+# resonance (rand)
+# pan (rand)
+# gain "0.9"
+# cutoff "0"
+
+d6 $ every 4 (striate 4) $ sound "super808*8"
+# n (fmap (subtract 36)(irand 32)) # cut "1"
+# gain "1.3"
+# cutoff "800"
+# sustain "0.1"
+
+d7 $ every 4 (striate 4) $ sound "cp*8"
+# n (fmap (subtract 36)(irand 32)) # cut "1"
+# gain "1.3"
+# cutoff "4000"
+# sustain "0.05"
+
+
+d3 $ iter 4 $ slowspread ($) [jux (rev), striate 2, jux (rev), chop 2] $ iter 4 $ chop 2 $ every 4 (striate 4) $ up "1 2 3 4 5 6 7 8" # sound "sd:111" # cut "2"
+# crush "8 6 4 6 4 2"
+# resonance (rand)
+
+
+hush
+#

@@ -1,0 +1,15 @@
+d1 $ density 2 $ cat [striate 2 $ sound "sn:2", every 2 (rev) $ striate 2 $ sound "[drum drum:1]"]
+|+| gain "1"
+
+d1 $ silence
+
+d2 $ jux (|+| vowel "a") $ every 4 (slow 2) $ every 4 (iter 2) $ rev $ jux (|+| speed "1.2 2 1 0.8") $ stut 3 0.6 0.25 $ sound "[t:1 acid*2]/4 [acid*2]/2"
+|+| end "0.2"
+
+d3 $ every 2 (iter 4) $ superimpose (slow 2 . (|+| speed "0.4")) $ density 2 $ jux (|+| vowel "a") $ sound "bass t:1*3"
+|+| speed "3 1.4 1 0.8 2"
+|+| gain "0.9 0.7 0"
+
+d4 $ density 2 $ every 2 (rev .(density 2)) $ sound "[hh can] [sn:2 bd:1]/2"
+
+hush

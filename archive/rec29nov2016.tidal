@@ -1,0 +1,11 @@
+d1 $ stack [
+  sound "bd bd/4",
+  sound "hh(5,8)"
+  ] # nudge "[0 0.04]*4"
+
+d1 $ jux (slow 4 . (# speed "-0.5 -0.3")) $ jux (zoom (0, 0.5)) $ spread (chop) [2, 0] $ rev $ n "[0*2] 2" # s "future sn" # speed "0.7 1"
+
+d2 $ jux (slow 1.5 . (# speed "-1.2")) $ n (irand 3) # s "blip" # speed "0.8"
+ # gain (scale 0.7 1.2 $ sine1)
+ # cutoff (scale 1200 1400 $ slow 2 $ saw1)
+ # pan (rand)

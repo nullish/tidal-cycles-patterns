@@ -1,0 +1,41 @@
+d1 $ iter 4 $ sound "jungbass jungbass:1 ~"
+ # gain "2"
+ # cut "1"
+ # shape "0.8"
+
+d2 $ sometimes (density 2) $ striate 2
+$ sound "supersaw*5" # n (fmap (+12) "0 1 2 3 4")
+# sustain "0.1"
+# vowel "a e i [o i] e i"
+# crush "9 6 8 6 4 6 8 6"
+# gain "1.5"
+# pitch1 "4"
+# resonance "0.7"
+# room "0.2"
+# size "0.8"
+# orbit "1"
+# pan "0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1"
+
+d3 $ degradeBy 0.1
+$ slowspread ($) [density 2, rev]
+$ every 4 (striate 4)
+$ sound "moog*2" # up (sometimes (fmap (+12)) "-20 -18 -14 -16 -18")
+# cut "2"
+# gain "1.2"
+# cutoff "200"
+
+d4 $ sometimes (striate 3) $ iter 5 $ degradeBy 0.9
+$ sound "arpy*1000 sn*2000 bd*10" # note (fmap ((-)12) (irand 74)) # cut "1"
+# pan "0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1"
+# room "0.4"
+# size "0.3"
+# orbit "1"
+# cutoff "60000"
+# gain "0.9"
+
+d3 silence
+
+d4 silence
+
+
+hush

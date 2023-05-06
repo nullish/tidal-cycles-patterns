@@ -1,0 +1,18 @@
+d1 $ brak $ n "2 1 1 2" # s "invaders blip" # speed "0.6"
+
+d2 $ sometimesBy 0.2 (# gain "1.2") $ jux (density 4 . (# speed "2")) $ every 4 (striate 2) $ striate 2 $ slow 2
+ $ sometimesBy 0.2 (jux (# vowel "a")) $ sound "invaders:1" # speed "0.4"
+ # orbit "1"
+ # room "0.3"
+
+d2 silence
+
+d3 $ density 2 $ every 2 (rev) $ sound "[jvbass*2] bass0"
+ # speed "2 1"
+ # orbit "1"
+
+d3 $ sound "bass0*4"
+
+d4 silence
+
+hush

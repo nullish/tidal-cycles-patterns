@@ -1,0 +1,9 @@
+d1 $ whenmod 8 4 (|+| speed "0.5") $ density 2 $ striate 2 $ every 4 (echo (1/2) . (slow 4 . (|+| up (run 2)))) $ sound "syn*2"
+|+| speed "0.3"
+|+| end "0.5"
+
+d2 $ every 4 (0.5 ~>) $ sound "[drum bass sn:1 bass, hh*4, sn:2]"
+
+d3 $ every 2 (palindrome) $ superimpose (slow 1.5) $ slow 2 $ juxBy (0.75) (striate 2 . (|+| vowel "a")) $ sound "syn*8"
+|+| speed (run 8)
+|+| delay "0.2"

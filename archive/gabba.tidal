@@ -1,0 +1,18 @@
+cps (90/60)
+
+d1 $ striate 4 $ every 2 (|+| speed "-0.8 1.2") $ sound "gabba*4 ~ ~"
+|+| gain "0.7"
+
+d2 $ every 4 (density 2 . (rev)) $ sound "bd:1 cp"
+|+| gain "1.2"
+
+d3 $ whenmod 5 15 (trunc 0.75) $ slow 4 $ iter 3 $ sound "invaders:3 ~ ~ [casio:1*4]"
+|+| speed "1 1 1 2 0.8 3 0.6"
+|+| gain "0.9"
+
+d4 $ whenmod 2 3 (iter 2) $ slow 4 $ sound "tb303*3 tb303:1"
+|+| speed "1 0.7 0.5"
+|+| begin "0.2"
+|+| gain "0.8"
+
+hush

@@ -1,0 +1,4 @@
+d1 $ sound "t:1*8"
+ # palindrome (hcutoff (scale 400 4200 $ slow 2 $ saw1))
+
+ hush

@@ -1,0 +1,7 @@
+solo $ d1 $ jux (slow 5 . (stut 8 0.6 0.4)) $ superimpose (slow 2 . (|-| speed 4)) $ jux rev $ off 0.3 (slow 2 . (|*| speed 1.2)) $ jux (iter 3) $ chop 2 $ sound "bass ~ blip"
+ # speed "<1.4 1.6 2>"
+ # delay 0.05
+ # delayt 0.3
+ # gain "1.1"
+
+d2 $ whenmod 4 2 (|-| speed "1") $ off 0.25 (iter (choose [3, 2]) . (striate 2)) $ jux rev $ sound "[sn:1 ~ sn/2, t, hardcore, hh:1*2]*2"

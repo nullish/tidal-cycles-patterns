@@ -1,0 +1,18 @@
+cps 5
+
+import Sound.Tidal.Utils
+
+import Data.Maybe
+
+let arpit p = Pattern $ \a -> munge $ arc p a
+    munge es = concatMap spreadOut (groupBy (\a b -> fst' a == fst' b) es)
+    spreadOut xs = catMaybes $ map (\(n, x) -> shiftIt n (length xs) x) $ enumerate xs
+    shiftIt n d ((s,e), a', v) = do a'' <- subArc (newS, newE) a'
+                                    return ((newS, newE), a'', v)
+      where newS = s + (dur*(fromIntegral n))
+            newE = newS + dur
+            dur = (e - s) / (fromIntegral d)
+in
+d1 $ stack [slow 4 $ jux rev $ n (arpit $ "[<c6(3,8) [a6*2 ~] f6*2 g6*2> <c a f*2 g>]" + "[0,<4 3 4 4>,7,12]") # sound "supermandolin" # legato 4,
+            slow 16 $ n "[[e _ f e _ _ _ _] ~] e [f ~] [g [a g]]" # sound "superpiano"
+           ]

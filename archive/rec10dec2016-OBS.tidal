@@ -1,0 +1,9 @@
+cps (1.15)
+
+d1 $ sound "[rbass*2, rbass*4, drum cp ~]" # speed "0.8 1"
+
+d2 $ sometimesBy 0.2 (# gain "0") $ every 4 (rev) $ striate 8 $ sound "rbass" # speed "0.8" # gain "1.4"
+
+d3 $ slow 2 $ n (irand 3) # s "blip" # speed "-1" # gain (scale 0 1 $ slow 2 $ sine1)
+
+hush

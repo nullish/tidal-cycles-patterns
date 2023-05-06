@@ -1,0 +1,11 @@
+
+d2 $ palindrome $ density 2 $ sound "[[jvbass bass] drum] [cp sn:2]/3"
+|+| shape "0.2 0.3 0.5"
+
+d1 $ sound "t*2"
+|+| speed "-0.4 -0.6"
+
+
+cps (70/60)
+
+hush

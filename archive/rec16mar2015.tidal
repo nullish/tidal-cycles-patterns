@@ -1,0 +1,13 @@
+d1 $ every 2 (brak . (|+| speed "-1.2")) $ spread (striate) [1, 2] $ sound "jvbass*2"
+|+| gain "1 0.7"
+
+d1 $ silence
+
+d2 $ interlace (sound "hh:1") $ striate 2 $ brak $ sound "sn:2 bd"
+
+d3 $ every 4 (density 2) $ stut 2 0.8 0.2 $ sound "jvbass"
+|+| speed "2"
+
+hush
+
+cps (70/60)

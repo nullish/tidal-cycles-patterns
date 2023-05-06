@@ -1,0 +1,6 @@
+d1 $ every 4 ()$ every 2 (brak . (rev)) $ sound (samples "cp*2 bass drum" (slow 2 "1 2 0 1"))
+|+| speed "0.9 1 0.9 1.2"
+
+hush
+
+cps (75/60)

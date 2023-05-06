@@ -1,0 +1,58 @@
+hush
+
+d2 $ juxBy 0.5 (rev)
+$ juxBy 0.5 (striate 2)
+$ slowspread ($) [striate 4, rev, chop 4, rev]
+$ iter 2
+$ slow 2 $ sound "cp [bd bd] arpy arpy:7 cp"  # up (run 12)
+# speed "[1 1 ~ 1.5 1.5 ~ 1.5 1.5, 0.7 0.7 ~ 0.5 0.5 ~ 1.2 1.2]/2"
+
+d1 $ stut 5 0.5 0.9 $ sound "[blip blip:2 ~ blip]*4"
+# up (fmap (+5) "0 2 4 6")
+# crush "8 6 4 6 2 5"
+# end "0.1"
+# gain "1.2"
+
+d6 silence
+$ iter 4
+$ jux (rev)
+$ striate 4
+$ stut 5 0.5 0.9 $ sound "[blip blip:2 ~ blip]*4"
+# up (fmap (subtract 12) "0 2 4 6")
+# crush "8 6 4 6 2 5"
+# shape "0.5 0.9 0.4 0.8"
+# gain "0.9"
+
+d6 silence
+
+hush
+
+d3 $ iter 4 $ striate 4 $ juxBy 0.5 (rev) $ sound "arpy*12" # up (fmap (subtract 12) (run 12)) # cut "1"
+
+hush
+
+d2 silence
+$ iter 4 $ striate 3 $ jux (rev) $ slowspread ($) [striate 4, jux (striate 3), chop 6, stut 32 0.5 0.9]
+$ sound "arpy*6" # up (fmap (subtract 0) "0 2 4 6 8 10")
+# pan "1 0 1 0 1"
+# orbit "1"
+
+silence
+
+d6 silence
+
+d5 silence
+
+d5 $ sound "bd bd" # shape "0.9"
+# gain "1.2"
+
+d3 $ slowspread ($) [rev, chop 4, rev]
+$ iter 3
+$ slow 2 $ sound "jungbass jungbass"
+# gain "1 1 ~ 1.5 1.5 ~ 1.5 1.5"
+# cut "2"
+
+
+d4 $ sound "[cp, hh]" # shape "0.5" # room "0.5" # orbit "1" # gain "1"
+
+d4 silence

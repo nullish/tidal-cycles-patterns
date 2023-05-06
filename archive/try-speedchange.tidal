@@ -1,0 +1,17 @@
+d1 $ every 2 (rev . (brak)) $ sound "bd cp"
+
+d2 $ interlace (sound "bass") $ slow 4 $ sound "choir"
+
+d5 $ silence
+
+d5 $ every 4 (density 2 . (|+| speed "1.8 2.2")) $ chop 4 $ sound "bass0*2"
+
+d6 $ every 4 (0.25 ~>) $ slowspread (slow) [4, 2, 4, 2] $ sound "t:1*8"
+|+| gain "0.9"
+|+| speed "0.8 1"
+
+d6 $ silence
+
+hush
+
+cps (70/60)

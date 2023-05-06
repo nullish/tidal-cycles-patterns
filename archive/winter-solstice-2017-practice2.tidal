@@ -1,0 +1,26 @@
+cps 1.2
+
+d1 $ spin 2 $ slow 3 $ s "stepford"
+ # gain 1
+
+d1 $ whenmod 8 4 (# speed "1.2") $ jux (slow 1.5 . (striate 2)) $ s "[bd sn:2 ~, jvbass*2]"
+ # gain 1.2
+ # speed 0.8
+
+d2 $ jux (fast 1.5) $ superimpose (slow 2 . (striate 2)) $ rev $ weave 24 (s "tb303*2") [
+ slow 2 $ chop 2 $ speed "0.8 2",
+ slow 2 $ stut 4 0.75 0.25 $ speed "2.2 1.2 2 2 1 0.8 1.2"
+]
+ # coarse 10
+ |-| speed "1"
+ # orbit 1
+ # room 0.3
+ # gain 1.2
+ # begin 0.5
+ # cutoff 2000
+
+solo $ d3 $ every 4 (0.25 ~>) $ slow 4 $ chop 2 $ striate 8 $ s "stepford bass drum"
+ # gain 1.2
+
+
+ hush

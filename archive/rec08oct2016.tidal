@@ -1,0 +1,8 @@
+d1 $ palindrome $ s "piano*4" # n "0 4 2 1"
+
+d1 $ slow 4 $ weave 16 (speed "1")
+  [s "piano*12" # n "0 1 2 4 1 1 4 2 4",
+  s "piano*4" # n "4 3 4 3",
+  stut 8 0.8 0.5 $ s "piano" # n "0"]
+
+d1 $ slow 2 $ stut 8 0.8 0.5 $ sound "piano piano:4 piano:1 piano:3"

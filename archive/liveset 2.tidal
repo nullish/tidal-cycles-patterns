@@ -1,0 +1,63 @@
+d1 $ slowspread ($) [striate 4, jux (rev), striate 2]
+$ every 2 (density 2) $ striate 3 $ smash 3 [1,2,3,4]
+$ sound "speechless:1 speechless:2 speechless:3 speechless:4"
+|=| speed "1 1.5 1.2 1.5"
+# delay "1"
+# delaytime "0.2"
+# gain "1.5"
+
+d3 silence
+
+d2 $ striate 3 $ jux (rev)
+$ sound "tacscan:12*8" # speed "4"
+# gain "0.5"
+# density 2 (vowel "a e i")
+
+d3 $ iter 5 $ chop 1 $ s "supersquare*8" # n (fmap (subtract 12) "-20 -18 -16 -12 -8 -4 0 -2 0")
+# crush "8 3 6 4 7 5 4"
+
+d1 $ degrade $ jux (rev) $ striate 2 $ jux (striate 2) $ iter 8 $ palindrome $ s "supersquare*8" # n (fmap (+12) "-20 -18 -16 -12 -8 -4 0 -2 0")
+# crush "8 3 6 4 7 5 4 4 6 3"
+
+d5 $ iter 4 $ sound "jungbass ~ jungbass:1"
+# gain "1.5"
+
+d2  silence
+$ degrade $ sound "super808*8" # n (fmap (+0)(irand 32)) # cut "2"
+# gain "1.3"
+# shape "0.7 0.5"
+# room "0.3"
+# orbit "1"
+# crush "8 6 4 6 5"
+
+d4 silence
+$ iter 4 $ slow 2 $ sound "bd:1 ~ ~ cp"
+# gain "1.5"
+# shape "0.7"
+# delay "0.8"
+# delaytime "0.5"
+# delayfeedback "0.5"
+# orbit "1"
+
+d5 silence
+$ sound "cp:2 cp:2 cp:2 cp:2 cp:2 cp:2 cp:2 cp:2"
+# gain "1.5"
+# pan "1 0 1 0 1 0 1 0 1 0"
+
+d3 $ degrade $ jux (rev) $ striate 3 $ weave 16 (sound (samples "arpy*16" (run 8)))
+[vowel "a e e i", vowel "a i", speed "2 2 3"]
+# gain "1.5"
+
+d4 $ degrade $ weave 16 (sound (samples "arpy*16" (run 8)))
+[vowel "a e e", vowel "a i i e", speed "1 1 2"]
+# gain "1.5"
+# orbit "1" # room "0.5"
+
+d2 $ weave 8 (sound (samples "arpy*16" (run 8)))
+[vowel "a e e", vowel "a i i e", speed "0.5 0.5 0.25"]
+# gain "1.2"
+# orbit "1" # room "0.5"
+
+d4 silence
+
+hush````

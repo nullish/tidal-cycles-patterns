@@ -1,0 +1,5 @@
+-- number is number of cycles pattern takes up
+
+d1 $ every 2 (# accelerate "-2") $ loopAt 8 $ sound "moog" # accelerate 2 # up 0.4
+
+ hush

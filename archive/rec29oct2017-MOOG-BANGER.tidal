@@ -1,0 +1,7 @@
+d1 $ juxBy 0.25 (# speed (scale 1 4 $ slow 12 $ saw1)) $ juxBy 0.75 (# up 3) $ jux (density 2 . (# vowel "a")) $ striate 4
+ $ stack [sound "moog*12", palindrome $ sound "yeah:1" # gain 1]
+
+
+d2 $ every 2 (density 4 . (zoom (0.5, 0.75))) $ sound "[hh*8, [sn:1*2] bd]"
+
+hush

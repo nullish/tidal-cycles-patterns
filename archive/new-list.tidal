@@ -1,0 +1,5 @@
+d1 $ density 2 $ sound "hh sn:1"
+
+d2 $ every 4 (chop 2) $ every 2 (chop 2) $ sound "bass:2"
+|+| speed "0.8"
+|+| accelerate "0.8"

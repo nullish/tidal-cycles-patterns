@@ -1,0 +1,13 @@
+d1 $ whenmod 8 6 (const $ sound "arpy(3,8)")
+   $ whenmod 4 2 (const $ sound "arpy(3,8)" # speed "2")
+   $ rarely (striate 3) $ every 4 (# speed "2")
+   $ every 3 (# pan "1 0 1 0")
+   $ sound "{cp cp cp ~ cp cp ~ cp ~ cp cp ~}%8"
+   # crush (scale 8 16 $ rand)
+
+t1 (wash (striate 4)4) $ sound "bd*2" # gain "1.5" # shape "0.7"
+
+
+hush
+
+cps 1

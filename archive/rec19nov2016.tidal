@@ -1,0 +1,8 @@
+d1 $ sound "[sn:1 drum, hh*8, cp]"
+ # delay "0.4"
+ # resonance "0.4"
+
+d2 $ every 2 (degradeBy 0.2) $ every 4 (# up "-0.4") $ striate 4 $ sound "tb303*4" # begin "0.25" # up "0.2"
+|+| cutoff (slow 2 $ scale 800 3000 $ sine1)
+
+solo $ d3 $ palindrome $ jux (slow 2 . (# speed "-1")) $ slow 4 $ chop 18 $ sound "rave" # begin "0.1" # speed "-0.5"

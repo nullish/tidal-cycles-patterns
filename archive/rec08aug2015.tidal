@@ -1,0 +1,4 @@
+d1 $ whenmod 32 8 (|+| speed "0.4") $ spin 4 $ slow 4 $ stut 3 0.6 0.25 $ sound "[arpy:2*6 ~]*2"
+|+| speed "0.6 0.9"
+|+| delay "0.3"
+|+| gain "1"

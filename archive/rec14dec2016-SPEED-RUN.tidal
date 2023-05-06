@@ -1,0 +1,21 @@
+d1 $ trunc 0.5 $ slow 2 $ slowspread ($) [(# gain "0.9"), (# gain "0.8")] $ weave 2 (speed "1")
+  [slow 4 $ sound "tb303:3*2" # speed "1 1.8" # accelerate "-1",
+  striate 8 $ jux (# speed "1") $ sound "choir" # speed "0.9"]
+  |+| delay "0.4"
+
+d2 $ sound "hh:1*2" # speed "-0.9" # gain "1 1.1"
+
+d3 $ jux (rev .(density 2)) $ every 4 (# vowel "o e") $ slowspread ($) [(# speed "0.9"), (# speed "1"), (# speed "2")] $ sound "syn*2" # gain "1.1" # speed "0.9 2"
+|+| shape (scale 0 0.3 $ slow 4 $ sine1)
+
+d4 $ jux (density 1.5) $ every 2 (rev) $ sound "[gabba:1 gabba:2, [techno*2] future:1 sn:3 ~]"
+
+d4 $ every 8 (# gain "0") $ density 2 $ jux (rev .(brak)) $ sound "[drum ~ sn:2(1,2)]"
+
+d3 $ sound "syn*8" |=| speed "0.2" |*| speed (run 8)
+
+d5 $ striate 16 $ sound "kurt:1" # speed "-0.25" # speed (rand)
+
+  hush
+
+  

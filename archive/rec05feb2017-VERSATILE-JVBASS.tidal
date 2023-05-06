@@ -1,0 +1,14 @@
+d1 $ jux (slow 1.5) $ every 2 (rev) $ density 2 $ sound "[[cp bd:1]/2, bd ~ sn:1, drum sn, hh:3*2]"
+
+d2 $ jux (slow 2) $ sound "jvbass*8"
+ # speed (choose [1, 2, 4, 1.2])
+ |-| speed "0.2"
+ # resonance "0.3"
+ # cutoff "700"
+ # gain "1"
+
+d3 $ every 2 (palindrome . (iter 2)) $ rev . (# speed (run 8)) $ superimpose (# speed "-12") $ jux (slow 2) $ sound "jvbass*8"
+ # gain "0.9"
+
+
+hush

@@ -1,0 +1,30 @@
+
+
+d2 $ every 4 (slowspread (slow) [1, 3]) $ striate 8 $ sound "[invaders:2*3] ~ ~ ~"
+|+| speed "0.8 0.2"
+|+| shape "0.7"
+|+| gain "1.3"
+
+d2 $ silence
+
+d3 $ rev $ density 2 $ brak $ sound "sn:1 [bd:3]"
+|+| gain "1.5"
+
+d3 $ silence
+
+d4 $ every 2 (rev) $ every 4 (density 2) $ slow 2 $ sound "ebass:4*2"
+|+| speed "0.8 0.5"
+|+| gain "1"
+|+| begin "0.4"
+|+| vowel "e"
+
+d4 $ silence
+
+d5 $ sometimesBy 0.4 (|+| speed "2") $ slow 2 $ jux (|+| speed "2") $ chop 4 $ sound "[tb303 ~]*2"
+|+| shape "0.7 0.5 0.9"
+|+| speed "1 0.7"
+|+| gain "0.9"
+
+d5 $ silence
+
+hush

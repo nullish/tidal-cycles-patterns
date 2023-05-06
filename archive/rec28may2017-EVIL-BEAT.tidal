@@ -1,0 +1,21 @@
+cps (1.5)
+
+d4 $ jux (degrade) $ palindrome $ loopAt 2 $ striate 16 $ sound "tb303:1"
+ # gain "1.2"
+
+d1 silence
+
+d3 silence
+
+solo $ d2 $ chop 2 $ every 2 (0.25 ~>) $ jux (slow 1.5) $ sound "[[jvbass](2,3), [hh*3]/2 ~bass*2, casio casio:2]" # gain "0.9" # speed "0.75"
+  # pan "[-1 1]*2"
+
+d1 $ stut 4 0.7 1.2 $ slow 3 $ loopAt <1 2> $ n "0" # s "tb303/2"
+ # cutoff "800"
+
+d5 $ every 4 (slow 2 . (loopAt 0.25 . (chop 2))) $ loopAt 2 $ striate 8 $ sound "kick"
+ # orbit "1"
+ # room "0.4"
+ # speed "-1"
+
+ hush

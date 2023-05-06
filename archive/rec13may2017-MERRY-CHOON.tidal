@@ -1,0 +1,15 @@
+d1 $ every 16 (slow 2) $ every 8 (rev) $ chop 2 $ stut 2 0.6 0.5 $ jux (slow 4) $ weave 24 (sound "arpy*2")
+ [speed "0.4 0.6*2",
+  jux (rev) $ speed (run 4),
+  slow 1.5 $ rev $ speed "0.6 1.2 0.4 1 1.2 0.6/2 0.8*2",
+  slow 2 $ speed "-0.4"]
+  |-| speed "0.2"
+
+d2 $ jux (striate 2) $ every 4 (striate 2) $ sound "tb303"
+ # speed "0.9"
+ # accelerate "0.5"
+ # cutoff "800"
+ # gain "1.1"
+
+d3 $ palindrome $ within (0.5, 1) (chop 2) $ sound "[bd [drum/2], drum:1 ~, bass]"
+ # gain "1.2"

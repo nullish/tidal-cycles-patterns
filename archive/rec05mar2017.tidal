@@ -1,0 +1,8 @@
+cps (1.15)
+
+d1 $ within (0, 0.25) (striate 2) $ superimpose (rev  . (slow 2.5 . (striate 4 . (|*| speed "2 2 3")))) $ n "0 0 1" # s "tb303"
+ # cutoff (scale 1100 2000 $ slow 4 $ sine1)
+ # gain (scale 1 1.2 $ slow 4 $ sine1)
+ # resonance "0.3"
+
+d2 $ jux (iter 1 . (density 1.5)) $ every 2 (trunc 0.75) $ chop 2 $ sound "[bass drum, cp]" # gain "1"

@@ -1,0 +1,9 @@
+d1 $ jux (slow 2 . (chop 2)) $ n (irand 6) # s "arpy" # speed "0.6"
+
+d2 $ every 2 (iter 2) $ sound "[jvbass ~ bass, sn:3*2]" # speed "1.1"
+
+d3 $ superimpose (striate 8) $ sound "arpy:1" # unit "c" # speed "1" # gain "1.2"
+
+d3 $ jux (slow 2 . (# speed "2")) $ striate 4 $ sound "tb303*2" # speed "0.8" # gain "1.2" # delay "0.3"
+
+hush

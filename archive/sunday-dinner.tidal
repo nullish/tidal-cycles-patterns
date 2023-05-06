@@ -1,0 +1,24 @@
+cps (1)
+
+d1 $ slow 2 $ superimpose (slow 4 . (# up "3")) $  whenmod 8 4 (# speed "0.6") $ stut 2 0.7 0.5 $ jux (slow 1.5) $ slow 2 $ n (irand 2) # s "blip"
+ # speed "0.4"
+ # resonance "0.4"
+ # cutoff (scale 800 2200 $ slow 2 $ sine1)
+ # gain "0.9"
+
+d2 $ density 2 $ sound "[sn:2 drum, jvbass*2, cp/2]"
+
+d3 $ striate 4 $ sound "hh:1*4" # speed "-1"
+ # gain (scale 0.9 1.2 $ slow 4 $ sine1)
+
+d4 $ every 4 (trunc 0.5 . (rev)) $ sound "[drum:2*2] [bass*2]"
+ # gain (scale 0.9 1.4 $ slow 4 $ sine1)
+ # speed "1 1.2"
+
+ d3 $ every 4 (brak) $ chop 8 $ slow 2 $ sound "choir*2" # speed "0.6 0.8"
+  # gain (scale 1.2 1.4 $ slow 4 $ sine1)
+
+ d2 silence
+ d4 silence
+
+ hush

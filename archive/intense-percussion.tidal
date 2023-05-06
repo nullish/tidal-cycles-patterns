@@ -1,0 +1,8 @@
+d1 $ slow 2 $ every 2 (iter 3) $ slowspread (density) [0.75, 1] $ every 2 (rev) $ sound "sn:1*4 bd*4 sn*4 drum:1*4"
+
+d2 $ sound "jvbass*2"
+
+d2 $ sometimesBy 0.333 (spin 3) $ slow 4 $ sound "t:1*16"
+|+| speed "0.8 0.6 0.9 1 0.2 0.6 1 2.2"
+
+hush

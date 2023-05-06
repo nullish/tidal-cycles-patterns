@@ -1,0 +1,6 @@
+d1 $ every 4 (density 8 . (zoom (0.25, 0.75))) $ sound "[[sn:1 bd](3,8), cp hh]"
+
+d2 $ striate 4 $ sound "tb303*4" # cutoff (scale 400 2000 $ slow 4 $ saw1)
+|+| resonance "0.2"
+
+d3 $ slow 4 $ sound "tb303*4" # up (run 3)

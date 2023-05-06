@@ -1,0 +1,16 @@
+cps (1.15)
+
+d1 $ every 12 (|=| gain "0") $ jux (slowspread (slow) [2, 1]) $ s "arpy*4" # n (run 4)
+|+| speed "0.4"
+
+d2 $ every 4 (|+| speed (run 4)) $ slow 2 $ sound "syn*4"
+|+| delay "0.3"
+|+| gain "1.2"
+
+d3 $ sound "[bd, hh*4, ~ ~ [cp*2]]"
+
+d4 $ spin 2 $ s "blip*2 ~ blip" # n "0 1 0 2"
+|+| speed "1"
+|+| resonance "0.4"
+
+hush

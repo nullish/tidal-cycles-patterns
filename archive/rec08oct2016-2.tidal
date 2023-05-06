@@ -1,0 +1,6 @@
+d1 $ sound "rbass*8" # up (slow 2 $ scale 0.4 2 saw1)
+
+d2 $ sound "[cp, bass2*2]"
+|+| gain "1 0.9"
+
+hush

@@ -1,0 +1,4 @@
+d1 $ fast 2 $ stut 16 0.7 0.25 $ n (chord "major <major minor>)" + "<1 12 7>") # s "superpiano"
+ # legato 6
+
+ hush

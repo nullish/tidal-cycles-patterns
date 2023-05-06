@@ -1,0 +1,2 @@
+d2 $ rev $ stut 3 0.7 0.25 $ every 2 (iter 2) $ slow 2 $ superimpose (slow 2 . (striate 2)) $ slowspread ($) [(rev), (# delay "0.2")]
+ $ sound (choose ["arpy", "blip"]) # speed (run 4)

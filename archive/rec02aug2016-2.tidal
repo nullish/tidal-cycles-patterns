@@ -1,0 +1,19 @@
+solo $ d1 $ palindrome $ trunc 0.5 $ chop 2 $ jux (stut 2 0.25 0.5 . (|+| begin "0.25")) $ sound "tb303*2"
+|+| speed "0.8 1.2"
+|+| gain "1.2"
+
+d2 $ every 4 (const $ sound "cp*4") $ sound "drum sn:2"
+
+d3 $ sometimesBy 0.75 (|+| gain "0.9") $ chop 2 $ stut 4 0.4 0.7 $ sound "invaders:2"
+|+| accelerate "1"
+|+| speed "-0.5"
+|+| gain "0"
+
+solo $ d3 $ slow 2 $ every 2 (density 2 . (trunc 0.5)) $ sound "moog"
+|+| speed "1.2"
+|+| accelerate "2"
+|+| delay "0.2"
+
+cps (0.8)
+
+hush

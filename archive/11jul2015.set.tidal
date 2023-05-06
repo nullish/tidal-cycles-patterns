@@ -1,0 +1,207 @@
+tb303
+casio
+pacman
+moog
+t:2
+arpy
+80z
+
+
+d2 $ sound "[bass*2] drum bass sn:1"
+|+| gain "1"
+
+d1 $ slow 2 $ stut 4 0.25 0.5 $ sound "blip*2"
+|+| speed "-1 -2"
+
+d3 $ spread (slow) [2, 1.5] $ sometimesBy (1/3) (rev) $ jux (density 1.5 . (|+| speed "0.5 1")) $ sound "blip*2"
+|+| speed "0.3"
+|+| delay "0.3"
+
+cps (70/60)
+
+hush
+
+// -------------
+
+d1 $ sound "[hh drum]"
+
+d2 $ every 4 (trunc 0.5) $ sound "mblast"
+
+d3 $ jux (|+| vowel "e") $ slow 4 $ sound "mblast:1"
+
+d3 $ silence
+
+d4 $ every 2 (rev) $ stut 4 0.8 0.5 $ sound "blip*2"
+|+| speed "0.6 1.4"
+
+cps (70/60)
+
+//-------------
+
+d1 $ slow 2 $ interlace (chop 2 $ sound "cp" |+| speed "-0.7") $ rev $ sound "sn:2*2 bass drum"
+|+| gain "0.8"
+|+| speed "1 1.4 1"
+
+d2 $ sometimesBy (1/3) (superimpose (|+| accelerate "0.5"))  $ jux (slow 4 . (|+| speed "0.8")) $ every 4 (|+| speed "3") $ sound "t:1*8"
+|+| speed "1.5 1.8 2 1 1"
+
+// -------------
+
+d1 $ sometimesBy 0.25 (jux (|+| vowel "a e")) $ rev $ jux (|+| speed "1.2") $ every 4 (|+| accelerate "-1.5") $ slow 2 $ every 2 (chop 2) $ sound "tb303*4"
+|+| resonance "0.6"
+|+| speed "0.7"
+|+| end "0.4"
+|+| gain "0.9"
+
+hush
+
+// -------------
+
+d4 $ every 2 (rev) $ stut 4 0.8 0.5 $ sound "blip*2"
+|+| speed "0.6 0.4"
+
+// -------------
+
+d2 $ every 2 (iter 2) $ striate 2 $ spread (slow) [1, 2] $ weave 16 (sound "80z bass") [speed "0.9 1",
+  speed "1 1.1"]
+|+| gain "1"
+
+// ----------
+
+d2 $ every 2 (chop 2) $ sound "sn:2 bd"
+
+// -------------
+
+d1 $ every 4 (trunc 0.25) $ slow 2 $ sound "cp*2"
+|+| speed "0.4"
+
+// -----------
+d3 $ sound "hh:1*2"
+|+| speed "-0.5"
+
+d4 $ sound "bd kick"
+|+| speed "0.9"
+
+// ------------
+
+d1 $ every 2 (jux (|+| vowel "e a")) $ every 4 (density 2) $ slow 2 $ striate 12 $ sound "pacman*12"
+|+| accelerate "-1"
+
+// --------------
+
+d1 $ every 2 (rev) $ sound "[jvbass*2] sn:1 bass"
+|+| speed "1 1 1.4 0.9"
+|+| gain "1 1.2 1 1.2"
+
+// ------------
+d1 $ density 2 $ every 3 (rev) $ sound "sn:1 bass sn:2 jvbass"
+
+d2 $ jux (striate 4) $ every 4 (|+| end "0.75") $ slow 2 $ sound "do"
+|+| unit "c"
+|+| speed "0.5"
+
+d3 $ weave 8 (sound "80z*2") [speed "0.8 0.6", speed "0.4", speed "1.2 0.4"]
+|+| vowel "a o"
+
+//----------
+
+d3 $ slow 2 $ chop 4 $ sound "acid:1*2"
+|+| speed "1 1.2"
+|+| gain "1.2"
+|+| delay "0.5"
+
+// ---------------
+d3 $ every 8 (slow 4) $ every 2 (slow 2) $ striate 4 $ echo (1/2) $ sound "80z"
+|+| accelerate "-0.5"
+|+| gain "1"
+|+| speed "0.8"
+
+d4 $ slow 2 $ chop 10 $ weave 4 (sound "tb303*2") [speed "1.4 1.2", speed "0.9 1"]
+|+| gain "1"
+
+d5 $ trunc 0.5 $ spread (chop) [1, 2, 4] $ sound "acid:1"
+|+| speed "0.8"
+
+// ---------------
+# WHOLE TUNE:
+
+d1 $ every 8 (|+| gain "0") $ every 4 (striate 2 . (|+| speed "3")) $ slow 2 $ striate 2 $ trunc 0.25 $ sound "tb303 ~"
+|+| speed "2"
+
+d1 silence
+
+d2 $ every 4 (rev) $ sound "t:2*4"
+|+| speed "1 0.75 0.5 0.25"
+|+| gain "1.2"
+
+d2 silence
+
+d3 $ sound "[bd*2] ~ cp"
+|+| gain "1.4"
+
+d4 $ trunc 0.5 $ sound "sn:1 bass1 ~"
+|+| speed "2"
+|+| vowel "e"
+
+d4 silence
+
+hush
+
+cps (75/60)
+
+// ------------
+# WHOLE TUNE:
+
+d1 $ density 2 $ sound "[sn:1] hh*2"
+|+| speed "0.8"
+
+d2 $ every 4 (slow 2) $ every 4 (|+| speed "1") $ striate 2 $ sound "ebass*2"
+|+| speed "0.6"
+|+| gain "1.2"
+|+| shape "0.1 0 0.1"
+|+| begin "0.25"
+
+d3 $ every 4 (iter 1) $ every 2 (rev) $ chop 4 $ sound "tb303*2"
+|+| gain "1"
+|+| speed "1 1.2 1.4"
+
+d4 $ every 4 (density 2) $ sound "cp"
+
+cps (80/60)
+
+hush
+
+
+// -----------------
+
+d3 $ jux (|+| speed "0.2") $ every 2 (rev) $ sound "casio*8"
+|+| speed "0.4 0.5 0.6"
+|+| shape "0.5 0.2 0.7"
+|+| gain "0.9"
+
+//--------------
+
+
+d4 $ every 4 (density 2) $ jux (slow 2 . (|+| speed "0.5 0.75")) $ every 2 (rev) $ sound "t:2*4"
+|+| speed "-1 0.75 -0.5 0.25"
+
+d5 $ slow 6 $ striate 4 $ sound "moog*3"
+|+| speed "2.5 2.8 3"
+|+| shape "0 0.5 0"
+|+| gain "0.8"
+
+cps (70/60)
+
+// ------
+
+d1 $ slow 2 $ spin 3 $ trunc 0.5 $ iter 2 $ weave 8 (sound "[arpy arpy:1]*2") [speed "0.6 0.4 0.2", speed "0.6 0.4 0.8", speed "1.4 1.8 0.8 0.6"]
+|+| delay "0.4"
+|+| gain "0.8"
+
+d1 $ every 2 (density 2) $ jux (slow 2 . (|+| speed "0.5 0.75")) $ every 2 (rev) $ sound "t:2*4"
+|+| speed "0.75 0.5"
+
+
+//-----
+
+d1 $ spin 3 $ slow 4 $ every 2 (|+| speed "1.2 1") $ stut 4 0.75 0.5 $ sound "arpy arpy:1"

@@ -1,0 +1,9 @@
+d1 $ every 4 (rev . (|=| speed (run 3))) $ jux (# speed (choose [4, 0.5, 2])) $ superimpose (slow 1.5 . (# speed "0.8")) $ iter 2 $ sound "rbass*4" # speed "2 1"
+
+d2 $ every 4 (const $ sound "sn:2*8") $ density 2 $ sound "[[sn:2] cp/2, hh*4, jvbass*2]"
+
+d3 $ every 2 (zoom (0.25, 1)) $ juxBy 0.5 (slow 2) $ n "1*7 ~ 2" # s "casio" # speed (scale 0.7 1 $ density 2 $ sine1) # gain "0.8"
+ # orbit "1"
+ # delayfeedback "0.2"
+
+hush

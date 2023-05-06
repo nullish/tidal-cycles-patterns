@@ -1,0 +1,17 @@
+d1 $ spin (2) $ iter 2 $ n (run 3) # s "newnotes"
+ # orbit "1"
+ # delayfeedback "0.3"
+ # speed (scale 0.7 0.9 $ density 1.5 $ sine1)
+ # room "0.6"
+
+d2 $ sound "[bd*2, hardcore(3,8)]"
+
+d3 $ jux (slow 1.5 . (# speed "2")) $ chop 2 $ sound "tb303"
+ # gain "0.9"
+ # end "1"
+ # speed "1.2"
+ # delayfeedback "0.3"
+ # shape (scale 0.1 0.3 $ slow 2 $ sine1)
+
+
+ hush

@@ -1,0 +1,13 @@
+d1 $ fast 2 $ gap 2 $ weave 24 (sound "tb303") [
+ iter 2 $ chop 2 $ jux rev $ speed "1 <2 4>",
+ slow 1.5 $ speed (run 4),
+ gap 12 $ slow 4 $ loopAt (3/4) $ delay 0.02
+]
+ # cutoff (scale 800 1000 $ slow 2 $ sine1)
+ # gain 1.2
+ # orbit 1
+ # room 0.3
+
+ d2 $ sound "[[cb8 hh]*4, bd*2]"
+
+ hush

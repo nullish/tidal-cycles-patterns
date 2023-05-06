@@ -1,0 +1,18 @@
+d1 $ slow 2 $ jux (palindrome) $ striate 4 $ every 4 (0.25 ~>) $ sound "[blip*2 t*2, blip:1 blip:]" # speed ("1.2 0.8 2.2 1")
+|+| cutoff (scale 1000 1400 $ slow 2 $ sine1)
+|+| gain "1"
+|+| accelerate "1"
+
+d2 $ every 10 (slowspread (slow) [1, 2, 4]) $ every 4 (zoom (0.25, 0.5) . (density 1.5)) $ sound "[[sn:2 [sn:1]*2]*2, jvbass*4, drum(3,4)]"
+|+| shape (scale 0 0.4 $ slow 4 $ sine1)
+
+d2 $ sound "[sn:2 bass sn:1 bass, hh*4]"
+|+| speed "1"
+|+| gain "1"
+
+solo $ d3 $ whenmod 6 3 (rev) $ slow 4 $ striate 12 $ juxBy 0.5 (zoom (0.25, 0.5)) $ sound "pacman:2*8" # speed "0.8"
+|+| vowel "a a a a e"
+|+| room "0.2"
+
+
+hush

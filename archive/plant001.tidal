@@ -1,0 +1,13 @@
+setcps 2.2
+
+d1 $ whenmod 8 4 (# speed 0.8) $ superimpose (slow 4 . (trunc 0.5)) $ every 2 rev $ brak $ striate 8 $ n "2*2" # s "plant"
+ # speed "1"
+
+d2 $ s "[plsnare*2, plkick]"
+ # gain 1.2
+
+d3 $ every 2 (fast 2 . (chop (choose[2,3]))) $ slow 2 $ n "0" # s "plstalk"
+
+d3 silence
+
+hush

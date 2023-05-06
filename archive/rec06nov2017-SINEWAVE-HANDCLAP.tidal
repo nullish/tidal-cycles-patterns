@@ -1,0 +1,10 @@
+d1 $ jux brak $ off 0.5 (# accelerate 2) $ spread ($) [(chop 2 . (# accelerate "-1")) , (# accelerate 2)] $ off (1/16) (# sound "cp")
+ $ superimpose (fast 2 . (# speed "2")) $ sound "sine"
+ # speed 0.4
+ # room 0.8
+ # gain 0.9
+
+d2 $ every 4 (# speed "-1") $ brak $ sound "gabba*2"
+ # gain 1.2
+
+ hush

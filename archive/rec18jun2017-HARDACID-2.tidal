@@ -1,0 +1,23 @@
+d1 $ every 3 (0.25 ~>) $ every 4 (|+| speed (rand)) $ sound "[t(3,8), <t invaders:1>*2]"
+ # speed "1 0.4"
+
+d2 $ sound "[drum*2, hh*4, cp?*2]"
+
+d3 $ density 2 $ every 4 (rev . jux ((# speed "-1"))) $ every 2 (off 0.35 (# gain "0.9")) $ s "[can*2, <casio invaders:1>]"
+ # shape (scale 0 0.3 $ slow 2 $ sine1)
+
+d4 $ slow 2 $ sound "t*4"
+ # gain "1.2"
+ |-| speed (run 3)
+
+d5 $ superimpose (density 2 . (# speed "4 8")) $ jux (striate 2 . (slow 2 . (# coarse "30"))) $ sound "tb303*2"
+ # orbit "1"
+ # speed "<1 2>"
+ # room "0.2"
+ # cutoff "600"
+ # speed "-0.8"
+ # accelerate "1"
+ # gain "1.2"
+ # hpf "200"
+
+d1 silence

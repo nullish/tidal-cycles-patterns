@@ -1,0 +1,4 @@
+d1 $ (superimpose (fillIn $ n "<6 4 5 2>" # speed 4) $ iter 4 $ n "0 ~ ~ 2 ~ 1 ~ 0")
+  # sound "feel"
+  # speed 2 # orbit 1 # room 0.2 # size 0.7
+  # delay 0.9 # delayt (slow 2 $ sine * 0.01) # delayfb 0.7

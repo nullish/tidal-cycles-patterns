@@ -1,0 +1,8 @@
+cps (1)
+
+d1 $ superimpose (# speed (run 3)) $ jux (slow 2) $ n (irand 2) # s "casio"
+ |-| speed (scale 0.3 0.2 $ slow 4 $ sine1)
+ # resonance "0.4"
+ # gain "0.9"
+
+d2 $ density 2 $ brak $ sound "[jvbass*2, sn:1 sn:2]"

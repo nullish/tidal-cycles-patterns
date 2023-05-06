@@ -1,0 +1,12 @@
+d1 $ jux (slow 2) $ brak  $ sound "sn:1 drum:1 hh:1 [sn:1*2] drum:1"
+
+d1 $ silence
+
+d2 $ slow 4 $ stut 8 0.6 0.6 $ sound "bass jvbass ~"
+|+| gain "1.2"
+|+| speed "1.1"
+
+d3 $ jux (slow 4 . (|+| speed "[1.2 1.4]/2")) $ slow 4 $ stut 8 0.7 0.6 $ sound "t:1*2"
+|+| delay "0.4"
+
+hush

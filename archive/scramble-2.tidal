@@ -1,0 +1,6 @@
+d1 $ density 2 $ scramble 8 $ sound "arpy blip sn:1 bd"
+
+d1 $ sound "tb303*3"
+ # scramble 3 (vowel "a e i")
+
+hush

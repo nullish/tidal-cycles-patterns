@@ -1,0 +1,9 @@
+d1 $ every 8 (|+| gain "0") $ every 2 (density 2) $ stut 4 0.6 0.75 $ sound "bass1" # speed "3"
+|+| shape (scale 0 0.75 $ slow 2 $ sine1)
+
+d2 $ jux (slow 2 . (|+| speed "-0.4")) $ chop 2 $ sound "sn:2" # speed "0.4"
+
+d3 $ whenmod 16 8 (|+| speed "0.8") $ palindrome $ every 2 (iter 4) $ sound "[[sn:2 [drum:1*2]/2]*4, sn:1 hh]"
+|+| speed "0.9"
+
+hush

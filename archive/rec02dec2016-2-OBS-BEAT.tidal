@@ -1,0 +1,3 @@
+d4 $ jux (density 1.5 . (rev)) $ sound "bass*2 sn:2 sn:1" # pan "-1 1"
+
+hush

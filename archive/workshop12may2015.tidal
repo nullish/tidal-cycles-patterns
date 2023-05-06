@@ -1,0 +1,11 @@
+d1 $ jux (density 2) $ sound (samples "drum can can" (slow 2.5 "0 1 2 4 5 6"))
+
+d2 $ jux (|+| speed "-5 -1") $ every 2 (rev) $ every 2 (slow 2 . (|+| accelerate "-2")) $ sound "wobble*8"
+|+| speed "3 2"
+
+d3 $ every 2 (rev) $ sound "[sn:2 can:1]*2 [drum*2]/2"
+|+| gain "1 1.2"
+
+
+
+hush

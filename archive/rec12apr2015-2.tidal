@@ -1,0 +1,19 @@
+d1 $ every 4 (rev) $ interlace (sound "bass*2") $ slow 4 $ jux (density 2) $ sound "casio*8"
+|+| speed "0.8 0.4"
+
+d1 $ silence
+
+solo $ d2 $ slow 4 $ sound "moog"
+|+| vowel "u"
+|+| unit "s"
+|+| speed "2"
+|+| gain "0.9"
+
+d3 $ density 2 $ every 2 (density 2 . (rev)) $ slow 2 $ slowspread (striate) [2, 1] $ sound "bd*4"
+|+| speed "1 0.9 0.8 0.7"
+|+| gain "1.2"
+
+
+cps (70/60)
+
+hush

@@ -1,0 +1,33 @@
+
+
+d2 $ iter 4 $ chop 4 $ n "[0 -4 -6 -8 -10 -12 -14 -16]" # s "[supersaw]/24" # sustain "0.2"
+  # voice "0.9" # semitone "7.9" # resonance "0.7" # lfo "3" # pitch1 "0.25" # decay "0.1" # speed "2"
+  # delay "0"
+  # delaytime "0.02"
+  # delayfeedback "0.2"
+  # vowel "a"
+  # crush "10 9 8 7 6 5 4 3 2"
+  # gain "2"
+
+d3 $ stut 4 0.1 0.1 $ palindrome $ (speed "1 2 3 4" # sound "ravemono:1"
+  # shape "0.7"
+  # crush "8 2 6 4 8 2 6 4"
+  # gain "1"
+  # cutoff "800"
+  # room "0.4"
+  # pan "0 1 0 1"
+  # orbit "1")
+
+d4 $ iter 4 $ n "-12 -10 -8 -6 -4 -2 0 2" # sound "arpy*8"
+  # resonance "0.9"
+  # vowel "a e i o u i i o u"
+  # gain "1.5"
+  # crush "4"
+  # speed "2"
+  # cut "1"
+
+d5 $ iter 2 $ slowcat [sound "bd bd [cp:1 cp]",
+  sound "[bd bd] bd cp:2 bd"
+  ]
+  # gain "2"
+  # crush "8 7 6 5 4 3 2 1"

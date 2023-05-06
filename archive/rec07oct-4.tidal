@@ -1,0 +1,10 @@
+d1 $ sound "[drum:1 [drum*2], [bd bass](5,8),[sn:1*2 hh*2]]"
+|+| gain "0.9"
+|+| speed "0.8"
+
+d2 $ every 2 (chop 2) $ sound "breath"
+|+| gain "1.4"
+
+d3 $ slow 4 $ striate 8 $ sound "t:2*8" # speed (slow 10 $ scale 0.7 0.4 sine1 )
+
+hush

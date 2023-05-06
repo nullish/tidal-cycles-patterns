@@ -1,0 +1,11 @@
+d1 $ every 4 (jux rev) $ slow 2 $ sound "sine*16" |/| speed (run 8)
+ |-| speed "0.4"
+ # vowel "o e"
+ # coarse "30"
+ # gain "0.8"
+
+d2 $ brak $ density 2 $ sound "sn:1 cp"
+
+d3 $ brak $ sound "[jvbass*2, casio*4]"
+ # coarse "20 0"
+ # gain "1.2"

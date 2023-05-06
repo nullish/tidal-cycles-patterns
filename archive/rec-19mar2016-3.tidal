@@ -1,0 +1,11 @@
+d1 $ rev $ every 2 (slow 2) $ sound "jvbass*3 ~"
+|+| speed "0.8 0.6 0.4"
+
+d2 $ slow 2 $ sound "jvbass*2"
+|+| accelerate "2"
+
+d3 $ sound "[hh:1 sn:1]"
+
+d4 $ every 4 (rev) $ every 2 (|+| speed "0.7 0.8 0.9 1") $ slow 4 $ stut 3 0.9 0.25 $ sound "t blip:1 [casio:1*2] blip:1"
+
+cps (75/60)

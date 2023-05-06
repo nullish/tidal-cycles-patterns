@@ -1,0 +1,10 @@
+cps (1.2)
+
+d1 $ every 4 (rev) $ every 2 (iter 3) $ slow 2 $ spread (chop) [2, 1] $ sometimesBy (1/8) (degrade) $ sound "[[pacman]*2, cp]"
+ # speed "2 1"
+ # coarse "10 0"
+
+d2 $ sound "[cp cp:1, bd drum, bass:1*2]"
+
+d3 $ spin 2 $ slow 4 $ striate 10 $ sound "pacman*4" # speed "2"
+ # pan (sine1)

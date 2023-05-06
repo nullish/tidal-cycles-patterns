@@ -1,0 +1,8 @@
+cps (1)
+
+d1 $ superimpose (|-| speed (run 2)) $ jux (slow 2 . (chop 2)) $ palindrome $ stut 2 1.6 0.4 $ sound "arpy*2"
+ # speed "0.4"
+ # room "0.4"
+
+d2 $ sound "[drum*2, jvbass, hh(3,8), cp]"
+ # gain "1.1"

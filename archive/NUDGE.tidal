@@ -1,0 +1,4 @@
+d1 $ stack [
+  sound "bd bd/4",
+  sound "hh(5,8)"
+  ] # nudge "[0 0.04] * 4"

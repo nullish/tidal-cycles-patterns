@@ -1,0 +1,45 @@
+cps (1.15)
+
+
+# 1
+
+d1 $ whenmod 8 4 (# speed "1.2") $ every 2 (brak . (rev)) $ chop 2 $ n "0 1" # s "bass"
+
+d2 $ sound "[[drum*2], hh*4]" # delay "0.3"
+
+d3 $ jux (slow 4 . (# shape "0.3" . (# speed "2"))) $ whenmod 8 4 (# speed "1.2") $ every 2 (density 2 . (brak)) $ density 2 $ sound "[blip blip:1]*2 ~ ~ ~ ~"
+
+# 2
+
+d1 $ whenmod 8 4 (# speed "1.2") $ every 2 (brak . (rev)) $ chop 2 $ n "0 1" # s "bass" # gain "1.2"
+
+d2 $ sound "[[drum*2], can*4]" |-| speed (run 3)
+
+# 3
+
+d1 $ jux (slow 2 . (chop 2)) $ n (irand 6) # s "arpy" # speed "0.6"
+
+d2 $ every 2 (iter 2) $ sound "[jvbass ~ bass, sn:3*2]" # speed "1.1"
+
+d3 $ jux (slow 2 . (# speed "2")) $ striate 4 $ sound "tb303*2" # speed "0.8" # gain "1.2" # delay "0.3"
+
+# 4
+
+d1 $ jux (palindrome . (density 1.5)) $ n (irand 4) # s "drum"
+
+d2 $ every 4 (rev) $ striate 8 $ sound "rbass" # speed "0.8" # gain "1.4"
+
+d3 $ slow 2 $ n (irand 3) # s "blip" # speed "-0.6" # gain (scale 0 1 $ slow 2 $ sine1) # room "0.2"
+
+# 5
+
+d1 $ sometimesBy 0.2 (degrade) $ jux (zoom (0.25, 0.75)) $ sound "[bd sn:1 ~ sn:1, [drum*2] sn:2]"
+
+d2 $ sometimesBy (1/3) (|+| gain "0.1") $ every 2 (palindrome) $ every 4 (# up (run 3)) $ slow 4 $ striate 2 $ sound "tb303*8" # speed "1 0.4 1 0.6 1 0.8"
+|+| begin "0.2"
+|+| gain "1"
+
+d3 $ superimpose (slow 8 . (stut 4 0.5 0.8)) $ every 2 (jux (density 2))
+  $ iter 2 $ slowspread ($) [(# speed "2"), (# speed "3")] $ n (run 4) # s "jvbass" # delay "0.4"
+
+hush

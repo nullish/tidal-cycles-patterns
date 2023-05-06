@@ -1,0 +1,22 @@
+d1 $ slowcat [sound "bd [bd bd] bd",
+              sound "cp cp cp" # speed "2",
+              sound "bd [bd bd bd] bd" # speed "2",
+              sound "[cp cp] cp cp"
+              ]
+
+d2 $ sound (samples "arpy*4" "0 1 2 3")
+            |+| delay "0.5"
+            |+| delaytime "0.1"
+            |+| delayfeedback "0.8"
+            |+| size "0.99"
+            |+| room "1"
+
+
+
+d3 $ slowcat [sound "blip blip blip" # speed "4" # gain "1.3",
+          sound "blip [blip blip] blip" # speed "4.5" # gain "1.3",
+          sound "blip blip blip" # speed "4" # gain "1.3",
+          sound "blip [blip blip] [blip blip]" # speed "4.7" # gain "1.3"
+          ]
+
+hush

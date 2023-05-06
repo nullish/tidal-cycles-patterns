@@ -1,0 +1,5 @@
+d1 $ sound "[drum*4, [jvbass*2] cp]"
+
+d2 $ superimpose (slow 1.2 . (|*| speed "2")) $ striate 4 $ slow 2 $ sound "t:1*6" # speed (scale 0.9 1.1 $ slow 2 $ sine1)
+
+hush

@@ -1,0 +1,16 @@
+d1 $ every 4 (rev) $ slowspread (chop) [10, 20, 40, 10, 20, 30] $ sound "[drum:1 bd]*2 [sn:1 drum:1]*2 [~ sn:1 bd drum]*2"
+|+| room "0.1"
+
+d2 $ superimpose (slow 4 . (|+| speed "3")) $ sound "jvbass*8"
+|+| accelerate "1"
+|+| gain "0.9"
+
+d1 $ every 2 (brak) $ every 8 (const $ sound "hh:1*4" |+| speed "1 1.2 1.4 1.8")$ sound "[drum:1 bd]*2 [sn:1 drum:1]*2"
+
+d3 $ jux (slow 32. (stut 4 0.4 0.8)) $ every 12 (degrade) $ weave 4 (s "arpy*4" # n "1 0 0 1")
+  [speed "0.5 0.8",
+  speed "1.2 1.4 1.8 2",
+  speed "1 2 1 2 1 2 1 2"]
+|+| gain "1.1"
+
+hush

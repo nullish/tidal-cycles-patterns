@@ -1,0 +1,10 @@
+cps (1.15)
+
+d1 $ jux (slow 1.5) $ every 2 (striate 2  . (density 2)) $ sound "gabba"
+
+d2 $ superimpose (# vowel "e") $ whenmod 32 16 (# gain "0") $ every 2 (# speed "0.8") $ superimpose (density 2 . (# speed "4")) $ brak $ sound "ebass*2" # begin "0.2" # accelerate "0.5" # gain "0.9"
+ # resonance "0.3"
+
+d3 $ jux (# vowel "e") $ every 4 (|-| speed (run 2)) $ echo (1/2) $ n (irand 4) # s "blip" # speed "2" # vowel "a"
+
+hush

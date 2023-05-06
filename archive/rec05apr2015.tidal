@@ -1,0 +1,25 @@
+d1 $ sometimesBy 0.25 (jux (|+| vowel "a e")) $ rev $ jux (|+| speed "1.2") $ every 4 (|+| accelerate "-1.5") $ slow 2 $ every 2 (chop 2) $ sound "tb303*4"
+|+| resonance "0.6"
+|+| speed "0.7"
+|+| end "0.4"
+|+| gain "0.9"
+
+d2 $ brak $ sound "bd [sn:2*2]"
+|+| speed "1"
+
+d3 $ chop 4 $ sound "bass*2"
+|+| begin "0.2"
+|+| speed "1.2"
+
+d1 $ silence
+
+d4 $ every 8 (|+| speed "5 4 5") $ every 4 (iter 2) $ slow 4 $ stut 4 0.8 0.5 $ echo (1/2) $ sound "pacman*4"
+|+| speed "3 2 5"
+|+| gain "0.6"
+|+| end "0.85"
+
+d4 $ silence
+
+cps (105/60)
+
+hush

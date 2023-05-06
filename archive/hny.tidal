@@ -1,0 +1,19 @@
+cps (1)
+
+d1 $ every 8 (const $ sound "cp*12") $ whenmod 8 4 (# speed "1.2") $ jux rev $ spread (striate) [2, 1] $ sound "[jvbass*2 ~, sn:2 sn:1]" # speed "0.8"
+ # cutoff (scale 800 2000 $ slow 2 $ sine1)
+ # room "0.3"
+ # gain "1"
+
+d2 $ rev $ stut 3 0.7 0.25 $ every 2 (iter 2) $ slow 2 $ superimpose (slow 2 . (striate 2)) $ slowspread ($) [(rev), (# delay "0.2")]
+ $ sound (choose ["arpy", "blip"]) # speed (run 4)
+ |-| speed "-0.5"
+ # accelerate "-2"
+ # gain "0.8"
+ # room "0.5"
+
+ d2 $ silence
+
+ d1 $ jux (slow 1.5) $ jux (slow 2 . (striate 2)) $ sound "cp sn:1 bd drum"
+
+ hush

@@ -1,0 +1,10 @@
+d1 $ density 2 $ every 3 (rev) $ sound "sn:1 bass sn:2 jvbass"
+
+d2 $ jux (striate 4) $ every 4 (|+| end "0.75") $ slow 2 $ sound "do"
+|+| unit "c"
+|+| speed "0.5"
+
+$ d3 $ weave 8 (sound "80z*2") [speed "0.8 0.6", speed "0.4", speed "1.2 0.4"]
+|+| vowel "a o"
+
+hush

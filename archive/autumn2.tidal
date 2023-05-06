@@ -1,0 +1,17 @@
+
+d3 $ n (irand 2) # s "<drum sn>" # speed 0.5
+
+d4 $ every 4 (# accelerate "<4 -4>") $ sound "tb303:3"
+ # cutoff (scale 400 600 $ slow 4 $ sine1)
+ # gain 0.6
+ # resonance 0.6
+
+ d4 silence
+
+d5 $ brak $ chop 16 $ sound "blip*48"
+ # speed (scale 0.2 2 $ slow 2 $ sine1)
+ # gain 1.4
+ |-| speed "1"
+ # vowel "e*20"
+
+hush

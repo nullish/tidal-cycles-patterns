@@ -1,0 +1,17 @@
+cps 1
+
+d1 $ jux rev $ every 2 (zoom (0.5, 1)) $ sound "<moog sn:1>*8"
+ # speed (saw1*3)
+ # pan "-1 0 1 0 -1"
+
+d2 $ sometimesBy 0.25 (# speed "0.8 2") $ density 2 $ stut 2 0.7 0.25 $ scramble 4 $ n "0 1" # s "<blip choir>"
+ # speed "0.8"
+ # coarse "4"
+ # gain 1.2
+
+d3 $ sometimes (rev) $ every 2 (linger 0.5) $ striate 8 $ loopAt 4 $ sound "moog*2"
+ # accelerate "<3 -1.2>"
+
+solo $ d4 $ density 2 $ sound "bd"
+
+hush

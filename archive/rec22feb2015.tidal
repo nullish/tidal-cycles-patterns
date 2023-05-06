@@ -1,0 +1,23 @@
+
+d1 $ every 2 (rev) $ sound "[sn:2 ~]*2"
+|+| speed "0.9"
+
+d2  $ sound "[t*2 t:1]*2"
+|+| speed "1 1.2 1.4 1.5 1"
+
+d2 $ silence
+
+d3 $ stut 2 0.25 0.75 $ chop 4 $ sound "tb303 ~"
+|+| begin "0.2"
+|+| speed "0.8"
+|+| gain "0.8"
+
+d3 $ silence
+
+d4 $ sound "cp"
+
+d4 $ silence
+
+hush
+
+cps (40/60)

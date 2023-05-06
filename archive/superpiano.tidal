@@ -1,0 +1,11 @@
+unsolo 3
+
+d1 $ every 4 (brak) $ fast 2 $ superimpose (# speed (run 8)) $ jux (echo (1/4)) $ n "0 <1 2> <4 6> 0" # s "superpiano"
+
+d2 $ every 2 (striate 4) $ rev $ s "tb303*2"
+ # accelerate "-0.5 4"
+ # gain 1.8
+
+d3 $ s "[bd*4, hh*2]" # gain 2
+
+hush

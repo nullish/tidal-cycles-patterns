@@ -1,0 +1,8 @@
+d1 $ chop 2 $ every 2 (# up 2) $ every 2 (jux (rev)) $ density 4 $ sound "acid*2" # speed "0.8 1" # end 0.4
+ # room 0.3
+
+d2 $ s "bd(4,3)" # gain 1.4
+
+d3 $ slow 2 $ s "[cp:1 [bass*2]](4,3)" # gain 1.4
+
+hush

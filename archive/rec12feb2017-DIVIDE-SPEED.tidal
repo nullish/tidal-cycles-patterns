@@ -1,0 +1,16 @@
+d1 $ every 4 (slowspread($) [(# speed "-0.8"), (# speed "-0.6")]) $ jux (degrade . (slow 4)) $ (jux (chop 2)) $ every 4 (0.25 ~>) $ n (irand 4) # s "arpy" # speed "1 2 1 1"
+|/| speed "1 2"
+ # cutoff (scale 600 2200 $ slow 2 $ sine1)
+ # orbit "1"
+ # coarse "10 30"
+ # pan "-1 1"
+
+d1 silence
+
+d2 $ sound "[drum*2, jvbass*2, bass:0]"
+
+d3 $ slowspread ($) [(density 2), (density 8), (density 12)] $ sound "hh:1*2"
+ # speed "-0.5"
+ # cutoff "800"
+
+hush

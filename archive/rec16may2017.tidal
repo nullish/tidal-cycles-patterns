@@ -1,0 +1,10 @@
+d1 $ superimpose (slow 2 . (|-| speed "2")) $ jux (slow 4 . (striate 4)) $ every 4 (rev) $ whenmod 9 3 (# speed "2 1") $ sound "[sax*2, bass*4]"
+ # speed "2"
+ # begin "0.6"
+ # cutoff "1200"
+ # gain (scale 1 1.2 $ slow 4 $ sine1)
+
+d2 $ jux (density 4 . (# gain "0.9")) $ sometimesBy (1/8) (superimpose (# speed "-0.8")) $ slow 2 $ n (slow 2 $ irand 3) # s "drum/4"
+ # speed "0.8 0.6"
+
+solo $ d3 $ every 4 (# coarse "50") $ density 2 $ brak $ sound "hh:1*2" # speed "3" # gain "1.3"

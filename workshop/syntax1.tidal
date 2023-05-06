@@ -1,9 +1,10 @@
-setcps 1
+setcps 1.2
 
 d1 $ sound "[bd bd sn:5] [bd sn:3]"
 
 d2 $ striate 4 $ s "<amencutup invaders>"
  # vowel "<a e> o o"
+ # speed "0.5"
 
 
 d5 $ vowel "<a e> o o" # s "<amencutup invaders>"

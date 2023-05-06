@@ -1,0 +1,16 @@
+d1 $ sometimesBy 0.25 (chop 4) $ whenmod 9 3 (# speed "-0.4") $ jux (slow 2 . (spin 2)) $ rev $ brak $ sound "t:3"
+ # orbit "1"
+ # speed "-0.3"
+ # resonance "0.3"
+
+d3 $ superimpose (slow 4 . (striate 3 . (# speed (run 4)))) $ trunc 0.25 $ every 2 (degrade) $ sound "[t:1 ~ bass]*8" # speed (rand)
+ |+| speed "2.2"
+ # gain "0.9"
+
+d4 $ every 4 (slowspread ($) [(# speed "0.7"), (# speed "0.4")]) $ jux (rev . (slow 2.5)) $ within (0.5, 1) (palindrome) $ sound "[[cp:1*2], blip ~ blip:1, bd(3,4), sn:1*2, [sn:2 sn [hardcore:1*2]](8, 12), cp]"
+ # gain "1.2"
+
+ d2 silence
+ d3 silence
+
+ hush

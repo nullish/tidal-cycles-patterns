@@ -1,0 +1,80 @@
+-- THE SET
+
+hush
+
+-- BASSLINE
+
+d1 $ palindrome $ loopAt 0.25 $ sound "[drum/2 sn:1/4]"
+ # cutoff (scale 1200 2600 $ slow 2 $ sine1)
+ # orbit 1
+ # room 0.3
+
+d2 $ sound "[breaks125, bass:1]"
+ # speed 0.9
+
+ -- / BASSLINE
+
+ -- / ACID BUILD
+ cps (1.15)
+
+ d1 $ palindrome $ chop 2 $ stut 2 1.6 0.4 $ jux (slow 2 . (chop 2)) $ sound "arpy*2" # speed "0.4"
+  # orbit "1"
+  # room "0.5"
+
+ d2 $ every 2 (jux (density 2. (rev))) $ sound "[drum*2, bass]"
+
+hush
+
+-- / ACID BUILD
+
+-- GRAND FINALE
+
+d1 $ every 4 (density 4 . (trunc 0.5)) $ sound "[drum ~ [bass*2] ~, bd sn:2]" # speed "<1 0.8>"
+
+d2 $ superimpose (echo (1/2) . (density 2 . (# speed "4"))) $ chop 2 $ sound "tb303"
+ # cutoff (scale 600 1000 $ slow 4 $ sine1)
+ # gain "1.2"
+
+ d2 silence
+
+d3 $ every 4 (jux (striate 3 . (|=| up "-2"))) $ weave 24 (sound "tb303*2")
+ [speed (run 4),
+ slow 2 $ speed "0.8 0.6",
+ density 1.5 $ chop 2 $ speed "2 4 8",
+ whenmod 8 4 (rev) $ slow 4 $ stut 4 0.25 0.4 $ speed "6 8"]
+ # cutoff "2000"
+ # gain "1.2"
+ # orbit "1"
+ # room "0.3"
+
+d4 $ slow 4 $ striate 8 $ sound "arpy" # speed "-0.5"
+
+hush
+-- / GRAND FINALE
+
+-- PUNCHY TECHNO SEQUENCE
+
+d1 $ jux (slow 1.5) $ every 2 (rev) $ density 2 $ sound "[[cp bd:1]/2, bd ~ sn:1, drum sn, hh:3*2]"
+
+d2 $ jux (slow 2) $ sound "jvbass*8"
+ # speed (choose [1, 2, 4, 1.2])
+ |-| speed "0.2"
+ # resonance "0.3"
+ # cutoff "700"
+ # gain "1"
+
+d3 $ every 2 (palindrome . (iter 2)) $ rev . (# speed (run 8)) $ superimpose (# speed "-12") $ jux (slow 2) $ sound "jvbass*8"
+ # gain "0.9"
+
+hush
+
+ -- / PUNCHY TECHNO SEQUENCE
+
+ -- INTRO CANDIDATE
+
+ solo $ d1 $ superimpose (# speed "2.2 2.4 1.8 2") $ jux (rev . (# speed "2")) $ slow 2 $ striate 12 $ n "0 1 1 0" # s "tb303" # gain 1.2
+
+ d2 $ superimpose (slow 4 . (# speed "-1")) $ chop 2 $ density 2 $ jux (slow 1.2 . (rev)) $ sound "[rbass, drum [drum:1 drum:2] sn, hh*2, bass:1?]" # speed "1"
+
+  -- / INTRO CANDIDATE
+hush

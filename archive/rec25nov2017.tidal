@@ -1,0 +1,25 @@
+d1 $ sound "[bd(3,4), cp*2 jvbass*2, [hh voodoo]*2]"
+
+d1 silence
+
+d2 $ sound "bleep:<0 1>" # speed "0.4"
+
+d2 $ every 2 (palindrome) $ superimpose (spread (fast) [2, 1] . (# speed 4)) $ off (1/8) (# sound "<blip arpy>") $ chop 4 $ s "arpy"
+ # speed (choose [0.5, 1, 1.2, 2, 0.4])
+
+d2 silence
+
+d3 $ every 4 (rev) $ superimpose (# s "moog") $ every 2 (slow 2) $ loopAt 0.5 $ striate 4 $ off (1/16) (# s "arpy") $ sound "sine"
+ # vowel "e?"
+ # coarse 8
+ # gain 0.8
+ # accelerate (scale 0.2 1.2 $ sine1)
+
+d3 silence
+
+d2 $ every 8 (zoom (0, 0.5)) $ every 2 (jux (rev . (brak))) $ every 4 rev $ chop 2 $ s "sine*2"
+ # speed "1 <0.5 -0.7>"
+ # coarse "<30 60>"
+ # gain "0.9"
+
+ hush

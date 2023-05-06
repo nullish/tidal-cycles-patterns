@@ -1,0 +1,29 @@
+cps 1
+
+d1 $ jux palindrome $ chop 4 $ n "0 1" # s "arpy"
+ # speed "0.8 <0.6 1>"
+ |+| speed (scale 0 0.4 $ slow 2 $ saw1)
+
+d2 $ striate 4 $ sound "tb303"
+ # speed 1
+ # accelerate "-1"
+ # gain 1.2
+
+d3 $ every 2 (iter 3) $ off 0.25 (slow 2) $  within (0.25, 0.5) (chop 2) $ sound "[drum [sn:1 sn sn:1/2], bass1]" # gain 0.9
+
+d4 $ every 2 (density 2) $ striate 2 $ sound "cp"
+ # speed "-0.7"
+
+d5 $ jux rev $ whenmod 8 4 (# speed "-1") $ n (irand 2) # s "blip"
+ # speed "-0.6"
+ # begin 0.25
+ # coarse "30"
+ # gain 1.2
+
+ d3 silence
+ d4 silence
+ d2 silence
+
+ d5 silence
+
+ hush

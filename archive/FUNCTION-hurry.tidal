@@ -1,0 +1,9 @@
+-- hurry function used to implement SPEED and DENSITY simultaneously
+
+let hurry x = (|*| speed (fromRational <$> x)) . fast x
+
+d1 $ slow 2 $ chunk 2 (chop 2 . spin 2) $ n (run 8) # s "arpy"
+
+-- CHUNK sequences two transformations over a pattern
+
+d1 silence

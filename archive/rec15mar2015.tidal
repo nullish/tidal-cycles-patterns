@@ -1,0 +1,18 @@
+d1 $ every 4 (|+| speed "1.5") $ slow 2 $ stut 8 0.4 1 $ sound "t:1"
+|+| gain "1.4"
+
+d1 $ silence
+
+d2 $ striate 2 $ slow 2 $ brak $ sound "[cp*2]"
+
+d2 $ silence
+
+d3 $ every 2 (|+| gain "0") $ sound "hh:1*2"
+|+| speed "-0.5"
+
+d4 $ every 2 (rev) $ slow 2 $ spread (striate) [4, 1] $ sound "bd*2 [sn:2]*2"
+|+| speed "1"
+
+hush
+
+cps (65/60)
