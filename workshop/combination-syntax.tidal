@@ -1,0 +1,2 @@
+d2 $ superimpose (fast 3 . (# speed 8)) $ every 2 (fast 2) $ s "stab"
+ # gain "1.2"

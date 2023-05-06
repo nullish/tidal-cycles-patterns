@@ -1,0 +1,10 @@
+d1 $ slice 2 "1 2 1 1" $ s "[breaks152, [bass/2]]"
+ # legato 1
+ # gain 1.1
+ # room "<0.1 0.3>"
+
+d2 $ every 4 (fast 2 . (chop 2)) $ slow 2 $ superimpose (zoom (0.25, 0.75)) $ s "stab*2"
+ # gain "<1 1 1 1.2>"
+ # speed "1 0.5"
+
+hush

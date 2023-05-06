@@ -1,0 +1,3 @@
+d1 $ slice 2 "1 2 1 1" $ s "[breaks152, [bass/4]]"
+ # legato 1
+ # gain 1.1
