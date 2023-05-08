@@ -1,6 +1,48 @@
 hush
 
+-- Favourites
+
 d1 $ slow 2 $ s "808*3" # n "0 1 2" -- includes vintage cowbell
+d1 $ slow 2 $ s "808mt*3" # n "0 1 2" -- acid
+d1 $ slow 2 $ s "ade*3" # n "0 1 2" --hauting flute / wind -- long
+d1 $ slow 2 $ s "alex*3" # n "0 1 2" -- real drums -- rhythm -- long
+d1 $ slow 2 $ s "amencutup*3" # n "0 1 2" -- drumnbass segments
+d1 $ slow 2 $ s "arp*3" # n "0 1 2" -- **** RAVE SYNTH
+d1 $ slow 2 $ s "arpy*3" # n "0 1 2" -- punchy synth
+d1 $ slow 2 $ s "baa*3" # n "0 1 2" -- literally sheep
+d1 $ slow 2 $ s "bass0*3" # n "0 1 2" -- harsh bass and bleep
+d1 $ slow 2 $ s "bass1*3" # n "0 1 2" -- ** acid bass
+d1 $ slow 2 $ s "bass2*3" # n "0 1 2" -- * dead hard old school acid bass
+d1 $ slow 2 $ s "bass3*3" # n "0 1 2" -- real bass guitar
+d1 $ slow 2 $ s "bev*3" # n "0 1 2" -- bev knight
+d1 $ slow 2 $ s "bleep*3" # n "0 1 2" -- zappy bleeps --long
+d1 $ slow 2 $ s "blip*3" # n "0 1 2" -- *** tricky disco style blips
+d1 $ slow 2 $ s "cb*3" # n "0 1 2" -- classic acid cowbell
+d1 $ slow 2 $ s "circus*3" # n "0 1 2" -- slow for dubstep?
+d1 $ slow 2 $ s "control*3" # n "0 1 2" -- ** house piano
+d1 $ slow 2 $ s "dist*3" # n "0 1 2" -- * industrial beat --long
+d1 $ slow 2 $ s "em2*3" # n "0 1 2" -- tribal pan pipes and all that
+d1 $ slow 2 $ s "erk*3" # n "0 1 2" -- * hip-hop shout
+d1 $ slow 2 $ s "f*3" # n "0 1 2" -- harsh synth osc
+d1 $ slow 2 $ s "feelfx*3" # n "0 1 2" -- ** 3 is dubstep wap
+d1 $ slow 2 $ s "fm*3" # n "0 1 2" -- * space mission 31 seconds -- long
+d1 $ slow 2 $ s "gabba*3" # n "0 1 2" -- 0 is loud gabba drum
+d1 $ slow 2 $ s "hardkick*3" # n "0 1 2" -- * hardcore drums
+d1 $ slow 2 $ s "hoover*3" # n "0 1 2" -- * prodigy synth
+d1 $ slow 2 $ s "koy*3" # n "0 1 2" -- * satanic chant
+d1 $ slow 2 $ s "led*3" # n "0 1 2"  -- * jazz drums and rock guitar - long
+d1 $ slow 2 $ s "moog*3" # n "0 1 2" -- ** kraftwerky moog
+d1 $ slow 2 $ s "mute*3" # n "0 1 2" -- brass
+d1 $ slow 2 $ s "newnotes*3" # n "0 1 2" -- short sine wave
+d1 $ slow 2 $ s "outdoor*3" # n "0 1 2" -- * factory noise -- long
+d1 $ slow 2 $ s "pad*3" # n "0 1 2" -- ** melow progressive houese tones  --long
+d1 $ slow 2 $ s "padlong*3" # n "0 1 2" -- ** melow progressive houese tones  --long
+d1 $ slow 2 $ s "pluck*3" # n "0 1 2" -- plucked strings
+d1 $ slow 2 $ s "rave2*3" # n "0 1 2" -- ** euphoric rave synth
+
+
+-- The rest
+
 d1 $ slow 2 $ s "808bd*3" # n "0 1 2"
 d1 $ slow 2 $ s "808cy*3" # n "0 1 2"
 d1 $ slow 2 $ s "808hc*3" # n "0 1 2"
@@ -8,40 +50,26 @@ d1 $ slow 2 $ s "808ht*3" # n "0 1 2"
 d1 $ slow 2 $ s "808lc*3" # n "0 1 2"
 d1 $ slow 2 $ s "808lt*3" # n "0 1 2"
 d1 $ slow 2 $ s "808mc*3" # n "0 1 2"
-d1 $ slow 2 $ s "808mt*3" # n "0 1 2"
 d1 $ slow 2 $ s "808oh*3" # n "0 1 2"
 d1 $ slow 2 $ s "808sd*3" # n "0 1 2"
 d1 $ slow 2 $ s "909*3" # n "0 1 2"
 d1 $ slow 2 $ s "ab*3" # n "0 1 2"
-d1 $ slow 2 $ s "ade*3" # n "0 1 2"
 d1 $ slow 2 $ s "ades2*3" # n "0 1 2"
 d1 $ slow 2 $ s "ades3*3" # n "0 1 2"
 d1 $ slow 2 $ s "ades4*3" # n "0 1 2"
-d1 $ slow 2 $ s "alex*3" # n "0 1 2"
 d1 $ slow 2 $ s "alphabet*3" # n "0 1 2"
-d1 $ slow 2 $ s "amencutup*3" # n "0 1 2"
 d1 $ slow 2 $ s "armora*3" # n "0 1 2"
-d1 $ slow 2 $ s "arp*3" # n "0 1 2"
-d1 $ slow 2 $ s "arpy*3" # n "0 1 2"
 d1 $ slow 2 $ s "auto*3" # n "0 1 2"
-d1 $ slow 2 $ s "baa*3" # n "0 1 2"
 d1 $ slow 2 $ s "baa2*3" # n "0 1 2"
 d1 $ slow 2 $ s "bass*3" # n "0 1 2"
-d1 $ slow 2 $ s "bass0*3" # n "0 1 2"
-d1 $ slow 2 $ s "bass1*3" # n "0 1 2"
-d1 $ slow 2 $ s "bass2*3" # n "0 1 2"
 d1 $ slow 2 $ s "bassdm*3" # n "0 1 2"
 d1 $ slow 2 $ s "bassfoo*3" # n "0 1 2"
-d1 $ slow 2 $ s "bass3*3" # n "0 1 2"
 d1 $ slow 2 $ s "battles*3" # n "0 1 2"
 d1 $ slow 2 $ s "bd*3" # n "0 1 2"
 d1 $ slow 2 $ s "bend*3" # n "0 1 2"
-d1 $ slow 2 $ s "bev*3" # n "0 1 2"
 d1 $ slow 2 $ s "bin*3" # n "0 1 2"
 d1 $ slow 2 $ s "birds*3" # n "0 1 2"
 d1 $ slow 2 $ s "birds3*3" # n "0 1 2"
-d1 $ slow 2 $ s "bleep*3" # n "0 1 2"
-d1 $ slow 2 $ s "blip*3" # n "0 1 2"
 d1 $ slow 2 $ s "blue*3" # n "0 1 2"
 d1 $ slow 2 $ s "bottle*3" # n "0 1 2"
 d1 $ slow 2 $ s "breaks125*3" # n "0 1 2"
@@ -52,16 +80,13 @@ d1 $ slow 2 $ s "breath*3" # n "0 1 2"
 d1 $ slow 2 $ s "bubble*3" # n "0 1 2"
 d1 $ slow 2 $ s "can*3" # n "0 1 2"
 d1 $ slow 2 $ s "casio*3" # n "0 1 2"
-d1 $ slow 2 $ s "cb*3" # n "0 1 2"
 d1 $ slow 2 $ s "cc*3" # n "0 1 2"
 d1 $ slow 2 $ s "chin*3" # n "0 1 2"
-d1 $ slow 2 $ s "circus*3" # n "0 1 2"
 d1 $ slow 2 $ s "clak*3" # n "0 1 2"
 d1 $ slow 2 $ s "click*3" # n "0 1 2"
 d1 $ slow 2 $ s "clubkick*3" # n "0 1 2"
 d1 $ slow 2 $ s "co*3" # n "0 1 2"
 d1 $ slow 2 $ s "coins*3" # n "0 1 2"
-d1 $ slow 2 $ s "control*3" # n "0 1 2"
 d1 $ slow 2 $ s "cosmicg*3" # n "0 1 2"
 d1 $ slow 2 $ s "cp*3" # n "0 1 2"
 d1 $ slow 2 $ s "cr*3" # n "0 1 2"
@@ -70,8 +95,6 @@ d1 $ slow 2 $ s "d*3" # n "0 1 2"
 d1 $ slow 2 $ s "db*3" # n "0 1 2"
 d1 $ slow 2 $ s "diphone*3" # n "0 1 2"
 d1 $ slow 2 $ s "diphone2*3" # n "0 1 2"
-d1 $ slow 2 $ s "Dirt-Samples.quark*3" # n "0 1 2"
-d1 $ slow 2 $ s "dist*3" # n "0 1 2"
 d1 $ slow 2 $ s "dork2*3" # n "0 1 2"
 d1 $ slow 2 $ s "dorkbot*3" # n "0 1 2"
 d1 $ slow 2 $ s "dr*3" # n "0 1 2"
@@ -83,19 +106,13 @@ d1 $ slow 2 $ s "drumtraks*3" # n "0 1 2"
 d1 $ slow 2 $ s "e*3" # n "0 1 2"
 d1 $ slow 2 $ s "east*3" # n "0 1 2"
 d1 $ slow 2 $ s "electro1*3" # n "0 1 2"
-d1 $ slow 2 $ s "em2*3" # n "0 1 2"
-d1 $ slow 2 $ s "erk*3" # n "0 1 2"
-d1 $ slow 2 $ s "f*3" # n "0 1 2"
 d1 $ slow 2 $ s "feel*3" # n "0 1 2"
-d1 $ slow 2 $ s "feelfx*3" # n "0 1 2"
 d1 $ slow 2 $ s "fest*3" # n "0 1 2"
 d1 $ slow 2 $ s "fire*3" # n "0 1 2"
 d1 $ slow 2 $ s "flick*3" # n "0 1 2"
-d1 $ slow 2 $ s "fm*3" # n "0 1 2"
 d1 $ slow 2 $ s "foo*3" # n "0 1 2"
 d1 $ slow 2 $ s "future*3" # n "0 1 2"
 d1 $ slow 2 $ s "gab*3" # n "0 1 2"
-d1 $ slow 2 $ s "gabba*3" # n "0 1 2"
 d1 $ slow 2 $ s "gabbaloud*3" # n "0 1 2"
 d1 $ slow 2 $ s "gabbalouder*3" # n "0 1 2"
 d1 $ slow 2 $ s "glasstap*3" # n "0 1 2"
@@ -106,7 +123,6 @@ d1 $ slow 2 $ s "gtr*3" # n "0 1 2"
 d1 $ slow 2 $ s "h*3" # n "0 1 2"
 d1 $ slow 2 $ s "hand*3" # n "0 1 2"
 d1 $ slow 2 $ s "hardcore*3" # n "0 1 2"
-d1 $ slow 2 $ s "hardkick*3" # n "0 1 2"
 d1 $ slow 2 $ s "haw*3" # n "0 1 2"
 d1 $ slow 2 $ s "hc*3" # n "0 1 2"
 d1 $ slow 2 $ s "hh*3" # n "0 1 2"
@@ -114,7 +130,6 @@ d1 $ slow 2 $ s "hh27*3" # n "0 1 2"
 d1 $ slow 2 $ s "hit*3" # n "0 1 2"
 d1 $ slow 2 $ s "hmm*3" # n "0 1 2"
 d1 $ slow 2 $ s "ho*3" # n "0 1 2"
-d1 $ slow 2 $ s "hoover*3" # n "0 1 2"
 d1 $ slow 2 $ s "house*3" # n "0 1 2"
 d1 $ slow 2 $ s "ht*3" # n "0 1 2"
 d1 $ slow 2 $ s "if*3" # n "0 1 2"
@@ -129,10 +144,8 @@ d1 $ slow 2 $ s "jungle*3" # n "0 1 2"
 d1 $ slow 2 $ s "juno*3" # n "0 1 2"
 d1 $ slow 2 $ s "jvbass*3" # n "0 1 2"
 d1 $ slow 2 $ s "kicklinn*3" # n "0 1 2"
-d1 $ slow 2 $ s "koy*3" # n "0 1 2"
 d1 $ slow 2 $ s "kurt*3" # n "0 1 2"
 d1 $ slow 2 $ s "latibro*3" # n "0 1 2"
-d1 $ slow 2 $ s "led*3" # n "0 1 2"
 d1 $ slow 2 $ s "less*3" # n "0 1 2"
 d1 $ slow 2 $ s "lighter*3" # n "0 1 2"
 d1 $ slow 2 $ s "linnhats*3" # n "0 1 2"
@@ -144,13 +157,10 @@ d1 $ slow 2 $ s "mash2*3" # n "0 1 2"
 d1 $ slow 2 $ s "metal*3" # n "0 1 2"
 d1 $ slow 2 $ s "miniyeah*3" # n "0 1 2"
 d1 $ slow 2 $ s "monsterb*3" # n "0 1 2"
-d1 $ slow 2 $ s "moog*3" # n "0 1 2"
 d1 $ slow 2 $ s "mouth*3" # n "0 1 2"
 d1 $ slow 2 $ s "mp3*3" # n "0 1 2"
 d1 $ slow 2 $ s "msg*3" # n "0 1 2"
 d1 $ slow 2 $ s "mt*3" # n "0 1 2"
-d1 $ slow 2 $ s "mute*3" # n "0 1 2"
-d1 $ slow 2 $ s "newnotes*3" # n "0 1 2"
 d1 $ slow 2 $ s "noise*3" # n "0 1 2"
 d1 $ slow 2 $ s "noise2*3" # n "0 1 2"
 d1 $ slow 2 $ s "notes*3" # n "0 1 2"
@@ -158,22 +168,16 @@ d1 $ slow 2 $ s "numbers*3" # n "0 1 2"
 d1 $ slow 2 $ s "oc*3" # n "0 1 2"
 d1 $ slow 2 $ s "odx*3" # n "0 1 2"
 d1 $ slow 2 $ s "off*3" # n "0 1 2"
-d1 $ slow 2 $ s "outdoor*3" # n "0 1 2"
-d1 $ slow 2 $ s "pad*3" # n "0 1 2"
-d1 $ slow 2 $ s "padlong*3" # n "0 1 2"
 d1 $ slow 2 $ s "pebbles*3" # n "0 1 2"
 d1 $ slow 2 $ s "perc*3" # n "0 1 2"
 d1 $ slow 2 $ s "peri*3" # n "0 1 2"
-d1 $ slow 2 $ s "pluck*3" # n "0 1 2"
 d1 $ slow 2 $ s "popkick*3" # n "0 1 2"
 d1 $ slow 2 $ s "print*3" # n "0 1 2"
 d1 $ slow 2 $ s "proc*3" # n "0 1 2"
 d1 $ slow 2 $ s "procshort*3" # n "0 1 2"
 d1 $ slow 2 $ s "psr*3" # n "0 1 2"
 d1 $ slow 2 $ s "rave*3" # n "0 1 2"
-d1 $ slow 2 $ s "rave2*3" # n "0 1 2"
 d1 $ slow 2 $ s "ravemono*3" # n "0 1 2"
-d1 $ slow 2 $ s "README.md*3" # n "0 1 2"
 d1 $ slow 2 $ s "realclaps*3" # n "0 1 2"
 d1 $ slow 2 $ s "reverbkick*3" # n "0 1 2"
 d1 $ slow 2 $ s "rm*3" # n "0 1 2"
@@ -196,7 +200,6 @@ d1 $ slow 2 $ s "speechless*3" # n "0 1 2"
 d1 $ slow 2 $ s "speedupdown*3" # n "0 1 2"
 d1 $ slow 2 $ s "stab*3" # n "0 1 2"
 d1 $ slow 2 $ s "stomp*3" # n "0 1 2"
-d1 $ slow 2 $ s "strudel.json*3" # n "0 1 2"
 d1 $ slow 2 $ s "subroc3d*3" # n "0 1 2"
 d1 $ slow 2 $ s "sugar*3" # n "0 1 2"
 d1 $ slow 2 $ s "sundance*3" # n "0 1 2"
