@@ -1,0 +1,20 @@
+setcps 1.2
+
+d1 $ every 4 (superimpose (slow 2 . (# speed "-1"))) $ jux (slow 1.5) $ s "[cb sn:1, hh*4, <bass1 casio>*2, [cp drum:1]]"
+
+d2 $ every 4 (zoom (0.25, 0.75)) $ whenmod 4 8 rev $ superimpose (slow 4) $ s "<blip:2 <blip:1 feelfx:2>>*4"
+ # room 0.3
+ # delayt 0.7
+ # delay 0.4
+ # speed "<1 -2 <0.5 0.25>>"
+
+d3 $ slow 8 $ striate 2 $ s "pad*2"
+ # n "2 0"
+ # room 0.4
+ # speed "1 0.5"
+ # gain (range 0 1 $ slow 2 $ sine)
+
+unsolo 2
+unsolo 3
+
+hush
