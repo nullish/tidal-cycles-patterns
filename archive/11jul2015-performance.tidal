@@ -18,7 +18,7 @@ d3 $ chjop 2 $ sound "80z"
 
 d3 $ silence
 
-cps (68/60)
+setcps (68/60)
 
 cps (1)
 
