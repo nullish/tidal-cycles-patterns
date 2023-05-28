@@ -1,20 +1,22 @@
--- Uze more synth effect or different synth def. Keep d2 low volume
+-- Find a better beat.
 
-d1 $ jux rev $ s "superchip*2" # n "-c e"
+setcps 2
+
+d1 $ jux rev $ s "supersquare*2" # n "a c "
  # sustain 0.4
- # gain 0.6
+ # gain "0.65"
 
-d2 $ rev $ s "superchip*2" # n "<-f f>"
+d2 $ spin 2 $ rev $ s "superpiano*2" # n "<-c d>"
  # sustain 0.8
  # gain "<0.8 0.7 0.6>"
  # room 0.3
 
-d2 silence
-
-d3 $ every 4 (jux rev) $ fast 2 $ every 2 (chop 2) $ sound "sn:1 bd:1"
- # pan "1 0 -1"
- # gain 1.1
-
 d3 silence
+
+d3 $ every 4 (jux (density "1.5")) $ every 4 (rev) $ slow 4 $ sound "[bd bd sn:5] [bd sn:3]"
+ # speed "0.8"
+ # pan "-0.75 0.75"
+
+unsolo 3
 
  hush
