@@ -1,6 +1,8 @@
-// is finish ...
+setcps 1
 
-d1 $ slow 2 $ spin 3 $ iter 3 $ weave 8 (sound "[blip arpy]*2")
+-- is finish ...
+
+d1 $ slow 2 $ spin 3 $ iter 3 $ weave 8 (sound "[blip <arpy arpy:1>]*2")
   [speed "0.6 0.4 0.2 1",
   speed "0.6 0.4 0.8",
   speed "1.4 1.8 0.8 0.6"]
@@ -12,13 +14,11 @@ d2 $ every 2 (chop 2) $ sound "sn:1 bd:1"
 
 d2 $ silence
 
-d3 $ chjop 2 $ sound "80z"
+d3 $ chop 2 $ sound "80z"
 |+| unit "s"
 |+| speed "4"
 
 d3 $ silence
-
-setcps (68/60)
 
 cps (1)
 

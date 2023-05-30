@@ -1,11 +1,13 @@
-setcps 0.6
+setcps 0.75
 
- d1 $ jux (slow 2 . (# up "-1")) $ s "arpy*8"
+d1 $ jux (slow 2 . (# up "-1")) $ s "arpy*8"
   # lpf (range 200 3000 $ sine)
   # lpq 0.2
   # speed "[1 0.8 0.4 0.6]*2"
   # up "1"
 
-d2 $ every 4 (fast 2) $ superimpose (fast 1.5) $ jux rev $ s "[bd:1 sn:1, jvbass bass]"
+d2 $ fast 1.5 $ jux rev $ s "sn:1 ~ bd(1,2) ~"
+
+d2 silence
 
 hush

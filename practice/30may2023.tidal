@@ -1,0 +1,10 @@
+setcps 1
+
+d1 $ superimpose (slow 2 . (# up "2")) $ jux rev $ arp "pinkyup" $ n "<c'min c'maj>"
+  # sound "arpy"
+  # speed "0.5"
+  # sustain 0.5
+  # lpf (range 800 2000 $ slow 2 $ sine)
+  # lpq 0.2
+
+hush

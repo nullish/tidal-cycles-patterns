@@ -1,0 +1,3 @@
+d3 $ stut 3 0.8 0.4 $ s "blip"
+
+d2 $ ghost' (1/4) $ s "[bd, hh*4, cp]"

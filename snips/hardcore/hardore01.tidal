@@ -1,0 +1,4 @@
+d1 $ off 0.45 (# up 0.5) $ s "arpy*2"
+ # delay "0.5"
+ # delayt "0.25"
+ # speed "<0.5 0.25>"

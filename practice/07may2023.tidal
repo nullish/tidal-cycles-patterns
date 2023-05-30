@@ -1,20 +1,18 @@
-setcps (70/60)
+setcps (80/60)
 
 d1 $ jux (chop 2 . (slow 2 . (# speed 2))) $ every 4 rev $ slow 2 $ s "arp*2" # n "0 1"
  # gain "0.7"
 
 
-d2 $ every 2 rev $ jux rev $ chop 2 $ s "<arpy:1 arpy> ~ ~ arpy:2" # speed "<-0.5 -0.25 -0.75 -1>"
+d2 $ every 2 rev $ jux rev $ chop 2 $ s "<arpy:1 arpy> <arpy:2 blip>" # speed "-0.75 -0.25 <-1 -2> -0.25"
  # legato 0.6
+ # delay "0.3"
+ # lpf (range 200 3000 $ slow 2 $ sine)
  # room 0.5
+ # up "1"
 
-d3 $ jux rev $ s "[sn:1 bd ~, <jvbass jvbass jvbass:1 jvbass:1>]"
+d3 $ jux rev $ s "sn:1 ~ bd(1,2) ~"
 
-d1 $ s "bass:2*8" # lpf (range 200 3000 $ sine)
-
-d1 silence
-
-d2 silence
-
+d4 $ s "jvbass:2*4" # lpf (range 200 3000 $ sine)
 
 hush
