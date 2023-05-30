@@ -11,8 +11,10 @@ d2 $ every 2 rev $ jux rev $ chop 2 $ s "<arpy:1 arpy> <arpy:2 blip>" # speed "-
  # room 0.5
  # up "1"
 
-d3 $ jux rev $ s "sn:1 ~ bd(1,2) ~"
+d3 $ slow 2 $ s "[bd cp, bass*2, blip:1]*2"
 
-d4 $ s "jvbass:2*4" # lpf (range 200 3000 $ sine)
+d4 $ s "jvbass:2*4" # lpf (range 200 3000 $ sine) # lpq (range 0.2 0.6 $ slow 4 $ sine)
 
 hush
+
+d2 silence

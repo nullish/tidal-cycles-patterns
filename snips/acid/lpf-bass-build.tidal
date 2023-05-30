@@ -1,6 +1,8 @@
--- snippet: acid2
 setcps 1
 
-d1 $ s "bass:3*8" # lpf (range 200 3000 $ sine)
+d1 $ s "bass:3*<4 8>" # lpf (range 200 2000 $ sine) # lpq 0.2
+ # vowel "e a"
+
+d2 $ s "[bd cp, bass*2, blip:1]*2"
 
 hush

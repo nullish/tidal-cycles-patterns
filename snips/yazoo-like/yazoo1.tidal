@@ -8,6 +8,6 @@ d1 $ jux (slow 2 . (# up "-1")) $ s "arpy*8"
 
 d2 $ fast 1.5 $ jux rev $ s "sn:1 ~ bd(1,2) ~"
 
-d2 silence
+d1 silence
 
 hush
