@@ -25,6 +25,6 @@ $ weave 4 (sound "arpy*4") [shape "0.2", speed "0.4", shape "0.2"]
 
 d5 $ silence
 
-cps 1.5
+cps 1.8
 
 hush
