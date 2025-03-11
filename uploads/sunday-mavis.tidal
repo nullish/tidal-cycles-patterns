@@ -1,6 +1,6 @@
 setcps 2
 
-d1 $ jux rev $ s "supersquare*2" # n "a c "
+d1 $ jux rev $ s "supersquare*2" # n "a d"
  # sustain 0.4
  # gain "0.65"
 
@@ -12,7 +12,8 @@ d2 $ spin 2 $ rev $ s "superpiano*2" # n "<-c d>"
 d3 silence
 
 d3 $ every 4 (jux (density "1.5")) $ every 4 (rev) $ slow 4 $ sound "[bd bd sn:5] [bd sn:3]"
- # speed "0.8"
+ # speed "0.6"
+ # sustain "0.2"
  # pan "-0.75 0.75"
 
 unsolo 3
