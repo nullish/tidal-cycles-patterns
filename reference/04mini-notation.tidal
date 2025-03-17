@@ -1,0 +1,31 @@
+setcps 1
+
+-- https://tidalcycles.org/docs/reference/mini_notation
+
+-- rests
+d1 $ s "~ hh ~ ~ sn"
+
+-- pattern grouping to create a subdvision of a step
+d2 $ s "[bd hh] bd bd"
+
+-- You can play multiple patterns at the same time inside one pattern.
+-- This is one of the most intuitive ways of dealing with superposition/polyphony.
+-- These patterns have the 4 samples sounding together, but with different rhythmic subdivisions.
+-- The second pattern is a complete rhythm section:
+
+d1 $ "[~ hh ~ ~ sn, [bd hh] bd bd]"
+
+-- slow a patter with division
+
+d2 $ s "sn/2 sn"
+
+-- alternate, or use ? to randomly emove events
+d3 $ s "<blip  ~? blip:1*2>"
+
+-- Euclidean rhythms
+-- https://tidalcycles.org/docs/reference/mini_notation#euclidian-sequences
+d4 $ s "superpiano(3,8)"
+
+d5 $ s "east(4,7)" # n "2 3 0 5"
+
+hush
