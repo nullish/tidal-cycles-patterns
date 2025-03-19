@@ -2,7 +2,9 @@
 -- d3 and d4 are the ones that make the frnch kiss acid sound. The rest are broken.
 -- ********
 
-solo $ d1 $ every 2 (rev) $ sound "[hh:1 [bass*2]] drum:1 sn:1"
+setcps 0.75
+
+d1 $ every 2 (rev) $ sound "[hh:1 [bass*2]] drum:1 sn:1"
 
 d2 $ every 4 (|+| speed "0.9") $ every 2 (rev . (brak)) $ sound "can cp can can:2"
 |+| shape "0 0.3 0.4"
@@ -13,7 +15,7 @@ d3 $ every 2 (density 2 . (trunc 0.5 . (|+| speed "1 1.8 2"))) $ sound "bass*2"
 |+| delay "0.4"
 |+| gain "1.2"
 
-d4 $ spin 3 $ sound "arpy*4"
+d4 $ slow 1.5 $ spin 3 $ sound "arpy*4"
 |+| speed "-0.8 0.4 -0.7 -1.2"
 
 d4 $ silence
@@ -24,7 +26,5 @@ $ weave 4 (sound "arpy*4") [shape "0.2", speed "0.4", shape "0.2"]
 |+| gain "0.7"
 
 d5 $ silence
-
-cps 1.8
 
 hush
