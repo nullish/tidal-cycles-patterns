@@ -1,0 +1,14 @@
+setcps 1
+
+-- https://tidalcycles.org/docs/reference/pattern_structure
+
+d1 $ s "blip*4"
+|*| speed "1 0.5 0.25"
+
+d2 $ s "blip*4"
+|+ speed "1 0.5 0.25"
+
+d3 $ s "blip*4"
+|/ speed "1 0.5 0.25"
+
+hush
