@@ -1,0 +1,32 @@
+-- https://tidalcycles.org/docs/reference/patterns
+
+setcps 1
+
+-- d1 to d16 are considered, historically, to be the classic pattern names.
+-- Each pattern will be associated to an orbit (a track for effects and audio output).
+
+-- a bass drum
+d1 $ s "bd ~ bd ~"
+
+-- high-hat pattern
+d2 $ s "[~ hh]*2"
+
+-- 1.. 1.. 1.. 1..
+d3 $ s "numbers:1"
+
+-- clap
+d4 $ s "cp cp cp"
+
+-- https://tidalcycles.org/docs/reference/patterns#patterns-by-name
+
+p "geoff" $ s "arpy*2"
+
+-- https://tidalcycles.org/docs/reference/patterns#doing-things-once
+
+once $ s "trump"
+
+-- https://tidalcycles.org/docs/reference/patterns#panic
+
+panic
+
+hush
