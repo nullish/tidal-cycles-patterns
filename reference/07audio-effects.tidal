@@ -1,6 +1,5 @@
 -- https://tidalcycles.org/docs/reference/audio_effects
 
-
 setcps 1.2
 
 d1 $ n "c"
@@ -21,5 +20,11 @@ d3 $ s "arpy*2" # n "1"
 d4 $ s "arpy*2" # n "1"
 # speed 0.5
 # djf "0.3 0.6"
+
+d5 $ chop 2 $ s "supersquare*4" # n "4"
+# vowel "a e i e a i"
+|/| speed "2.2"
+# distort "0.4"
+
 
 hush
