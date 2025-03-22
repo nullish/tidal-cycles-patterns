@@ -1,9 +1,11 @@
-d1 $ s "arpy*2"
+d1 $ every 2 (palindrome) $ s "arpy*2 arpy:1*3"
  # delay "0.5"
  # delayt "0.25"
- # speed 0.5
+ # speed "0.5 <0.3 0.5>"
 
 d2 $ s "arpy*4"
  # octer "0.2 0.4 0.8 1"
+
+d3 $ s "[sn:1(4,3), bd:1*2, bass:1(3,8), hh:1(2, 4)]"
 
 hush

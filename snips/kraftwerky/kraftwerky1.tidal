@@ -2,13 +2,23 @@ setcps 1.2
 
 hush
 
-d1 $ jux (slow 1.5 . (|+| speed "1.5")) $ sound "jvbass*4"
+d1 $ superimpose (slow 2) $ jux (slow 1.5 . (|+| speed "<1.2 2>")) $ sound "jvbass*4"
+# gain "1.1"
+# room "<0.5 0.8>"
 
-d2 $ ghost' (1/4) $ s "[bd, hh*4, cp]"
+d2 $ every 4 (chop 2) $ ghost' (1/4) $ s "[bd, hh*4, cp]"
 
 d3 $ stut 3 0.8 0.4 $ s "<casio casio:1>"
 # speed "1"
 # delay 0.3
 # delayt "0.4"
 
-d3 silence 
+d3 silence
+
+d4 $ palindrome $ trunc 0.8 $ n "[c f e a a?]*2"
+ # s "supersquare"
+ # gain "0.7"
+
+ d4 silence
+
+hush
