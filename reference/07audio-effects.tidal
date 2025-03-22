@@ -1,1 +1,25 @@
 -- https://tidalcycles.org/docs/reference/audio_effects
+
+
+setcps 1.2
+
+d1 $ n "c"
+ # s "jvbass"
+ |* speed "1.5"
+ # delay "0.7"
+ # delayt "0.8"
+
+d2 $ n "e" # s "gabba"
+# dry "0.2"
+# room "0.7"
+# size "0.7"
+
+d3 $ s "arpy*2" # n "1"
+# speed 0.5
+# distort "<0.3 0.6> 0.2"
+
+d4 $ s "arpy*2" # n "1"
+# speed 0.5
+# djf "0.3 0.6"
+
+hush
