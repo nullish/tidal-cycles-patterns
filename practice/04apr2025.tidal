@@ -1,0 +1,16 @@
+setcps 1
+
+d1 $ jux rev $ echo 2 0.4 0.75 $ iter 2 $ s "arpy*4" # n (run 4)
+# room "0.2"
+# speed "0.8"
+
+d2 $ iter 2 $ every 2 (trunc 0.5) $ s "superchip*2 ~" # n "-d e"
+# accelerate "<-0.8 -0.2>"
+# gain "0.9"
+
+d3 $ every 2 (chop 2) $ s "[gabba <cp sn:1>](2,4)"
+# speed "0.7"
+
+d2 silence
+
+hush
