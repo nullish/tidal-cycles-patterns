@@ -74,7 +74,7 @@ d1 $ s "click" <| n (run 4) -- four glitch sounds, maybe useful
 d1 $ fast 2 $ s "clubkick" <| n (run 5) -- five similar very aggressive kicks
 d1 $ s "co" <| n (run 4) -- various hats
 d1 $ s "coins" # gain 2 -- very quiet coin chink
-d1 $ s "control" <| n (run 2) -- two synth notes, out of tune
+d1 $ s "control" <| n (run 2) -- two synth notes, out of tune 90S EUPHORIC
 d1 $ slow 4 $ s "cosmicg" <| n (run 15) -- strange mix of bleeps and loud noise
 d1 $ s "cp" <| n (run 2) -- two rather similar claps
 d1 $ s "cr" <| n (run 6) -- six ride cymbs
@@ -97,7 +97,7 @@ d1 $ slow 4 $ s "em2" <| n (run 6) -- six longer sounds, kalimba, flute, loon?
 d1 $ s "erk" -- voice 'one two three hit it'
 d1 $ s "f" -- one short synth note, actually a bit below Eb
 d1 $ s "feel" <| n (run 7) -- quite nice bank of 7 drum sounds
-d1 $ slow 2 $ s "feelfx" <| n (run 8) -- varied effected sounds, bit longer, ok
+d1 $ slow 2 $ s "feelfx" <| n (run 8) -- varied effected sounds, bit longer, ok DRUMNBASS
 d1 $ s "fest" -- voice saying 'bling?' or 'berlin?'
 d1 $ slow 8 $ s "fire" -- longish sample of fire sounds, low ambience
 d1 $ slow 2 $ s "flick" <| n (run 17) -- mix of 17 hits couple of long Cs

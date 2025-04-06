@@ -2,3 +2,5 @@ d5 $ chop 2 $ s "supersquare*4" # n "4"
 # vowel "a e i e a i"
 |/| speed "2.2"
 # distort "0.4"
+
+hush
