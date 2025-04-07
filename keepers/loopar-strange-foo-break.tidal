@@ -13,3 +13,5 @@ d3 $ chop 2 $ s "blip(3,9)"
  # gain 1
  # room 0.3
  # accelerate "-1.2"
+
+hush
