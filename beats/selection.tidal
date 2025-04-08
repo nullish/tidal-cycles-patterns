@@ -1,0 +1,2 @@
+-- simple 4:4
+d1 $ every 2 (fast 2) $ s "sn:1 sn:2"

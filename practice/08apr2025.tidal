@@ -1,0 +1,13 @@
+setcps 1
+
+d1 $ s "[808bd*2, 808(3,8)]"
+ # gain 1.2
+
+d2 $ jux (ghost' 0.5 . (slow "<2 0.5>" . (# speed "1.8 3.2"))) $ chop 4 $ s "moog"
+ # speed 0.9
+ # room 0.1
+ # legato 0.4
+
+d3 $ every 2 (fast 2) $ s "sn:1 sn:2"
+
+hush
