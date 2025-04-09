@@ -2,7 +2,7 @@ setcps 2
 
 d1 $ ghost' 1.2 $ jux rev $ iter 2 $ s "moog:1*8"
 # legato "0.6"
--| speed (run 4)
+-| speed (run "<2 4>")
 
 d2 $ s "bd"
 # room 0.2
