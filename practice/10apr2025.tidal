@@ -1,0 +1,9 @@
+setcps 1
+
+d1 $ jux rev $ s "jvbass(2,5)"
+ # lpf 400
+ # room 0.2
+
+d2 $ s "[cp, ~sn, <hh hh:1>*4]"
+
+hush 
