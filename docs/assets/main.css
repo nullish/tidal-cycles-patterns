@@ -1,5 +1,10 @@
 body {
   background-color: black;
-  color: white;
+  color: #b1f530;
   font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.main-content {
+  // main content styles
 }
