@@ -1,10 +1,14 @@
 body {
   background-color: black;
   color: #b1f530;
-  font-family: Arial, sans-serif;
+  font-family: Courier, mono;
   text-align: center;
 }
 
 .main-content {
   // main content styles
+}
+
+a {
+  color: #e9e7e7;
 }
