@@ -1,0 +1,13 @@
+setcps 1
+
+d1 $ qtrigger $ seqP [
+ (0, 12, sound "sn:2 cp" # speed 0.9 # gain 1.2),
+ (12, 18, sound "sn:2 drum cp drum:2" # speed 0.9 # gain 1.2),
+ (18, 64, jux rev $ sound "[sn:2 drum cp drum:2, jvbass*4]" # speed 0.9 # gain 1.2),
+ (18, 24, chop 2 $ s "supersquare*2" # n "4" # vowel "a e" |/| speed "2.2"),
+ (24, 32, chop 2 $ s "supersquare*4" # n "4" # vowel "a e e i" |/| speed "2.2"),
+ (32, 48, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2"),
+ (48, 64, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.4),
+ (64, 82, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.7 # room 0.2),
+ (64, 82, jux rev $ sound "[sn:2 drum, jvbass*4]" # speed 0.9 # gain 1.2)
+]
