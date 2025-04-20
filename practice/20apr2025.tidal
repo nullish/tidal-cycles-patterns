@@ -1,0 +1,19 @@
+setcps 1
+
+d1 $ off 0.4 (chop 2) $ jux rev $ s "[bd [sn:1*2], sn ~ sn:2/2]"
+ # speed (range 0.8 1 $ slow 4 $ sine)
+ # gain 0.9
+ # room (range 0.1 0.4 $ slow 2 $ sine)
+
+d2 $ off 0.25 (slow 2 . (# speed "<0.6 1.2> 2 1")) $ ghost' 0.25 $ s "<moog moog:1 casio:1>*2"
+# legato 0.5
+# room (range 0.4 0.1 $ slow 2 $ sine)
+
+d3 $ s "bd sn:1"
+ # gain 1.1
+
+ d4 $ brak $ slow 4 $ fast 2 $ jux rev $ s "superchip*8" # n "[-c -d e -f]*2"
+  # sustain 0.1
+  # slow 2 (speed "<0.7 1>")
+
+hush
