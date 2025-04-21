@@ -1,0 +1,6 @@
+setcps 1
+
+d1 $ superimpose (slow 2 . (# speed 3)) $ jux (rev . (slow 1.5)) $ chop 32 $ s "[sn:1 ~, ~ hh*2 bd*2 hh]"
+# speed 0.5
+
+hush
