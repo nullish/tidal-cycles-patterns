@@ -1,5 +1,8 @@
 hush
 
+-- Add new samples to:
+-- ~/.local/share/SuperCollider/downloaded-quarks/Dirt-Samples
+
 -- Favourites
 
 d1 $ slow 2 $ s "808*3" # n "0 1 2" -- includes vintage cowbell
