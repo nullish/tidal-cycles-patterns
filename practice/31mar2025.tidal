@@ -1,0 +1,10 @@
+setcps 1.2
+
+d1 $ every 2 (jux $ rev) $ s "[sn sn:1, hh*4]"
+
+d2 $ superimpose (slow 1.5 . (# speed "<2 0.8>")) $ jux rev $ fast 2 $ every 2 (jux $ slow 2) $ ghost $ s "jvbass bass"
+ # gain "1.1"
+
+d2 silence
+
+ hush

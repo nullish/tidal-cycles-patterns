@@ -1,0 +1,8 @@
+setcps 1
+
+hush
+
+d1 $ s "[sn:1(3, 8), 808:3, hh*4]"
+
+d2 $ superimpose (# speed 0.4) $ jux (ghost' 0.25 . (zoom (0.25, 0.75))) $ s "arpy*8" # n (run 3)
+ # speed "<0.6 0.8>"

@@ -1,0 +1,19 @@
+d1 $ ghost' (0.5) $ s "sn:1 ~ bd"
+
+d2 $ superimpose (# speed "<2 1.2>") $ every 2 (trunc 0.25) $ chop 2 $ s "moog"
+
+d3 $ every 4 (# speed "1") $ jux rev $ fast 2 $ palindrome $ s "<arpy blip>*3"
+  # n (run 3)
+  # speed "1.4"
+  # room "0.2"
+
+--
+
+setcps 1.2
+
+d1 $ every 4 (superimpose (chop 2 . (# speed "1.2"))) $ ghost' (0.5) $ s "moog" # n "<1 2>"
+ # legato "0.2"
+ # sustain "1.2"
+ # speed "0.8"
+
+hush

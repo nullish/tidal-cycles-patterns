@@ -1,0 +1,18 @@
+setcps 1
+
+d1 $ superimpose (fast 2 . (|*| speed 2)) $ chop 2 $ jux rev $ off (1/8)(slow 2 . (iter 2)) $ s "arpy*2" |/| speed (run "<4 2 8 1 4 4 4 >")
+ # room 0.2
+ # lpf (range "<800 400>" "<2400 4000>" $ sine)
+
+d2 $ every 4 (brak) $ s "[<808:5 808:2 invaders:1 ~ >, bd:1*2]" # speed 0.8 # gain 1.4
+ # room 0.4
+
+d3 $ superimpose (# vowel "a") $ palindrome $ jux rev $ slow 4 $ s "superchip*12" # n "eb a a eb <c f> eb g"
+ # legato (1/3)
+ # attack 0.4
+ # sustain 0.4
+ # release 0.7
+ # gain (range 0.6 0.9 $ slow 2 $ sine)
+ # room 0.5
+
+ hush

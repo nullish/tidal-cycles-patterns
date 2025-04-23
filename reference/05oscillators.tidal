@@ -1,1 +1,7 @@
 -- https://tidalcycles.org/docs/reference/oscillators
+
+setcps 1
+
+d2 $ s "bass:5*8" # lpf (slow 2 $ range 200 5000 $ sine)
+
+hush
