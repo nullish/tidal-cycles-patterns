@@ -10,15 +10,16 @@ d1 $ qtrigger $ seqP [
  (24, 32, chop 2 $ s "supersquare*4" # n "4" # vowel "a e e i" |/| speed "2.2"),
  (32, 48, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2"),
  (48, 64, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.4),
- (64, 96, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.7 # room 0.2),
- (64, 96, jux rev $ sound "[sn:2 drum, jvbass*4]" # speed 0.9 # gain 1.2),
- (82, 132, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "3.2" # distort 0.7 # room 0.2),
- (82, 96, spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.3),
- (96, 132, spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.7),
- (96, 144, jux rev $ sound "[sn:2 drum cp drum:2, jvbass*4]" # speed 0.9 # gain 1.2),
- (132, 144, spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.9),
- (132, 144, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.4 # gain 0.8)
+ (64, 82, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.7 # room 0.2),
+ (64, 128, jux rev $ sound "[sn:2 drum, jvbass*4]" # speed 0.9 # gain 1.2),
+ (82, 112, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "3.2" # distort 0.7 # room 0.2),
+ (96, 108, spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.3),
+ (108, 112, spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.7),
+ (112, 128, spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.9),
+ (128, 144, jux rev $ sound "[sn:2 drum cp drum:2, jvbass*4]" # speed 0.9 # gain 1.2),
+ (128, 144, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.4 # gain 0.8)
 ]
 
+d2 $  spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.9
 
 hush
