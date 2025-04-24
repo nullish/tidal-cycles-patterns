@@ -1,3 +1,13 @@
+-- QUESTIONS
+-- Is there a more elegant way of achieving this? I.e. less repetition? Easier access to points in the overall composition?
+-- E.g. could I: have a basic pattern that cycles throughpout which is passed modifiers at different points in the composition?
+-- IN natural language:
+
+-- Cycle this pattern 100 times:
+-- d1 $ chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2"
+-- on cycle num 20, apply this modifier "distort 0.4"
+-- on cycle 30, apply this modifier "room 0.2"
+
 setcps 1
 
 setCycle 48
