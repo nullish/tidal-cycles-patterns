@@ -1,0 +1,5 @@
+d1 $ s "superchip" # freqbus 0  (segment 256 $ smooth "50 100 300 100 100 50 50")
+
+d1 $ s "superchip" # freqbus 0  (segment 10 $ smooth "50 100 300 100 100 50 50")
+
+hush
