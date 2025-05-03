@@ -1,0 +1,23 @@
+setcps 1
+
+d1 $ chunk 4 (ghost' 0.5) $ n "[c, a]*2"
+ # s "superpiano"
+ # up "<0 1>"
+
+d1 $ chunk 4 (ghost' 0.5) $ n "[c, a]*2" # s "superpiano"
+ # up "<0 1>"
+
+d2 $ s "superchip"
+ # freqbus 0 (segment 128 $ slow 2 $ smooth "40 40 180 50")
+ # attack 0.3
+ # sustain 1.1
+ # release 0.9
+ # room 0.3
+
+ d3 $ jux (slow 1.5 . (rev)) $ s "arp:1"
+  # speed "<3 3 3 4>"
+
+
+unsolo 1
+
+hush
