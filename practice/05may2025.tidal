@@ -1,0 +1,13 @@
+setcps 1
+
+d1 $ s "breaks125 ~"
+
+
+d2 $ iter 4 $ s "moog*4"
+ # speed 0.9
+ # up (run 4)
+ # legato 0.5
+ # room "0 0 0 0.2"
+
+
+hush
