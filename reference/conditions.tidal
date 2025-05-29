@@ -1,0 +1,3 @@
+-- https://tidalcycles.org/docs/reference/conditions/#struct
+
+d1 $ struct (every 3 inv "t f t*2 f") $ sound "cp"

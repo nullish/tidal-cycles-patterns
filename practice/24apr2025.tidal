@@ -1,0 +1,7 @@
+setcps 1
+
+d1 $ whenmod 12 9 (# gain 0) $ jux (slow 4 . (rev . (|-| speed (run 4)))) $ iter 2  $ slow 2 $ s "pad:1*8" # speed (run 4)
+
+d2 $ every 4 (brak) $ trunc 0.5 $ s "breaks125" # speed 0.8
+
+d3 $ palindrome $ striate 4 $ slow 4 $ s "arp:1*2" # speed "1.2 2"

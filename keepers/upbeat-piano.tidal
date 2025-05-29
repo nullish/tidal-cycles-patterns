@@ -1,0 +1,12 @@
+setcps  1.1
+
+d1 $ s "[bd:1, hh:1, bass*2]"
+ # gain (range 1.1 0.9 $ slow 4 $ sine)
+
+d2 $ every 4 brak $ off 0.25 (slow 4) $ echo 2 0.6 0.7 $ n "<[e*2 d] [e*2 d] [es*2 d] [es*2 d] es*4>" # s "superpiano"
+ # legato "<0.25 1>"
+ # room  (range 0.1 0.4 $ slow 2 $ sine)
+ 
+d3 $ echo 8 0.6 0.7 $ n "g" # s "superpiano"
+
+hush

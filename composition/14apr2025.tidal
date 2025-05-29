@@ -1,0 +1,35 @@
+-- QUESTIONS
+-- Is there a more elegant way of achieving this? I.e. less repetition? Easier access to points in the overall composition?
+-- E.g. could I: have a basic pattern that cycles throughpout which is passed modifiers at different points in the composition?
+-- IN natural language:
+
+-- Cycle this pattern 100 times:
+-- d1 $ chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2"
+-- on cycle num 20, apply this modifier "distort 0.4"
+-- on cycle 30, apply this modifier "room 0.2"
+
+setcps 1
+
+setCycle 48
+
+d1 $ qtrigger $ seqP [
+ (0, 12, sound "sn:2 cp" # speed 0.9 # gain 1.2),
+ (12, 18, sound "sn:2 drum cp drum:2" # speed 0.9 # gain 1.2),
+ (18, 64, jux rev $ sound "[sn:2 drum cp drum:2, jvbass*4]" # speed 0.9 # gain 1.2),
+ (18, 24, chop 2 $ s "supersquare*2" # n "4" # vowel "a e" |/| speed "2.2"),
+ (24, 32, chop 2 $ s "supersquare*4" # n "4" # vowel "a e e i" |/| speed "2.2"),
+ (32, 48, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2"),
+ (48, 64, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.4),
+ (64, 82, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.7 # room 0.2),
+ (64, 128, jux rev $ sound "[sn:2 drum, jvbass*4]" # speed 0.9 # gain 1.2),
+ (82, 112, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "3.2" # distort 0.7 # room 0.2),
+ (96, 108, spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.3),
+ (108, 112, spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.7),
+ (112, 128, spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.9),
+ (128, 144, jux rev $ sound "[sn:2 drum cp drum:2, jvbass*4]" # speed 0.9 # gain 1.2),
+ (128, 144, chop 2 $ s "supersquare*4" # n "4" # vowel "a e i e a i" |/| speed "2.2" # distort 0.4 # gain 0.8)
+]
+
+d2 $  spin 2 $ palindrome $ chop 2 $ s "supersquare*3" # n "4" # vowel "e o" # speed "1 .. 5" # gain 0.9
+
+hush

@@ -1,0 +1,14 @@
+-- https://tidalcycles.org/docs/reference/transitions
+
+-- The argument '3' specifies the channel to fade into
+-- If you trigger d3 first, it will be faded out for the xfade pattern to fade in. But ...
+-- If you just trigger the xfade statement, it will startw ith silence and fade into d3
+
+d3 $ s "bd(3,8)"
+
+xfadeIn 3 8 $ s "arpy*4" # speed (irand 3)
+
+
+d3 $ s "<arpy:1*4 arpy*4>"
+
+hush

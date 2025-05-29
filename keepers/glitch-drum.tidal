@@ -1,0 +1,12 @@
+d1 $ jux rev $ s "[hh sn/2]*12 ~ ~ bd hh*8 [~ bd]*4 ~ sn:1"
+ # speed (range 0.8 1.2 $ slow 4 $ sine)
+ # room 0.2
+ # decay 0.3
+ # cutoff "<600 2400>"
+
+d2 $ striate 4 $ slow 4 $ s "invaders:1"
+ # speed "-0.4"
+ # gain "<1.2 1>"
+ # room 0.30
+
+hush

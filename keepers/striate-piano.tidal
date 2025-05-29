@@ -1,0 +1,11 @@
+setcps 1
+
+d1 $ jux rev $ s "sn:1 [hh*4, jvbass*2]"
+
+d2 $ superimpose (fast 2 . (# s "g")) $ off 0.25 (slow 2) $ slow 4 $ striate 8 $ n "c e f c" # s "superpiano"
+ # speed "<1 1.2 1 0.8>"
+ # room 0.2
+
+d2 silence
+
+hush

@@ -1,0 +1,9 @@
+setcps 1
+
+d1 $ sometimesBy 0.25 (# speed "-1") $ slow 4 $ superimpose (spin 3 . (slow 4)) $ chop 2 $ jux (|-| up "0.25") $ n (run 4) # s "blip"
+ # distort 0.4
+ # room 0.6
+
+d2 $ jux rev $ sound "[[drum*2], [jvbass, jvbass:1]*2, hh*4]" # delay "0.3"
+
+hush
