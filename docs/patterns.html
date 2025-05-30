@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nullish - pattern snippets</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="assets/custom.css">
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NDLP9TSS');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDLP9TSS" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <main class="container">
+        <h1>Nullish - code snippets</h1>
+        <p>My contribution to the world of coding with music using the <a
+                href="https://tidalcycles.org/">TidalCycles</a> pattern language.</p>
+        <p><a href="index.html">Home</a></p>
+        <p><a class="selected" href="patterns.html">Patterns: the raw code for tonnes of snippets</a>
+        </p>
+        <p><a href="video.html">Videos: some past performances</a></p>
+        <p><a href="sounds.html">Sounds: recordings of compositions and performances</a></p>
+        <h2>Snippets</h2>
+        <p>A decentish selection from an <a href="https://github.com/nullish/tidal-cycles-patterns">extensive archive.</a></p>
+
+        <!-- snippet #1: arp majestic-->
+         <div class="grid">
+         <pre>
+            setcps 1
+
+d1 $ superimpose (slow 2 . (|-| speed 1)) 
+  $ jux rev $ s "arpy*2 ~ [arpy*2] ~"
+ # speed "-1 -0.8 -1 <-0.3 -0.3 -0.3 -1.4> -1"
+ # lpf "<800 1200 2800>"
+
+d2 $ n (run 4) # s "808"
+
+d3 $ s "bd:1*2"
+
+d4 $ stut 4 0.2 0.7 $ s "arpy"
+ # gain 1.1
+ # speed "<-2 -2 -0.6 -2>"
+ # distort 0.4
+
+hush
+
+         </pre>
+        <!-- end 1 --> 
+         <!-- 2 -->
+          <pre>
+            setcps 1
+
+d1 $ s "[808bd*2, 808(3,8)]"
+ # gain 1.2
+
+d2 $ jux (ghost' 0.5 . (slow "<2 0.5>" . 
+ (# speed "1.8 3.2"))) 
+ $ chop 4 $ s "moog"
+ # speed 0.9
+ # room 0.1
+ # legato 0.4
+
+d3 $ every 2 (fast 2) $ s "sn:1 sn:2"
+
+hush
+
+          </pre>
+          <!-- end 2 -->
+         </div>
+<div class="grid">
+    <!-- 3 -->
+     <pre>
+        setcps 2
+
+d1 $ ghost' 1.2 $ jux rev $ iter 2 $ s "moog:1*8"
+# legato "0.6"
+-| speed (run "<2 4>")
+
+d2 $ s "bd"
+# room 0.2
+# gain 1.2
+
+hush
+     </pre>
+     <!-- end 3 -->
+      <!-- 4 -->
+       <pre>
+        setcps 1
+
+d1 $ chunk 4 (ghost' 0.5) $ n "[c, a]*2"
+ # s "superpiano"
+ # up "<0 1>"
+
+d1 $ chunk 4 (ghost' 0.5) $ n "[c, a]*2" # s "superpiano"
+ # up "<0 1>"
+
+d2 $ s "superchip"
+ # freqbus 0 (segment 128 $ slow 2 $ smooth "40 40 180 50")
+ # attack 0.3
+ # sustain 1.1
+ # release 0.9
+ # room 0.3
+
+ d3 $ jux (slow 1.5 . (rev)) $ s "arp:1"
+  # speed "<3 3 3 4>"
+
+
+solo 3
+
+hush
+
+       </pre>
+       <!-- end 4 -->
+</div>
+    </main>
+</body>
+
+</html>
