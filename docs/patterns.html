@@ -24,6 +24,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-NDLP9TSS');
     </script>
     <!-- End Google Tag Manager -->
+     
 </head>
 
 <body>
@@ -41,11 +42,15 @@
         <p><a href="video.html">Videos: some past performances</a></p>
         <p><a href="sounds.html">Sounds: recordings of compositions and performances</a></p>
         <h2>Snippets</h2>
-        <p>A decentish selection from an <a href="https://github.com/nullish/tidal-cycles-patterns">extensive archive.</a></p>
+        <p>A decentish selection from an <a href="https://github.com/nullish/tidal-cycles-patterns">extensive
+                archive.</a></p>
+                <hr>
 
         <!-- snippet #1: arp majestic-->
-         <div class="grid">
-         <pre>
+        <div class="grid">
+            <div class="snippet-container">
+                <button type="button" class="copy" data-copy=".snippet1">Copy</button>
+                <pre class="snippet1">
             setcps 1
 
 d1 $ superimpose (slow 2 . (|-| speed 1)) 
@@ -65,9 +70,10 @@ d4 $ stut 4 0.2 0.7 $ s "arpy"
 hush
 
          </pre>
-        <!-- end 1 --> 
-         <!-- 2 -->
-          <pre>
+            </div>
+            <!-- end 1 -->
+            <!-- 2 -->
+            <pre>
             setcps 1
 
 d1 $ s "[808bd*2, 808(3,8)]"
@@ -85,11 +91,11 @@ d3 $ every 2 (fast 2) $ s "sn:1 sn:2"
 hush
 
           </pre>
-          <!-- end 2 -->
-         </div>
-<div class="grid">
-    <!-- 3 -->
-     <pre>
+            <!-- end 2 -->
+        </div>
+        <div class="grid">
+            <!-- 3 -->
+            <pre>
         setcps 2
 
 d1 $ ghost' 1.2 $ jux rev $ iter 2 $ s "moog:1*8"
@@ -102,9 +108,9 @@ d2 $ s "bd"
 
 hush
      </pre>
-     <!-- end 3 -->
-      <!-- 4 -->
-       <pre>
+            <!-- end 3 -->
+            <!-- 4 -->
+            <pre>
         setcps 1
 
 d1 $ chunk 4 (ghost' 0.5) $ n "[c, a]*2"
@@ -130,9 +136,10 @@ solo 3
 hush
 
        </pre>
-       <!-- end 4 -->
-</div>
+            <!-- end 4 -->
+        </div>
     </main>
+    <script type="text/javascript" src="assets/main.js"></script>
 </body>
 
 </html>
