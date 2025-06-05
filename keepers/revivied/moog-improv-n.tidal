@@ -1,0 +1,19 @@
+-- From: https://www.youtube.com/watch?v=6wkjpm8B_78
+
+setcps (70/60)
+
+d1 $ jux rev $ every 2 (zoom (0.5, 1)) $ s "<moog sn:1>*8"
+ # speed (square * "<3 3 2 4>")
+ # legato 0.8
+
+d2 $ sometimesBy 0.25 (zoom (0.5, 1)) $ stut 2 0.7 0.25 $ scramble 4 $ n "0 1" # s "casio"
+ # speed "<0.3 0.4>"
+ # coarse "10 20"
+
+d3 $ fast 2 $ s "bd"
+ # room 0.2
+
+d4 $ striate 8 $ loopAt  4 $ s "moog*2"
+ # accelerate "<3 -1.2>"
+
+ hush
