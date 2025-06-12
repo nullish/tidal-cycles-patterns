@@ -2,8 +2,8 @@
 
 setcps (80/60)
 
-d1 $ superimpose (fast 2 . (# up 3)) $ stut 2 0.7 0.5 $ jux (slow 1.5) $ s "blip" # n (irand 2)
- # speed "<0.4  0.4 0.4 1>"
+d1 $ superimpose (fast 2 . (# up 3)) $ stut 2 0.7 0.5 $ jux (slow 1.5) $ fast 2 $ s "blip" # n (irand 2)
+ # speed "<0.4  0.4 0.4 2>"
  # resonance 0.4
  # cutoff (range 400 1200 $ slow 2 $ sine)
  # gain 1.2
@@ -16,5 +16,7 @@ d3 $ chop "<8 12 12 12>" $ slow "<2 4 4 4>" $ s "choir:1"
 d4 $ jux (# up "<2 4>") $ every 4 brak $ every 2 (# speed "1.2 1") $ s "choir*2"
  # speed "0.6 0.8"
  # gain (range 0.8 1.2 $ slow 8 $ sine)
+
+d4 silence
 
 hush

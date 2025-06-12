@@ -1,0 +1,12 @@
+setcps (70/60)
+
+d1 $ every 4 (rev) $ superimpose (slow 4 . (# up 2)) $ superimpose (iter 1 . (slow 2)) $ jux rev $ palindrome $ stut 2 0.7 0.4 $ s "acid"
+ # legato 0.2
+ # room 0.2
+ # speed "<1 0.8 <1.4 1.2>>"
+ # lpf (range 1200 2500 $ slow 2 $ sine)
+
+d2 $ s "[bd*2, hh*4]"
+ # gain 1.2
+
+hush

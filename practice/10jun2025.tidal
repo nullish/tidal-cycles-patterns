@@ -1,0 +1,11 @@
+d1 $ jux rev $ s "drum [<jvbass arp>*4, <[bd*2] sn:1>*2]"
+
+d2 $ jux rev $ slow 2 $ every 2 (fast 2) $ s "<moog moog:1>*4"
+ # legato 0.4
+ -| speed (run "<8 4>")
+
+d3 $ slow 2 $ n (run 2) # s "moog"
+
+solo 2
+
+hush
