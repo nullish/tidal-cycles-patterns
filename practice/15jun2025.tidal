@@ -1,0 +1,9 @@
+setcps (60/70)
+
+d1 $ jux (|/| speed 2) $ sometimesBy (1/3) (|*| speed "-1") $ slow 2 $ s "<[blip*2] sn:1 sn:1>*12"
+ # speed (irand 3)
+ # room 0.7
+
+d2 $ s "superchip"
+
+hush
