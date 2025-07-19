@@ -1,0 +1,12 @@
+setcps 1.4
+
+let boostGain = (# gain 1.4)
+
+d1 $ boostGain $ superimpose (slow 4 . (# up "-2")) $ chunk 4 (ghost' 0.5) $ s "<blip [jvbass*4] sn:1>*2"
+
+d2  $ brak $ palindrome $ n (run 4) # s "[blip, jvbass*2]"
+ # speed 2
+ # room 0.3
+ # gain "<1.2 1.2 1.2 0 0>"
+
+hush
